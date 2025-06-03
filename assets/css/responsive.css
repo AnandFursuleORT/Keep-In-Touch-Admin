@@ -1,0 +1,5395 @@
+@media screen and (max-width: 480px) {
+    .drip-header {
+        flex-direction: column;
+        gap: 1rem !important;
+        align-items: flex-start !important;
+        margin-top: 24px;
+    }
+
+    .table-head {
+        flex-direction: column;
+        gap: 1rem !important;
+        align-items: flex-start !important;
+    }
+
+    .topbar {
+        gap: 1rem !important;
+        padding: 8px 16px;
+    }
+
+    .mobile-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .details-header {
+        padding: 16px;
+    }
+
+    .drip-name {
+        font-size: 8px;
+    }
+
+    .content2 {
+        gap: 4px;
+    }
+
+    .cancel-drip-btn {
+        width: 12px;
+        height: 12px;
+    }
+
+    .indicator {
+        font-size: 10px;
+    }
+
+    .sidebar {
+        border: none;
+
+    }
+
+    .off-btn {
+        background-color: transparent;
+        border: none !important;
+    }
+
+    .site-offcanvas {
+        width: 280px !important;
+    }
+
+    .notification,
+    .profile-menu,
+    .help-support {
+        padding: 8px 12px;
+    }
+
+    .credits {
+        padding: 10px 12px;
+    }
+
+    .drip-header {
+        margin-top: 0;
+    }
+
+    .dripMailImg {
+        display: none;
+    }
+
+    .modal-main-content {
+        gap: 1rem !important;
+    }
+
+    .page-content {
+        padding: 16px;
+    }
+
+    .table-div {
+        padding: 16px;
+    }
+
+    .table-tabs-link {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .table-tabs-link:hover {
+        font-size: 16px;
+    }
+
+    .nav-pills .table-tabs-link.active {
+        /* font-size: 16px; */
+        padding: 8px;
+    }
+
+    .active-drip-bar {
+        margin: 0 !important;
+    }
+
+    .heading h4 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .add-button {
+        font-size: 14px;
+    }
+
+    /* drip modal css */
+
+    .detail-img-div {
+        display: none;
+    }
+
+    .drip-event-select {
+        width: 100%;
+    }
+
+    .drips-image {
+        left: 6%;
+    }
+
+    /* wallet css */
+
+    .wallet-div1 {
+        padding: 10px;
+    }
+
+    .download-history-wrapper {
+        padding: 8px 10px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+    .add-button {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .download-history {
+        display: none;
+    }
+
+    .credit-usage-div h4 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .credit-usage-card {
+        padding: 16px;
+    }
+
+    .credit-card {
+        flex-direction: column;
+        align-items: start !important;
+        gap: 8px;
+    }
+
+    .credit span {
+        font-size: 20px;
+    }
+
+    /* Contact listing css */
+
+    .table-div1 {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 8px;
+    }
+
+    .table-search {
+        width: 100%;
+    }
+
+    .table-div-tabs {
+        gap: 0.5rem !important;
+        flex-wrap: wrap;
+    }
+
+    .table-heading h4 {
+        font-size: 16px;
+    }
+
+    .addContact-modal-hdg h2 {
+        font-size: 18px;
+    }
+
+    .addContactModal .main-container {
+        padding: 16px;
+    }
+
+    .addContact-Personal,
+    .addContact-business {
+        padding: 16px;
+    }
+
+    .upload-details {
+        gap: 8px;
+    }
+
+    /* sign in css */
+
+    .main-img {
+        background-image: none;
+        height: auto;
+        padding: 24px 24px 12px 24px;
+    }
+
+    .img-text {
+        display: none;
+    }
+
+    .sign-in {
+        padding: 8px 24px;
+        gap: 14px;
+    }
+
+    .form-heading-text h4 {
+        font-size: 24px;
+    }
+
+    form {
+        gap: 16px;
+    }
+
+    .table-dropdown-menu-item img {
+        height: 14px;
+        width: 14px;
+    }
+
+    .pricing-table thead th {
+        padding: 10px;
+
+    }
+
+    .pricing-table tbody td {
+        padding: 6px;
+    }
+
+    .features img {
+        height: 16px;
+        width: 16px;
+    }
+
+    .upload-button {
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+
+    .template-content {
+        font-size: 10px !important;
+    }
+
+    .submit-btn,
+    .cancel-btn {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    .domain-select {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .heading h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .add-button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .check-label {
+        font-size: 12px;
+    }
+
+    .check-label.active {
+        font-size: 12px;
+    }
+
+    .cancel-drip-btn {
+        width: 16px;
+        height: 16px;
+    }
+
+    #expand-btn {
+        width: 14px;
+        height: 14px;
+    }
+
+    .table-heading h4 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .table-div {
+        padding: 10px;
+    }
+
+    .Table td {
+        font-size: 10px;
+        padding: 5px !important;
+    }
+
+    .table-div1 {
+        margin-bottom: 8px;
+    }
+
+    .table-icons-div img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .tag-name-count {
+        font-size: 10px;
+    }
+
+    .export,
+    .import {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .export img,
+    .import img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .topbar-search {
+        padding: 8px 10px 8px 30px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .search {
+        padding: 8px 10px 8px 30px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .table-filter {
+        padding: 8px 10px;
+    }
+
+    .page-content {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .select-tag-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .title-offcanvas {
+        font-size: 18px;
+    }
+
+    .topbar {
+        height: auto;
+        padding: 7.4px 12px;
+    }
+
+    .link-item {
+        font-size: 12px;
+    }
+
+    .notification,
+    .profile-menu,
+    .help-support {
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .notification img,
+    .profile-menu img,
+    .help-support img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .profile {
+        font-size: 12px;
+    }
+
+    .credits {
+        padding: 8px 12px;
+    }
+
+    .credits img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .topbar-widgets-text {
+        font-size: 12px;
+    }
+
+    .drip-active-item.active {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+
+    .drip-name {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .sidebar .logo {
+        padding: 12px 14px;
+        height: auto;
+    }
+
+    .sidebar-menu {
+        padding: 12px;
+    }
+
+    .menu-item a {
+        font-size: 12px;
+        padding: 6px;
+        gap: 8px;
+    }
+
+    .table-tabs-link {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .nav-pills .table-tabs-link.active {
+        /* font-size: 16px; */
+    }
+
+    .table-tabs-link:hover {
+        font-size: 14px;
+    }
+
+    .badge {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+
+    .menu-list2 {
+        gap: 4px;
+    }
+
+    .menu-list2 li a {
+        font-size: 10px;
+    }
+
+
+
+    .sidebar-accordion span {
+        padding-left: 6px;
+    }
+
+    .accordion-button:not(.collapsed) {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .offcanvas-header {
+        padding: 12px;
+    }
+
+    .filter-offcanvas .offcanvas-body {
+        padding: 12px;
+    }
+
+    .filter-acdn-btn:not(.collapsed) {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .filter-acdn-btn {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .filter-acdn .accordion-body {
+        padding: 8px;
+    }
+
+    .filter-date {
+        padding: 6px 10px;
+    }
+
+    .filter-search {
+        background-size: 14px;
+        padding: 8px 6px 8px 28px;
+    }
+
+    .menu-list .menu-item.active span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .contact-sub-items {
+        padding: 6px !important;
+    }
+
+    .menu-list .menu-item.active {
+        border-radius: 6px;
+    }
+
+    .app-section-menu {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .apple-store {
+        padding: 8px;
+    }
+
+    .play-store {
+        padding: 8px;
+    }
+
+    .table-action img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .page-link {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+
+    .dt-length select {
+        font-size: 12px;
+    }
+
+    .select-tag {
+        font-size: 12px;
+    }
+
+    .table-heading th {
+        padding: 12px !important;
+        font-size: 12px;
+    }
+
+    .btn-grey {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .btn-red {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    /* Add contact modal */
+
+    .addContact-modal-hdg h2 {
+        font-size: 20px;
+    }
+
+    .details-header {
+        padding: 8px 80px;
+    }
+
+    .addContactModal .main-container {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .addContact-Personal,
+    .addContact-business {
+        padding: 12px;
+    }
+
+    .input-label {
+        font-size: 12px;
+    }
+
+    .email-form-label {
+        font-size: 12px;
+    }
+
+    .input-text {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .input-text::placeholder {
+        font-size: 12px;
+    }
+
+    .execution-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .domain-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .time-img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .addContact-email-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .add-email {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .add-email img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .successfullyModal {
+        border-radius: 24px !important;
+    }
+
+    .successfullyModal-body {
+        gap: 12px;
+    }
+
+    .successfullyModal .modal-header {
+        padding: 12px;
+    }
+
+    .successfullyModal .modal-body {
+        padding: 16px 42px;
+    }
+
+    .successfullyModal-body img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .successfully-title h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .successfully-text p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* wallet css */
+
+    .wallet-div1 {
+        padding: 10px;
+    }
+
+    .download-history-wrapper {
+        padding: 8px 12px;
+    }
+
+    .download-history {
+        font-size: 12px;
+    }
+
+    .credit-usage-card,
+    .credit-info-card,
+    .plan-details-card {
+        padding: 10px;
+    }
+
+    .balance-card {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .credit-points img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .credit-left {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .overall-credit {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .acct-holder-text,
+    .Expiry-date-text {
+        font-size: 10px;
+    }
+
+    .credit-usage-div h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .credit-usage-div span {
+        font-size: 10px;
+    }
+
+    .credit-usage-select {
+        font-size: 12px;
+    }
+
+    .sms {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .sms-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .credit h6 {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .whatsapp {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .whatsapp-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .email {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .email-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .credit-info h4,
+    .plan-details h4 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .credit-info,
+    .plan-details {
+        gap: 12px;
+    }
+
+    .credit-per-sms,
+    .credit-per-email,
+    .credit-per-whatsapp,
+    .details-plan {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .sms-credit,
+    .email-credit,
+    .whatsapp-credit,
+    .details {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* tag master css */
+
+    .add-modal-title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    form {
+        gap: 8px;
+    }
+
+    .text-area::placeholder {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .text-area {
+        background-size: 14px;
+    }
+
+    .add-modal {
+        padding: 16px 16px 5px 16px;
+    }
+
+    .uploadModal {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .uploadMdal-title h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .uploadMdal-title p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .file-upload-div {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .upload-modal-body {
+        gap: 8px;
+    }
+
+    .file-upload-text {
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    .file-upload-circle3 img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .contact {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .md-body-div {
+        gap: 8px;
+    }
+
+    .file-upload-div {
+        gap: 12px;
+    }
+
+    .modal-dt-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    /* Dashboard */
+
+    .profile-name h4 {
+        font-size: 15px;
+    }
+
+    .profile-menu-item a {
+        font-size: 12px;
+    }
+
+    /* sign-up css */
+
+    .sign-in {
+        gap: 12px;
+        padding: 8px 40px 0 40px;
+    }
+
+    .form-heading-text {
+        gap: 4px;
+    }
+
+    .form-heading-text h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .sign-form-input {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .input_wrap label {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    input:focus+label,
+    input:not(:placeholder-shown)+label {
+        font-size: 12px !important;
+    }
+
+    .next-step,
+    .prev-step {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .skip-step {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .file-upload {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .info-btn {
+        background-size: 14px;
+    }
+
+    .send-code-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .sign-up-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .keep-logged-in-text {
+        font-size: 12px;
+    }
+
+    .sign-in-btn {
+        padding: 8px;
+    }
+
+    .sign-in-btn a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .sign-in-form {
+        gap: 12px;
+    }
+
+    .option {
+        padding: 12px;
+    }
+
+    .sign-logo img {
+        width: 200px;
+    }
+
+    .main-img {
+        padding: 24px;
+    }
+
+    .img-text h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .img-text p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .sign-up-role {
+        padding: 12px;
+        gap: 4px;
+    }
+
+    .sign-up-role h4 {
+        font-size: 14px;
+    }
+
+    .sign-up-role p {
+        font-size: 12px;
+    }
+
+    .option a {
+        font-size: 14px;
+    }
+
+    .Sign-In-with-text {
+        font-size: 14px;
+    }
+
+    /* drip modal css */
+
+    .add-drip-modal {
+        padding: 12px;
+    }
+
+    .modal-main-content {
+        gap: 12px;
+    }
+
+    .modal-heading {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .modal-cont {
+        gap: 8px;
+    }
+
+    .drip-modal-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .drip-modal-p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .drip-form-div {
+        padding: 12px;
+    }
+
+    .drip-select {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .drip-select1 {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .drip-condition-div {
+        margin-top: 8px;
+        gap: 0px;
+    }
+
+    .drips-image {
+        width: 14px;
+        height: 14px;
+        top: 62%;
+    }
+
+    .drips-image1 {
+        width: 14px;
+        height: 14px;
+        top: 62%;
+    }
+
+    .drip-input-date {
+        padding: 8px 16px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .drip-event-select {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .detail-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .detail-img-div {
+        gap: 8px;
+    }
+
+    .drip-input-date::-webkit-calendar-picker-indicator {
+        background-size: 14px;
+    }
+
+    .channel-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .add-step-btn {
+        font-size: 14px;
+        background-size: 14px;
+        padding: 6px 25px 8px 25px;
+    }
+
+    .add-step-btn img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .auto-setup img {
+        width: 100px;
+        height: 90px;
+    }
+
+    .insert-text {
+        gap: 8px;
+    }
+
+    .insert-text h6 {
+        font-size: 18px;
+    }
+
+    .insert-text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .execution-time {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .sms-place-text {
+        font-size: 12px;
+    }
+
+    .custom-file-label span:first-child {
+        font-size: 12px;
+    }
+
+    .custom-file-label span:last-child {
+        font-size: 12px;
+    }
+
+    .variable-input {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .custom-file-label {
+        padding: 10px;
+    }
+
+    .media-div {
+        padding: 10px;
+    }
+
+    .media-badges span {
+        font-size: 12px;
+    }
+
+    .back-btn-template {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .back-btn-template img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .back-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .back-btn img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .summary-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .drip-footer {
+        padding: 12px 12px;
+    }
+
+    .step-text {
+        font-size: 12px;
+    }
+
+    .whatsapp-step.completed .step-subtext {
+        font-size: 10px;
+    }
+
+    .whatsapp-step.active .step-subtext {
+        font-size: 10px;
+    }
+
+    .add-step-li {
+        width: 135px;
+    }
+
+    .add-step-li .dropdown-item {
+        font-size: 12px;
+    }
+
+    .add-step-li .dropdown-item img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .next-btn-template {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .next-btn-template img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .messages-text {
+        font-size: 12px;
+    }
+
+    .email-input {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .event-booth-input,
+    .event-location-input {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .email-alias {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .mail-sub-input {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .template-box {
+        height: 208px;
+    }
+
+    .template-box p {
+        font-size: 12px;
+    }
+
+    .template-div p {
+        font-size: 12px;
+    }
+
+    .step2-div {
+        padding: 8px;
+    }
+
+    .email-design-text {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .reset-div {
+        padding: 2px 12px;
+    }
+
+    .stepper-main-div {
+        padding: 12px;
+    }
+
+    .step3-div {
+        padding: 8px;
+    }
+
+    .reset-text {
+        font-size: 12px;
+    }
+
+    .edit-text {
+        font-size: 12px;
+    }
+
+    .email-design-preview {
+        padding: 12px;
+    }
+
+    .step-summary-div {
+        padding: 12px 50px 12px 12px;
+    }
+
+    .summary-label {
+        font-size: 10px;
+    }
+
+    .summary-info {
+        font-size: 12px;
+    }
+
+    .summary-info-green {
+        font-size: 12px;
+    }
+
+    .action-div img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .publish-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .publish-btn img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .flash-div img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .write-msg-text {
+        font-size: 12px;
+    }
+
+    .form-small-text {
+        font-size: 10px;
+    }
+
+    .step-template-div {
+        padding: 12px;
+    }
+
+    .format-text-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .text-format {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .format-table .table-light td {
+        font-size: 12px;
+    }
+
+    .format-table-div {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+
+    .modal-header {
+        padding: 10px 16px;
+    }
+
+    .templates {
+        padding: 12px;
+    }
+
+    .template-hdg {
+        font-size: 10px;
+    }
+
+    .template-text {
+        font-size: 12px;
+    }
+
+    .status-text {
+        font-size: 12px;
+    }
+
+    .status-text2 {
+        font-size: 12px;
+    }
+
+    .status-text3 {
+        font-size: 12px;
+    }
+
+    .sender-input {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .deleteModal .modal-content {
+        padding: 6px;
+    }
+
+    .delete-modal-title {
+        font-size: 16px;
+    }
+
+    .delete-modal-text p {
+        font-size: 12px;
+    }
+
+    .indicator {
+        font-size: 12px;
+    }
+
+    .detail-list li {
+        font-size: 12px;
+    }
+
+    /* ====================== Setting ===================  */
+
+    .setting-option h6 {
+        font-size: 14px;
+    }
+
+    .setting-option p {
+        font-size: 12px;
+    }
+
+    .setting-option {
+        padding: 8px;
+    }
+
+
+
+    .setting-tab-hdg {
+        font-size: 16px;
+    }
+
+    .plan-summary {
+        padding: 8px 16px;
+    }
+
+    .plain-details {
+        padding: 12px;
+    }
+
+    .plain-details h6 {
+        font-size: 12px;
+    }
+
+    .plain-details p {
+        font-size: 14px;
+    }
+
+    .table-dropdown-menu-item img {
+        height: 14px;
+        width: 14px;
+    }
+
+    /*=========================== team Access & Permission ====================*/
+
+    .setting-modal-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .setting-modal-p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    /*=========================== Change Password  ====================*/
+
+    .modal-changePasswordModal,
+    .modal-twoFactorAuthModal,
+    .modal-twoFactorAuthModal,
+    .modal-acctActivateModal,
+    .modal-loginHistoryModal,
+    .modal-chooseLangModal {
+        padding: 16px;
+    }
+
+    .changePassword-wrapper,
+    .two-factor-auth-wrapper,
+    .acctActivate-wrapper,
+    .loginHistory-wrapper,
+    .chooseLang-wrapper {
+        gap: 12px;
+    }
+
+    .two-factor-auth-input,
+    .acctActivate-input {
+        padding: 12px;
+    }
+
+    .settings-input {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .two-factor-auth-wrapper2 {
+        gap: 4px;
+    }
+
+    .pricing-table thead th {
+        padding: 10px;
+
+    }
+
+    .pricing-table tbody td {
+        padding: 6px;
+    }
+
+    .features img {
+        height: 16px;
+        width: 16px;
+    }
+
+    .upload-button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .template-content {
+        font-size: 10px !important;
+    }
+
+    .submit-btn,
+    .cancel-btn {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    .domain-select {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+    .step span {
+        font-size: 10px;
+    }
+
+    .heading h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .add-button {
+        /* padding: 8px 25px; */
+        font-size: 12px;
+    }
+
+    .check-label {
+        font-size: 12px;
+    }
+
+    .check-label.active {
+        font-size: 12px;
+    }
+
+    .cancel-drip-btn {
+        width: 16px;
+        height: 16px;
+    }
+
+    #expand-btn {
+        width: 14px;
+        height: 14px;
+    }
+
+    .table-heading h4 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* .table-div {
+        padding: 10px;
+    } */
+
+    .Table td {
+        font-size: 11px;
+        padding: 5px !important;
+    }
+
+    .table-div1 {
+        margin-bottom: 8px;
+    }
+
+    .table-icons-div img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .tag-name-count {
+        font-size: 10px;
+    }
+
+    .export,
+    .import {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .export img,
+    .import img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .topbar-search {
+        padding: 8px 10px 8px 30px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .search {
+        padding: 8px 10px 8px 30px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .table-filter {
+        padding: 8px 10px;
+    }
+
+    .table-filter img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .page-content {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .select-tag-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .title-offcanvas {
+        font-size: 18px;
+    }
+
+    .topbar {
+        height: auto;
+        padding: 7.4px 12px;
+    }
+
+    .link-item {
+        font-size: 12px;
+    }
+
+    .notification,
+    .profile-menu,
+    .help-support {
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .notification img,
+    .profile-menu img,
+    .help-support img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .profile {
+        font-size: 12px;
+    }
+
+    .credits {
+        padding: 8px 12px;
+    }
+
+    .credits img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .topbar-widgets-text {
+        font-size: 12px;
+    }
+
+    .drip-active-item.active {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+
+    .drip-name {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .sidebar {
+        width: 213px;
+    }
+
+    .sidebar .logo {
+        padding: 12px 14px;
+        height: auto;
+    }
+
+    .sidebar-menu {
+        padding: 12px;
+    }
+
+    .menu-item a {
+        font-size: 12px;
+        padding: 4px;
+        gap: 8px;
+    }
+
+    .menu-item img {
+        height: 14px;
+        width: 14px;
+    }
+
+    .table-tabs-link {
+        padding: 10px;
+    }
+
+    .nav-pills .table-tabs-link.active {
+        /* font-size: 16px; */
+    }
+
+    .badge {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+
+    .menu-list2 {
+        gap: 4px;
+    }
+
+    .menu-list2 li a {
+        font-size: 10px;
+    }
+
+    .sidebar-accordion {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .sidebar-accordion span {
+        padding-left: 6px;
+    }
+
+    .accordion-button:not(.collapsed) {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .offcanvas-header {
+        padding: 12px;
+    }
+
+    .filter-offcanvas .offcanvas-body {
+        padding: 12px;
+    }
+
+    .filter-acdn-btn:not(.collapsed) {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .filter-acdn-btn {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .filter-acdn .accordion-body {
+        padding: 8px;
+    }
+
+    .filter-date {
+        padding: 6px 10px;
+    }
+
+    .filter-search {
+        background-size: 14px;
+        padding: 8px 6px 8px 28px;
+    }
+
+    .menu-list .menu-item.active span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .contact-sub-items {
+        padding: 6px !important;
+    }
+
+    .menu-list .menu-item.active {
+        border-radius: 6px;
+    }
+
+    .app-section-menu {
+        padding: 12px 24px;
+        gap: 8px;
+    }
+
+    .apple-store {
+        padding: 8px;
+    }
+
+    .play-store {
+        padding: 8px;
+    }
+
+    .table-action img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .page-link {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+
+    .dt-length select {
+        font-size: 12px;
+    }
+
+    .select-tag {
+        font-size: 12px;
+    }
+
+    .table-heading th {
+        padding: 10px !important;
+        font-size: 11px;
+    }
+
+    .btn-grey {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .btn-red {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    /* Add contact modal */
+
+    .addContact-modal-hdg h2 {
+        font-size: 20px;
+    }
+
+    .details-header {
+        padding: 8px 80px;
+    }
+
+    .addContactModal .main-container {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .addContact-Personal,
+    .addContact-business {
+        padding: 12px;
+    }
+
+    .input-label {
+        font-size: 12px;
+    }
+
+    .email-form-label {
+        font-size: 12px;
+    }
+
+    .input-text {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .input-text::placeholder {
+        font-size: 12px;
+    }
+
+    .execution-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .domain-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .time-img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .addContact-email-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .add-email {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .add-email img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .successfullyModal {
+        border-radius: 24px !important;
+    }
+
+    .successfullyModal-body {
+        gap: 12px;
+    }
+
+    .successfullyModal .modal-header {
+        padding: 12px;
+    }
+
+    .successfullyModal .modal-body {
+        padding: 16px 42px;
+    }
+
+    .successfullyModal-body img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .successfully-title h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .successfully-text p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* wallet css */
+
+    .wallet-div1 {
+        padding: 10px;
+    }
+
+    .download-history-wrapper {
+        padding: 8px 12px;
+    }
+
+    .download-history {
+        font-size: 12px;
+    }
+
+    .credit-usage-card,
+    .credit-info-card,
+    .plan-details-card {
+        padding: 10px;
+    }
+
+    .balance-card {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .credit-points img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .credit-left {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .overall-credit {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .acct-holder-text,
+    .Expiry-date-text {
+        font-size: 10px;
+    }
+
+    .credit-usage-div h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .credit-usage-div span {
+        font-size: 10px;
+    }
+
+    .credit-usage-select {
+        font-size: 12px;
+    }
+
+    .sms {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .sms-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .credit h6 {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .whatsapp {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .whatsapp-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .email {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .email-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .credit-info h4,
+    .plan-details h4 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .credit-info,
+    .plan-details {
+        gap: 12px;
+    }
+
+    .credit-per-sms,
+    .credit-per-email,
+    .credit-per-whatsapp,
+    .details-plan {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .sms-credit,
+    .email-credit,
+    .whatsapp-credit,
+    .details {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* tag master css */
+
+    .add-modal-title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    form {
+        gap: 8px;
+    }
+
+    .text-area::placeholder {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .text-area {
+        background-size: 14px;
+    }
+
+    .add-modal {
+        padding: 16px 16px 5px 16px;
+    }
+
+    .uploadModal {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .uploadMdal-title h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .uploadMdal-title p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .file-upload-div {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .upload-modal-body {
+        gap: 8px;
+    }
+
+    .file-upload-text {
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    .file-upload-circle3 img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .contact {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .md-body-div {
+        gap: 8px;
+    }
+
+    .file-upload-div {
+        gap: 12px;
+    }
+
+    .modal-dt-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    /* Dashboard */
+
+    .profile-name h4 {
+        font-size: 15px;
+    }
+
+    .profile-menu-item a {
+        font-size: 12px;
+    }
+
+    /* sign-up css */
+
+    .sign-in {
+        gap: 12px;
+        padding: 8px 40px 0 40px;
+    }
+
+    .form-heading-text {
+        gap: 4px;
+    }
+
+    .form-heading-text h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .form-heading-text p {
+        font-size: 14px;
+    }
+
+    .dont-have-acct-text,
+    .have-acct-text {
+        font-size: 14px;
+    }
+
+    .sign-form-input {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .input_wrap label {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    input:focus+label,
+    input:not(:placeholder-shown)+label {
+        font-size: 12px !important;
+    }
+
+    .next-step,
+    .prev-step {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .skip-step {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .file-upload {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .info-btn {
+        background-size: 14px;
+    }
+
+    .send-code-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .sign-up-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .keep-logged-in-text {
+        font-size: 12px;
+    }
+
+    .sign-in-btn {
+        padding: 6px;
+    }
+
+    .sign-in-btn a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .sign-in-form {
+        gap: 12px;
+    }
+
+    .option {
+        padding: 12px;
+    }
+
+    .sign-logo img {
+        width: 200px;
+    }
+
+    .main-img {
+        padding: 24px;
+    }
+
+    .img-text h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .img-text p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .sign-up-role {
+        padding: 12px;
+        gap: 4px;
+    }
+
+    .sign-up-role h4 {
+        font-size: 14px;
+    }
+
+    .sign-up-role p {
+        font-size: 12px;
+    }
+
+    .option a {
+        font-size: 14px;
+    }
+
+    .Sign-In-with-text {
+        font-size: 14px;
+    }
+
+    /* drip modal css */
+
+    .add-drip-modal {
+        padding: 12px;
+    }
+
+    .modal-main-content {
+        gap: 12px;
+    }
+
+    .modal-heading {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .modal-cont {
+        gap: 8px;
+    }
+
+    .drip-modal-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .drip-modal-p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .drip-form-div {
+        padding: 12px;
+    }
+
+    .drip-select {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .drip-select1 {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .drip-condition-div {
+        margin-top: 8px;
+        gap: 0px;
+    }
+
+    .drips-image {
+        width: 14px;
+        height: 14px;
+        top: 62%;
+    }
+
+    .drips-image1 {
+        width: 14px;
+        height: 14px;
+        top: 62%;
+    }
+
+    .drip-input-date {
+        padding: 8px 16px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .drip-event-select {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .detail-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .detail-img-div {
+        gap: 8px;
+    }
+
+    .drip-input-date::-webkit-calendar-picker-indicator {
+        background-size: 14px;
+    }
+
+    .channel-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .add-step-btn {
+        font-size: 14px;
+        background-size: 14px;
+        padding: 6px 25px 8px 25px;
+    }
+
+    .add-step-btn img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .auto-setup img {
+        width: 100px;
+        height: 90px;
+    }
+
+    .insert-text {
+        gap: 8px;
+    }
+
+    .insert-text h6 {
+        font-size: 18px;
+    }
+
+    .insert-text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .execution-time {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .sms-place-text {
+        font-size: 12px;
+    }
+
+    .custom-file-label span:first-child {
+        font-size: 12px;
+    }
+
+    .custom-file-label span:last-child {
+        font-size: 12px;
+    }
+
+    .variable-input {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .custom-file-label {
+        padding: 10px;
+    }
+
+    .media-div {
+        padding: 10px;
+    }
+
+    .media-badges span {
+        font-size: 12px;
+    }
+
+    .back-btn-template {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .back-btn-template img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .back-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .back-btn img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .summary-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .drip-footer {
+        padding: 12px 12px;
+    }
+
+    .step-text {
+        font-size: 12px;
+    }
+
+    .whatsapp-step.completed .step-subtext {
+        font-size: 10px;
+    }
+
+    .whatsapp-step.active .step-subtext {
+        font-size: 10px;
+    }
+
+    .add-step-li {
+        width: 135px;
+    }
+
+    .add-step-li .dropdown-item {
+        font-size: 12px;
+    }
+
+    .add-step-li .dropdown-item img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .next-btn-template {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .next-btn-template img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .messages-text {
+        font-size: 12px;
+    }
+
+    .email-input {
+        padding: 8px 16px 8px 36px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .event-booth-input,
+    .event-location-input {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+
+    .email-alias {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .mail-sub-input {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .template-box {
+        height: 208px;
+    }
+
+    .template-box p {
+        font-size: 12px;
+    }
+
+    .template-div p {
+        font-size: 12px;
+    }
+
+    .step2-div {
+        padding: 8px;
+    }
+
+    .email-design-text {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .reset-div {
+        padding: 2px 12px;
+    }
+
+    .stepper-main-div {
+        padding: 12px;
+    }
+
+    .step3-div {
+        padding: 8px;
+    }
+
+    .reset-text {
+        font-size: 12px;
+    }
+
+    .edit-text {
+        font-size: 12px;
+    }
+
+    .email-design-preview {
+        padding: 12px;
+    }
+
+    .step-summary-div {
+        padding: 12px 50px 12px 12px;
+    }
+
+    .summary-label {
+        font-size: 10px;
+    }
+
+    .summary-info {
+        font-size: 12px;
+    }
+
+    .summary-info-green {
+        font-size: 12px;
+    }
+
+    .action-div img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .publish-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .publish-btn img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .flash-div img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .write-msg-text {
+        font-size: 12px;
+    }
+
+    .form-small-text {
+        font-size: 10px;
+    }
+
+    .step-template-div {
+        padding: 12px;
+    }
+
+    .format-text-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .text-format {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .format-table .table-light td {
+        font-size: 12px;
+    }
+
+    .format-table-div {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+
+    .modal-header {
+        padding: 10px 16px;
+    }
+
+    .templates {
+        padding: 12px;
+    }
+
+    .template-hdg {
+        font-size: 10px;
+    }
+
+    .template-text {
+        font-size: 12px;
+    }
+
+    .status-text {
+        font-size: 12px;
+    }
+
+    .status-text2 {
+        font-size: 12px;
+    }
+
+    .status-text3 {
+        font-size: 12px;
+    }
+
+    .sender-input {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .deleteModal .modal-content {
+        padding: 6px;
+    }
+
+    .delete-modal-title {
+        font-size: 16px;
+    }
+
+    .delete-modal-text p {
+        font-size: 12px;
+    }
+
+    .indicator {
+        font-size: 12px;
+    }
+
+    .detail-list li {
+        font-size: 12px;
+    }
+
+    /* ====================== Setting ===================  */
+
+    .setting-option h6 {
+        font-size: 14px;
+    }
+
+    .setting-option p {
+        font-size: 12px;
+    }
+
+    .setting-option {
+        padding: 8px;
+    }
+
+
+
+    .setting-tab-hdg {
+        font-size: 16px;
+    }
+
+    .plan-summary {
+        padding: 8px 16px;
+    }
+
+    .plain-details {
+        padding: 12px;
+    }
+
+    .plain-details h6 {
+        font-size: 12px;
+    }
+
+    .plain-details p {
+        font-size: 14px;
+    }
+
+    .table-dropdown-menu-item img {
+        height: 14px;
+        width: 14px;
+    }
+
+    /*=========================== team Access & Permission ====================*/
+
+    .setting-modal-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .setting-modal-p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    /*=========================== Change Password  ====================*/
+
+    .modal-changePasswordModal,
+    .modal-twoFactorAuthModal,
+    .modal-twoFactorAuthModal,
+    .modal-acctActivateModal,
+    .modal-loginHistoryModal,
+    .modal-chooseLangModal {
+        padding: 16px;
+    }
+
+    .changePassword-wrapper,
+    .two-factor-auth-wrapper,
+    .acctActivate-wrapper,
+    .loginHistory-wrapper,
+    .chooseLang-wrapper {
+        gap: 12px;
+    }
+
+    .two-factor-auth-input,
+    .acctActivate-input {
+        padding: 12px;
+    }
+
+    .settings-input {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .two-factor-auth-wrapper2 {
+        gap: 4px;
+    }
+
+    .pricing-table thead th {
+        padding: 10px;
+
+    }
+
+    .pricing-table tbody td {
+        padding: 6px;
+    }
+
+    .features img {
+        height: 16px;
+        width: 16px;
+    }
+
+    .upload-button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .template-content {
+        font-size: 10px !important;
+    }
+
+    .submit-btn,
+    .cancel-btn {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    .domain-select {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1366px) {
+    .sidebar {
+
+        width: 230px;
+    }
+
+    .step span {
+        font-size: 10px;
+    }
+
+    .heading h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .add-button {
+        padding: 8px 25px;
+        font-size: 12px;
+    }
+
+    .check-label {
+        font-size: 12px;
+    }
+
+    .check-label.active {
+        font-size: 12px;
+    }
+
+    .cancel-drip-btn {
+        width: 16px;
+        height: 16px;
+    }
+
+    #expand-btn {
+        width: 14px;
+        height: 14px;
+    }
+
+    .table-heading h4 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* .table-div {
+        padding: 10px;
+    } */
+
+    .Table td {
+        font-size: 11px;
+        padding: 5px !important;
+    }
+
+    .table-div1 {
+        margin-bottom: 8px;
+    }
+
+    .table-icons-div img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .tag-name-count {
+        font-size: 10px;
+    }
+
+    .export,
+    .import {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .export img,
+    .import img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .topbar-search {
+        padding: 8px 10px 8px 30px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .search {
+        padding: 8px 10px 8px 30px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .table-filter {
+        padding: 8px 10px;
+    }
+
+    .table-filter img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .page-content {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .select-tag-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .title-offcanvas {
+        font-size: 18px;
+    }
+
+    .topbar {
+        height: auto;
+        padding: 7.4px 12px;
+    }
+
+    .link-item {
+        font-size: 12px;
+    }
+
+    .notification,
+    .profile-menu,
+    .help-support {
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .notification img,
+    .profile-menu img,
+    .help-support img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .profile {
+        font-size: 12px;
+    }
+
+    .credits {
+        padding: 8px 12px;
+    }
+
+    .credits img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .topbar-widgets-text {
+        font-size: 12px;
+    }
+
+    .drip-active-item.active {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+
+    .drip-name {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+
+
+    .sidebar .logo {
+        padding: 12px 14px;
+        height: auto;
+    }
+
+    .sidebar-menu {
+        padding: 12px;
+    }
+
+    .menu-item a {
+        font-size: 12px;
+        padding: 4px;
+        gap: 8px;
+    }
+
+    .menu-item img {
+        height: 14px;
+        width: 14px;
+    }
+
+    .table-tabs-link {
+        padding: 10px;
+    }
+
+    .nav-pills .table-tabs-link.active {
+        /* font-size: 16px; */
+    }
+
+    .badge {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+
+    .menu-list2 {
+        gap: 4px;
+    }
+
+    .menu-list2 li a {
+        font-size: 10px;
+    }
+
+    .sidebar-accordion {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .sidebar-accordion span {
+        padding-left: 6px;
+    }
+
+    .accordion-button:not(.collapsed) {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .offcanvas-header {
+        padding: 12px;
+    }
+
+    .filter-offcanvas .offcanvas-body {
+        padding: 12px;
+    }
+
+    .filter-acdn-btn:not(.collapsed) {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .filter-acdn-btn {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .filter-acdn .accordion-body {
+        padding: 8px;
+    }
+
+    .filter-date {
+        padding: 6px 10px;
+    }
+
+    .filter-search {
+        background-size: 14px;
+        padding: 8px 6px 8px 28px;
+    }
+
+    .menu-list .menu-item.active span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .contact-sub-items {
+        padding: 6px !important;
+    }
+
+    .menu-list .menu-item.active {
+        border-radius: 6px;
+    }
+
+    .app-section-menu {
+        padding: 12px 24px;
+        gap: 8px;
+    }
+
+    .apple-store {
+        padding: 8px;
+    }
+
+    .play-store {
+        padding: 8px;
+    }
+
+    .table-action img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .page-link {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+
+    .dt-length select {
+        font-size: 12px;
+    }
+
+    .select-tag {
+        font-size: 12px;
+    }
+
+    .table-heading th {
+        padding: 10px !important;
+        font-size: 13px;
+    }
+
+    .btn-grey {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .btn-red {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    /* Add contact modal */
+
+    .addContact-modal-hdg h2 {
+        font-size: 20px;
+    }
+
+    .details-header {
+        padding: 8px 80px;
+    }
+
+    .addContactModal .main-container {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .addContact-Personal,
+    .addContact-business {
+        padding: 12px;
+    }
+
+    .input-label {
+        font-size: 12px;
+    }
+
+    .email-form-label {
+        font-size: 12px;
+    }
+
+    .input-text {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .input-text::placeholder {
+        font-size: 12px;
+    }
+
+    .execution-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .domain-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .time-img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .addContact-email-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .add-email {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .add-email img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .successfullyModal {
+        border-radius: 24px !important;
+    }
+
+    .successfullyModal-body {
+        gap: 12px;
+    }
+
+    .successfullyModal .modal-header {
+        padding: 12px;
+    }
+
+    .successfullyModal .modal-body {
+        padding: 16px 42px;
+    }
+
+    .successfullyModal-body img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .successfully-title h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .successfully-text p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* wallet css */
+
+    .wallet-div1 {
+        padding: 10px;
+    }
+
+    .download-history-wrapper {
+        padding: 8px 12px;
+    }
+
+    .download-history {
+        font-size: 12px;
+    }
+
+    .credit-usage-card,
+    .credit-info-card,
+    .plan-details-card {
+        padding: 10px;
+    }
+
+    .balance-card {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .credit-points img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .credit-left {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .overall-credit {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .acct-holder-text,
+    .Expiry-date-text {
+        font-size: 10px;
+    }
+
+    .credit-usage-div h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .credit-usage-div span {
+        font-size: 10px;
+    }
+
+    .credit-usage-select {
+        font-size: 12px;
+    }
+
+    .sms {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .sms-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .credit h6 {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .whatsapp {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .whatsapp-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .email {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .email-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .credit-info h4,
+    .plan-details h4 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .credit-info,
+    .plan-details {
+        gap: 12px;
+    }
+
+    .credit-per-sms,
+    .credit-per-email,
+    .credit-per-whatsapp,
+    .details-plan {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .sms-credit,
+    .email-credit,
+    .whatsapp-credit,
+    .details {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* tag master css */
+
+    .add-modal-title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    form {
+        gap: 8px;
+    }
+
+    .text-area::placeholder {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .text-area {
+        background-size: 14px;
+    }
+
+    .add-modal {
+        padding: 16px 16px 5px 16px;
+    }
+
+    .uploadModal {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .uploadMdal-title h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .uploadMdal-title p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .file-upload-div {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .upload-modal-body {
+        gap: 8px;
+    }
+
+    .file-upload-text {
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    .file-upload-circle3 img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .contact {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .md-body-div {
+        gap: 8px;
+    }
+
+    .file-upload-div {
+        gap: 12px;
+    }
+
+    .modal-dt-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    /* Dashboard */
+
+    .profile-name h4 {
+        font-size: 15px;
+    }
+
+    .profile-menu-item a {
+        font-size: 12px;
+    }
+
+    /* sign-up css */
+
+    .sign-in {
+        gap: 12px;
+        padding: 8px 40px 0 40px;
+    }
+
+    .form-heading-text {
+        gap: 4px;
+    }
+
+    .form-heading-text h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .form-heading-text p {
+        font-size: 14px;
+    }
+
+    .dont-have-acct-text,
+    .have-acct-text {
+        font-size: 14px;
+    }
+
+    .sign-form-input {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .input_wrap label {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    input:focus+label,
+    input:not(:placeholder-shown)+label {
+        font-size: 12px !important;
+    }
+
+    .next-step,
+    .prev-step {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .skip-step {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .file-upload {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .info-btn {
+        background-size: 14px;
+    }
+
+    .send-code-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .sign-up-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .keep-logged-in-text {
+        font-size: 12px;
+    }
+
+    .sign-in-btn {
+        padding: 6px;
+    }
+
+    .sign-in-btn a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .sign-in-form {
+        gap: 12px;
+    }
+
+    .option {
+        padding: 12px;
+    }
+
+    .sign-logo img {
+        width: 200px;
+    }
+
+    .main-img {
+        padding: 24px;
+    }
+
+    .img-text h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .img-text p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .sign-up-role {
+        padding: 12px;
+        gap: 4px;
+    }
+
+    .sign-up-role h4 {
+        font-size: 14px;
+    }
+
+    .sign-up-role p {
+        font-size: 12px;
+    }
+
+    .option a {
+        font-size: 14px;
+    }
+
+    .Sign-In-with-text {
+        font-size: 14px;
+    }
+
+    /* drip modal css */
+
+    .add-drip-modal {
+        padding: 12px;
+    }
+
+    .modal-main-content {
+        gap: 12px;
+    }
+
+    .modal-heading {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .modal-cont {
+        gap: 8px;
+    }
+
+    .drip-modal-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .drip-modal-p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .drip-form-div {
+        padding: 12px;
+    }
+
+    .drip-select {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .drip-select1 {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .drip-condition-div {
+        margin-top: 8px;
+        gap: 0px;
+    }
+
+    .drips-image {
+        width: 14px;
+        height: 14px;
+        top: 62%;
+    }
+
+    .drips-image1 {
+        width: 14px;
+        height: 14px;
+        top: 62%;
+    }
+
+    .drip-input-date {
+        padding: 8px 16px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .drip-event-select {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .detail-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .detail-img-div {
+        gap: 8px;
+    }
+
+    .drip-input-date::-webkit-calendar-picker-indicator {
+        background-size: 14px;
+    }
+
+    .channel-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .add-step-btn {
+        font-size: 14px;
+        background-size: 14px;
+        padding: 6px 25px 8px 25px;
+    }
+
+    .add-step-btn img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .auto-setup img {
+        width: 100px;
+        height: 90px;
+    }
+
+    .insert-text {
+        gap: 8px;
+    }
+
+    .insert-text h6 {
+        font-size: 18px;
+    }
+
+    .insert-text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .execution-time {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .sms-place-text {
+        font-size: 12px;
+    }
+
+    .custom-file-label span:first-child {
+        font-size: 12px;
+    }
+
+    .custom-file-label span:last-child {
+        font-size: 12px;
+    }
+
+    .variable-input {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .custom-file-label {
+        padding: 10px;
+    }
+
+    .media-div {
+        padding: 10px;
+    }
+
+    .media-badges span {
+        font-size: 12px;
+    }
+
+    .back-btn-template {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .back-btn-template img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .back-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .back-btn img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .summary-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .drip-footer {
+        padding: 12px 12px;
+    }
+
+    .step-text {
+        font-size: 12px;
+    }
+
+    .whatsapp-step.completed .step-subtext {
+        font-size: 10px;
+    }
+
+    .whatsapp-step.active .step-subtext {
+        font-size: 10px;
+    }
+
+    .add-step-li {
+        width: 135px;
+    }
+
+    .add-step-li .dropdown-item {
+        font-size: 12px;
+    }
+
+    .add-step-li .dropdown-item img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .next-btn-template {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .next-btn-template img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .messages-text {
+        font-size: 12px;
+    }
+
+    .email-input {
+        padding: 8px 16px 8px 36px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .event-booth-input,
+    .event-location-input {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+
+    .email-alias {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .mail-sub-input {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .template-box {
+        height: 208px;
+    }
+
+    .template-box p {
+        font-size: 12px;
+    }
+
+    .template-div p {
+        font-size: 12px;
+    }
+
+    .step2-div {
+        padding: 8px;
+    }
+
+    .email-design-text {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .reset-div {
+        padding: 2px 12px;
+    }
+
+    .stepper-main-div {
+        padding: 12px;
+    }
+
+    .step3-div {
+        padding: 8px;
+    }
+
+    .reset-text {
+        font-size: 12px;
+    }
+
+    .edit-text {
+        font-size: 12px;
+    }
+
+    .email-design-preview {
+        padding: 12px;
+    }
+
+    .step-summary-div {
+        padding: 12px 50px 12px 12px;
+    }
+
+    .summary-label {
+        font-size: 10px;
+    }
+
+    .summary-info {
+        font-size: 12px;
+    }
+
+    .summary-info-green {
+        font-size: 12px;
+    }
+
+    .action-div img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .publish-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .publish-btn img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .flash-div img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .write-msg-text {
+        font-size: 12px;
+    }
+
+    .form-small-text {
+        font-size: 10px;
+    }
+
+    .step-template-div {
+        padding: 12px;
+    }
+
+    .format-text-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .text-format {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .format-table .table-light td {
+        font-size: 12px;
+    }
+
+    .format-table-div {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+
+    .modal-header {
+        padding: 10px 16px;
+    }
+
+    .templates {
+        padding: 12px;
+    }
+
+    .template-hdg {
+        font-size: 10px;
+    }
+
+    .template-text {
+        font-size: 12px;
+    }
+
+    .status-text {
+        font-size: 12px;
+    }
+
+    .status-text2 {
+        font-size: 12px;
+    }
+
+    .status-text3 {
+        font-size: 12px;
+    }
+
+    .sender-input {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .deleteModal .modal-content {
+        padding: 6px;
+    }
+
+    .delete-modal-title {
+        font-size: 16px;
+    }
+
+    .delete-modal-text p {
+        font-size: 12px;
+    }
+
+    .indicator {
+        font-size: 12px;
+    }
+
+    .detail-list li {
+        font-size: 12px;
+    }
+
+    /* ====================== Setting ===================  */
+
+    .setting-option h6 {
+        font-size: 14px;
+    }
+
+    .setting-option p {
+        font-size: 12px;
+    }
+
+    .setting-option {
+        padding: 8px;
+    }
+
+
+    .setting-tab-hdg {
+        font-size: 16px;
+    }
+
+    .plan-summary {
+        padding: 8px 16px;
+    }
+
+    .plain-details {
+        padding: 12px;
+    }
+
+    .plain-details h6 {
+        font-size: 12px;
+    }
+
+    .plain-details p {
+        font-size: 14px;
+    }
+
+    .table-dropdown-menu-item img {
+        height: 14px;
+        width: 14px;
+    }
+
+    /*=========================== team Access & Permission ====================*/
+
+    .setting-modal-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .setting-modal-p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    /*=========================== Change Password  ====================*/
+    .modal-changePasswordModal,
+    .modal-twoFactorAuthModal,
+    .modal-twoFactorAuthModal,
+    .modal-acctActivateModal,
+    .modal-loginHistoryModal,
+    .modal-chooseLangModal {
+        padding: 16px;
+    }
+
+    .changePassword-wrapper,
+    .two-factor-auth-wrapper,
+    .acctActivate-wrapper,
+    .loginHistory-wrapper,
+    .chooseLang-wrapper {
+        gap: 12px;
+    }
+
+    .two-factor-auth-input,
+    .acctActivate-input {
+        padding: 12px;
+    }
+
+    .settings-input {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .two-factor-auth-wrapper2 {
+        gap: 4px;
+    }
+
+    .pricing-table thead th {
+        padding: 10px;
+
+    }
+
+    .pricing-table tbody td {
+        padding: 6px;
+    }
+
+    .features img {
+        height: 16px;
+        width: 16px;
+    }
+
+    .upload-button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .template-content {
+        font-size: 10px !important;
+    }
+
+    .submit-btn,
+    .cancel-btn {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    .domain-select {
+        padding: 8px 16px;
+    }
+
+
+}
+
+@media screen and (min-width: 1376px) and (max-width: 1440px) {
+    .sidebar {
+
+        width: 240px;
+    }
+
+    .step span {
+        font-size: 10px;
+    }
+
+    .heading h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .add-button {
+        padding: 8px 25px;
+        font-size: 12px;
+    }
+
+    .check-label {
+        font-size: 12px;
+    }
+
+    .check-label.active {
+        font-size: 12px;
+    }
+
+    .cancel-drip-btn {
+        width: 16px;
+        height: 16px;
+    }
+
+    #expand-btn {
+        width: 14px;
+        height: 14px;
+    }
+
+    .table-heading h4 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* .table-div {
+        padding: 10px;
+    } */
+
+    .Table td {
+        font-size: 11px;
+        padding: 5px !important;
+    }
+
+    .table-div1 {
+        margin-bottom: 8px;
+    }
+
+    .table-icons-div img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .tag-name-count {
+        font-size: 10px;
+    }
+
+    .export,
+    .import {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .export img,
+    .import img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .topbar-search {
+        padding: 8px 10px 8px 30px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .search {
+        padding: 8px 10px 8px 30px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .table-filter {
+        padding: 8px 10px;
+    }
+
+    .table-filter img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .page-content {
+        padding: px;
+        gap: 12px;
+    }
+
+    .select-tag-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .title-offcanvas {
+        font-size: 18px;
+    }
+
+    .topbar {
+        height: auto;
+        padding: 7.4px 12px;
+    }
+
+    .link-item {
+        font-size: 12px;
+    }
+
+    .notification,
+    .profile-menu,
+    .help-support {
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .notification img,
+    .profile-menu img,
+    .help-support img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .profile {
+        font-size: 12px;
+    }
+
+    .credits {
+        padding: 8px 12px;
+    }
+
+    .credits img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .topbar-widgets-text {
+        font-size: 12px;
+    }
+
+    .drip-active-item.active {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+
+    .drip-name {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+
+
+    .sidebar .logo {
+        padding: 12px 14px;
+        height: auto;
+    }
+
+    .sidebar-menu {
+        padding: 12px;
+    }
+
+    .menu-item a {
+        font-size: 12px;
+        padding: 4px;
+        gap: 8px;
+    }
+
+    .menu-item img {
+        height: 14px;
+        width: 14px;
+    }
+
+    .table-tabs-link {
+        padding: 10px;
+    }
+
+    .nav-pills .table-tabs-link.active {
+        /* font-size: 16px; */
+    }
+
+    .badge {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+
+    .menu-list2 {
+        gap: 4px;
+    }
+
+    .menu-list2 li a {
+        font-size: 10px;
+    }
+
+    .sidebar-accordion {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .sidebar-accordion span {
+        padding-left: 6px;
+    }
+
+    .accordion-button:not(.collapsed) {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .offcanvas-header {
+        padding: 12px;
+    }
+
+    .filter-offcanvas .offcanvas-body {
+        padding: 12px;
+    }
+
+    .filter-acdn-btn:not(.collapsed) {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .filter-acdn-btn {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .filter-acdn .accordion-body {
+        padding: 8px;
+    }
+
+    .filter-date {
+        padding: 6px 10px;
+    }
+
+    .filter-search {
+        background-size: 14px;
+        padding: 8px 6px 8px 28px;
+    }
+
+    .menu-list .menu-item.active span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .contact-sub-items {
+        padding: 6px !important;
+    }
+
+    .menu-list .menu-item.active {
+        border-radius: 6px;
+    }
+
+    .app-section-menu {
+        padding: 12px 24px;
+        gap: 8px;
+    }
+
+    .apple-store {
+        padding: 8px;
+    }
+
+    .play-store {
+        padding: 8px;
+    }
+
+    .table-action img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .page-link {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+
+    .dt-length select {
+        font-size: 12px;
+    }
+
+    .select-tag {
+        font-size: 12px;
+    }
+
+    .table-heading th {
+        padding: 10px !important;
+        font-size: 13px;
+    }
+
+    .btn-grey {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .btn-red {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    /* Add contact modal */
+
+    .addContact-modal-hdg h2 {
+        font-size: 20px;
+    }
+
+    .details-header {
+        padding: 8px 80px;
+    }
+
+    .addContactModal .main-container {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .addContact-Personal,
+    .addContact-business {
+        padding: 12px;
+    }
+
+    .input-label {
+        font-size: 12px;
+    }
+
+    .email-form-label {
+        font-size: 12px;
+    }
+
+    .input-text {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .input-text::placeholder {
+        font-size: 12px;
+    }
+
+    .execution-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .domain-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .time-img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .addContact-email-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .add-email {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .add-email img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .successfullyModal {
+        border-radius: 24px !important;
+    }
+
+    .successfullyModal-body {
+        gap: 12px;
+    }
+
+    .successfullyModal .modal-header {
+        padding: 12px;
+    }
+
+    .successfullyModal .modal-body {
+        padding: 16px 42px;
+    }
+
+    .successfullyModal-body img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .successfully-title h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .successfully-text p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* wallet css */
+
+    .wallet-div1 {
+        padding: 1px;
+    }
+
+    .download-history-wrapper {
+        padding: 8px 12px;
+    }
+
+    .download-history {
+        font-size: 12px;
+    }
+
+    .credit-usage-card,
+    .credit-info-card,
+    .plan-details-card {
+        padding: 10px;
+    }
+
+    .balance-card {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .credit-points img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .credit-left {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .overall-credit {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .acct-holder-text,
+    .Expiry-date-text {
+        font-size: 10px;
+    }
+
+    .credit-usage-div h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .credit-usage-div span {
+        font-size: 10px;
+    }
+
+    .credit-usage-select {
+        font-size: 12px;
+    }
+
+    .sms {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .sms-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .credit h6 {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .whatsapp {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .whatsapp-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .email {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .email-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .credit-info h4,
+    .plan-details h4 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .credit-info,
+    .plan-details {
+        gap: 12px;
+    }
+
+    .credit-per-sms,
+    .credit-per-email,
+    .credit-per-whatsapp,
+    .details-plan {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .sms-credit,
+    .email-credit,
+    .whatsapp-credit,
+    .details {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* tag master css */
+
+    .add-modal-title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    form {
+        gap: 8px;
+    }
+
+    .text-area::placeholder {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .text-area {
+        background-size: 14px;
+    }
+
+    .add-modal {
+        padding: 16px 16px 5px 16px;
+    }
+
+    .uploadModal {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .uploadMdal-title h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .uploadMdal-title p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .file-upload-div {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .upload-modal-body {
+        gap: 8px;
+    }
+
+    .file-upload-text {
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    .file-upload-circle3 img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .contact {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .md-body-div {
+        gap: 8px;
+    }
+
+    .file-upload-div {
+        gap: 12px;
+    }
+
+    .modal-dt-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    /* Dashboard */
+
+    .profile-name h4 {
+        font-size: 15px;
+    }
+
+    .profile-menu-item a {
+        font-size: 12px;
+    }
+
+    /* sign-up css */
+
+    .sign-in {
+        gap: 12px;
+        padding: 8px 40px 0 40px;
+    }
+
+    .form-heading-text {
+        gap: 4px;
+    }
+
+    .form-heading-text h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .form-heading-text p {
+        font-size: 14px;
+    }
+
+    .dont-have-acct-text,
+    .have-acct-text {
+        font-size: 14px;
+    }
+
+    .sign-form-input {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .input_wrap label {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    input:focus+label,
+    input:not(:placeholder-shown)+label {
+        font-size: 12px !important;
+    }
+
+    .next-step,
+    .prev-step {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .skip-step {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .file-upload {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .info-btn {
+        background-size: 14px;
+    }
+
+    .send-code-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .sign-up-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .keep-logged-in-text {
+        font-size: 12px;
+    }
+
+    .sign-in-btn {
+        padding: 6px;
+    }
+
+    .sign-in-btn a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .sign-in-form {
+        gap: 12px;
+    }
+
+    .option {
+        padding: 12px;
+    }
+
+    .sign-logo img {
+        width: 200px;
+    }
+
+    .main-img {
+        padding: 24px;
+    }
+
+    .img-text h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .img-text p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .sign-up-role {
+        padding: 12px;
+        gap: 4px;
+    }
+
+    .sign-up-role h4 {
+        font-size: 14px;
+    }
+
+    .sign-up-role p {
+        font-size: 12px;
+    }
+
+    .option a {
+        font-size: 14px;
+    }
+
+    .Sign-In-with-text {
+        font-size: 14px;
+    }
+
+    /* drip modal css */
+
+    .add-drip-modal {
+        padding: 12px;
+    }
+
+    .modal-main-content {
+        gap: 12px;
+    }
+
+    .modal-heading {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .modal-cont {
+        gap: 8px;
+    }
+
+    .drip-modal-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .drip-modal-p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .drip-form-div {
+        padding: 12px;
+    }
+
+    .drip-select {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .drip-select1 {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .drip-condition-div {
+        margin-top: 8px;
+        gap: 0px;
+    }
+
+    .drips-image {
+        width: 14px;
+        height: 14px;
+        top: 62%;
+    }
+
+    .drips-image1 {
+        width: 14px;
+        height: 14px;
+        top: 62%;
+    }
+
+    .drip-input-date {
+        padding: 8px 16px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .drip-event-select {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .detail-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .detail-img-div {
+        gap: 8px;
+    }
+
+    .drip-input-date::-webkit-calendar-picker-indicator {
+        background-size: 14px;
+    }
+
+    .channel-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .add-step-btn {
+        font-size: 14px;
+        background-size: 14px;
+        padding: 6px 25px 8px 25px;
+    }
+
+    .add-step-btn img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .auto-setup img {
+        width: 100px;
+        height: 90px;
+    }
+
+    .insert-text {
+        gap: 8px;
+    }
+
+    .insert-text h6 {
+        font-size: 18px;
+    }
+
+    .insert-text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .execution-time {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .sms-place-text {
+        font-size: 12px;
+    }
+
+    .custom-file-label span:first-child {
+        font-size: 12px;
+    }
+
+    .custom-file-label span:last-child {
+        font-size: 12px;
+    }
+
+    .variable-input {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .custom-file-label {
+        padding: 10px;
+    }
+
+    .media-div {
+        padding: 10px;
+    }
+
+    .media-badges span {
+        font-size: 12px;
+    }
+
+    .back-btn-template {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .back-btn-template img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .back-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .back-btn img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .summary-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .drip-footer {
+        padding: 12px 12px;
+    }
+
+    .step-text {
+        font-size: 12px;
+    }
+
+    .whatsapp-step.completed .step-subtext {
+        font-size: 10px;
+    }
+
+    .whatsapp-step.active .step-subtext {
+        font-size: 10px;
+    }
+
+    .add-step-li {
+        width: 135px;
+    }
+
+    .add-step-li .dropdown-item {
+        font-size: 12px;
+    }
+
+    .add-step-li .dropdown-item img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .next-btn-template {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .next-btn-template img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .messages-text {
+        font-size: 12px;
+    }
+
+    .email-input {
+        padding: 8px 16px 8px 36px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .event-booth-input,
+    .event-location-input {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+
+    .email-alias {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .mail-sub-input {
+        padding: 8px 16px 8px 34px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .template-box {
+        height: 208px;
+    }
+
+    .template-box p {
+        font-size: 12px;
+    }
+
+    .template-div p {
+        font-size: 12px;
+    }
+
+    .step2-div {
+        padding: 8px;
+    }
+
+    .email-design-text {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .reset-div {
+        padding: 2px 12px;
+    }
+
+    .stepper-main-div {
+        padding: 12px;
+    }
+
+    .step3-div {
+        padding: 8px;
+    }
+
+    .reset-text {
+        font-size: 12px;
+    }
+
+    .edit-text {
+        font-size: 12px;
+    }
+
+    .email-design-preview {
+        padding: 12px;
+    }
+
+    .step-summary-div {
+        padding: 12px 50px 12px 12px;
+    }
+
+    .summary-label {
+        font-size: 10px;
+    }
+
+    .summary-info {
+        font-size: 12px;
+    }
+
+    .summary-info-green {
+        font-size: 12px;
+    }
+
+    .action-div img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .publish-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .publish-btn img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .flash-div img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .write-msg-text {
+        font-size: 12px;
+    }
+
+    .form-small-text {
+        font-size: 10px;
+    }
+
+    .step-template-div {
+        padding: 12px;
+    }
+
+    .format-text-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .text-format {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .format-table .table-light td {
+        font-size: 12px;
+    }
+
+    .format-table-div {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+
+    .modal-header {
+        padding: 10px 16px;
+    }
+
+    .templates {
+        padding: 12px;
+    }
+
+    .template-hdg {
+        font-size: 10px;
+    }
+
+    .template-text {
+        font-size: 12px;
+    }
+
+    .status-text {
+        font-size: 12px;
+    }
+
+    .status-text2 {
+        font-size: 12px;
+    }
+
+    .status-text3 {
+        font-size: 12px;
+    }
+
+    .sender-input {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .deleteModal .modal-content {
+        padding: 6px;
+    }
+
+    .delete-modal-title {
+        font-size: 16px;
+    }
+
+    .delete-modal-text p {
+        font-size: 12px;
+    }
+
+    .indicator {
+        font-size: 12px;
+    }
+
+    .detail-list li {
+        font-size: 12px;
+    }
+
+    /* ====================== Setting ===================  */
+
+    .setting-option h6 {
+        font-size: 14px;
+    }
+
+    .setting-option p {
+        font-size: 12px;
+    }
+
+    .setting-option {
+        padding: 8px;
+    }
+
+
+
+    .setting-tab-hdg {
+        font-size: 16px;
+    }
+
+    .plan-summary {
+        padding: 8px 16px;
+    }
+
+    .plain-details {
+        padding: 12px;
+    }
+
+    .plain-details h6 {
+        font-size: 12px;
+    }
+
+    .plain-details p {
+        font-size: 14px;
+    }
+
+    .table-dropdown-menu-item img {
+        height: 14px;
+        width: 14px;
+    }
+
+    /*=========================== team Access & Permission ====================*/
+
+    .setting-modal-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .setting-modal-p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    /*=========================== Change Password  ====================*/
+
+    .modal-changePasswordModal,
+    .modal-twoFactorAuthModal,
+    .modal-twoFactorAuthModal,
+    .modal-acctActivateModal,
+    .modal-loginHistoryModal,
+    .modal-chooseLangModal {
+        padding: 16px;
+    }
+
+    .changePassword-wrapper,
+    .two-factor-auth-wrapper,
+    .acctActivate-wrapper,
+    .loginHistory-wrapper,
+    .chooseLang-wrapper {
+        gap: 12px;
+    }
+
+    .two-factor-auth-input,
+    .acctActivate-input {
+        padding: 12px;
+    }
+
+    .settings-input {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .two-factor-auth-wrapper2 {
+        gap: 4px;
+    }
+
+    .pricing-table thead th {
+        padding: 10px;
+
+    }
+
+    .pricing-table tbody td {
+        padding: 6px;
+    }
+
+    .features img {
+        height: 16px;
+        width: 16px;
+    }
+
+    .upload-button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .template-content {
+        font-size: 10px !important;
+    }
+
+    .submit-btn,
+    .cancel-btn {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    .domain-select {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1536px) {
+    .sidebar {
+
+        width: 240px;
+    }
+
+
+}
+
+@media screen and (min-width: 1537px) and (max-width: 1919px) {
+    .sidebar {
+
+        width: 265px;
+    }
+
+
+}
+
+@media screen and (width: 1920px) {
+    .sidebar {
+        width: 320px;
+    }
+
+}

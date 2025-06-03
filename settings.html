@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/KIT-favicon.png">
+</head>
+
+<body>
+    <div class="container-fluid p-0 layout">
+        <div class="row g-0">
+            <div class="col-lg-2 col-md-3 col-sm-12 d-none d-md-block d-lg-block sidebar-col">
+                <div class="sidebar" id="sidebar">
+                    <div class="menu-div1">
+                        <div class="logo">
+                            <img src="./assets/images/logo.svg" alt="brand-logo">
+                        </div>
+                        <div class="sidebar-menu">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="dashboard.html">
+                                        <img src="./assets/images/dashboard-menu.svg" alt="dashboard-icon">
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="customer-management.html">
+                                        <img src="./assets/images/user-management-menu.svg" alt="Customer-icon">
+                                        <span>Customer Management</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <div class="accordion" id="accordionSupport">
+                                        <div class="accordion-item sidebar-accdn">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button sidebar-accordion collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseaccordionSupport" aria-expanded="true"
+                                                    aria-controls="collapseaccordionSupport">
+                                                    <img src="./assets/images/contact-menu.svg" alt="Support">
+                                                    <span>Support</span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseaccordionSupport" class="accordion-collapse collapse">
+                                                <div class="accordion-body contact-sub-items">
+                                                    <ul class="accdn-menu-list">
+                                                        <li class="menu-item">
+                                                            <a href="drip.html">
+                                                                <img src="./assets/images/drip-icon.svg" alt="Drip">
+                                                                <span>Drips</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="leads.html">
+                                                                <img src="./assets/images/tags.svg" alt="Leads">
+                                                                <span>Leads</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-item ">
+                                    <div class="accordion" id="accordionUser">
+                                        <div class="accordion-item sidebar-accdn">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button sidebar-accordion collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseaccordionUser" aria-expanded="false"
+                                                    aria-controls="accordionUser">
+                                                    <img src="./assets/images/product-menu.svg" alt="product">
+                                                    <span>User Management</span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseaccordionUser" class="accordion-collapse collapse">
+                                                <div class="accordion-body contact-sub-items">
+                                                    <ul class="accdn-menu-list">
+                                                        <li class="menu-item">
+                                                            <a href="role-master.html">
+                                                                <img src="./assets/images/contact-listing1.svg"
+                                                                    alt="Products">
+                                                                <span>Role Master</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="add-user.html">
+                                                                <img src="./assets/images/product-category-menu.svg"
+                                                                    alt="product">
+                                                                <span>Add User</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="permisssion.html">
+                                                                <img src="./assets/images/product-category-menu.svg"
+                                                                    alt="product">
+                                                                <span>Permission</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="credit-rate.html">
+                                        <img src="./assets/images/reports-menu.svg" alt="Reports">
+                                        <span>Credit Rate</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="settings.html">
+                                        <img src="./assets/images/setting-menu.svg" alt="setting">
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="menu-div2">
+                        <div class="app-section-menu">
+                            <h6 class="app-text">Get the app</h6>
+                            <a class="apple-store">
+                                <img src="./assets/images/apple.svg" alt="apple-icon">
+                                <img src="./assets/images/appleText.svg" alt="apple-text">
+                            </a>
+                            <a class="play-store">
+                                <img src="./assets/images/google-play-logo.svg" alt="google-play-icon">
+                                <img src="./assets/images/playText.svg" alt="google-play-text">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-9 col-sm-12">
+                <div class="main-content">
+                    <div class="topbar d-none d-md-block d-lg-block">
+                        <div class="topbar-div">
+                            <div>
+                                <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
+                                    aria-label="breadcrumb">
+                                    <ol class="breadcrumb drip-breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#" class="link-item">Home</a></li>
+                                        <li class="breadcrumb-item active drip-active-item" aria-current="page">Settings
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <div class="topbar-widgets">
+                                <div class="topbar-search-div">
+                                    <input type="search" class="form-control topbar-search" id="searchUniversal"
+                                        placeholder="Search">
+                                </div>
+                                <div class="notification ">
+                                    <img src="./assets/images/notification.svg" alt="notification">
+                                </div>
+                                <div class="dropdown">
+                                    <div class="profile-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./assets/images/profile.svg" alt="profile">
+                                        <ul class="dropdown-menu ">
+                                            <li class="menu-item">
+                                                <a class="dropdown-item" target="_blank" href="settings.html"><img
+                                                        src="./assets/images/setting-menu.svg"
+                                                        alt="setting">Settings</a>
+                                            </li>
+                                            <li class="menu-item"><a class="dropdown-item" href="sign-in.html"><img
+                                                        src="./assets/images/logout.svg" alt="Logout">Log Out</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="credits">
+                                    <img src="./assets/images/Coins.svg" alt="coins">
+                                    <span class="topbar-widgets-text">200/200</span>
+                                    <img src="./assets/images/alert-circle.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="topbar d-sm-block d-md-none d-lg-none">
+                        <span><img src="./assets/images/KIT-favicon.png" class="mobile-logo" alt="brand-logo"></span>
+
+                        <div class="drip-offcanvas-div">
+                            <div class="topbar-widgets">
+                                <div class="notification">
+                                    <img src="./assets/images/notification.svg" alt="notification">
+                                </div>
+                                <div class="dropdown">
+                                    <div class="profile-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./assets/images/profile.svg" alt="profile">
+                                        <ul class="dropdown-menu ">
+                                            <li class="menu-item">
+                                                <a class="dropdown-item" target="_blank" href="settings.html"><img
+                                                        src="./assets/images/setting-menu.svg"
+                                                        alt="setting">Settings</a>
+                                            </li>
+                                            <li class="menu-item"><a class="dropdown-item" href="sign-in.html"><img
+                                                        src="./assets/images/logout.svg" alt="Logout">Log Out</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="credits">
+                                    <img src="./assets/images/Coins.svg" alt="coins">
+                                    <span class="topbar-widgets-text">200/200</span>
+                                    <img src="./assets/images/alert-circle.svg" alt="">
+                                </div>
+                            </div>
+                            <button class="off-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                                aria-controls="offcanvasScrolling">
+                                <img src="./assets/images/offcanvas-right-icon.svg" alt="offcanvasBtn">
+                            </button>
+
+                            <div class="offcanvas offcanvas-end site-offcanvas" data-bs-scroll="true"
+                                data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                                aria-labelledby="offcanvasScrollingLabel">
+                                <div class="offcanvas-header px-3">
+                                    <div class="logo">
+                                        <span><img src="./assets/images/logo.svg" alt="brand-logo"></span>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body p-0">
+                                    <div class="sidebar-mobile" id="sidebar">
+                                        <div class="menu-div1">
+                                            <div class="sidebar-menu">
+                                                <ul class="menu-list">
+                                                    <li class="menu-item">
+                                                        <a href="dashboard.html">
+                                                            <img src="./assets/images/dashboard-menu.svg"
+                                                                alt="dashboard-icon">
+                                                            <span>Dashboard</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="customer-management.html">
+                                                            <img src="./assets/images/user-management-menu.svg"
+                                                                alt="Customer-icon">
+                                                            <span>Customer Management</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <div class="accordion" id="accordionSupport">
+                                                            <div class="accordion-item sidebar-accdn">
+                                                                <div class="accordion-header">
+                                                                    <button
+                                                                        class="accordion-button sidebar-accordion collapsed"
+                                                                        type="button" data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapseaccordionSupport"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="collapseaccordionSupport">
+                                                                        <img src="./assets/images/contact-menu.svg"
+                                                                            alt="Support">
+                                                                        <span>Support</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div id="collapseaccordionSupport"
+                                                                    class="accordion-collapse collapse">
+                                                                    <div class="accordion-body contact-sub-items">
+                                                                        <ul class="accdn-menu-list">
+                                                                            <li class="menu-item">
+                                                                                <a href="drip.html">
+                                                                                    <img src="./assets/images/drip-icon.svg"
+                                                                                        alt="Drip">
+                                                                                    <span>Drips</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item">
+                                                                                <a href="leads.html">
+                                                                                    <img src="./assets/images/tags.svg"
+                                                                                        alt="Leads">
+                                                                                    <span>Leads</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu-item ">
+                                                        <div class="accordion" id="accordionUser">
+                                                            <div class="accordion-item sidebar-accdn">
+                                                                <div class="accordion-header">
+                                                                    <button
+                                                                        class="accordion-button sidebar-accordion collapsed"
+                                                                        type="button" data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapseaccordionUser"
+                                                                        aria-expanded="false"
+                                                                        aria-controls="accordionUser">
+                                                                        <img src="./assets/images/product-menu.svg"
+                                                                            alt="product">
+                                                                        <span>User Management</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div id="collapseaccordionUser"
+                                                                    class="accordion-collapse collapse">
+                                                                    <div class="accordion-body contact-sub-items">
+                                                                        <ul class="accdn-menu-list">
+                                                                            <li class="menu-item">
+                                                                                <a href="role-master.html">
+                                                                                    <img src="./assets/images/contact-listing1.svg"
+                                                                                        alt="Products">
+                                                                                    <span>Role Master</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item">
+                                                                                <a href="add-user.html">
+                                                                                    <img src="./assets/images/product-category-menu.svg"
+                                                                                        alt="product">
+                                                                                    <span>Add User</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item">
+                                                                                <a href="permisssion.html">
+                                                                                    <img src="./assets/images/product-category-menu.svg"
+                                                                                        alt="product">
+                                                                                    <span>Permission</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="credit-rate.html">
+                                                            <img src="./assets/images/reports-menu.svg" alt="Reports">
+                                                            <span>Credit Rate</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="settings.html">
+                                                            <img src="./assets/images/setting-menu.svg" alt="setting">
+                                                            <span>Settings</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="menu-div2">
+                                            <div class="app-section-menu">
+                                                <h6 class="app-text">Get the app</h6>
+                                                <a class="apple-store">
+                                                    <img src="./assets/images/apple.svg" alt="apple-icon">
+                                                    <img src="./assets/images/appleText.svg" alt="apple-text">
+                                                </a>
+                                                <a class="play-store">
+                                                    <img src="./assets/images/google-play-logo.svg"
+                                                        alt="google-play-icon">
+                                                    <img src="./assets/images/playText.svg" alt="google-play-text">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="drip-header">
+                            <div class="heading">
+                                <h4>Settings</h4>
+                            </div>
+                        </div>
+
+                        <div class="Setting-section">
+                            <div class="setting-hdg">
+                                <h4>Settings :</h4>
+                            </div>
+                            <div class="setting-wrapper">
+                                <div class="setting-option">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-md-8 col-sm-12">
+                                            <div class="SMS-configure-setting">
+                                                <h6>SMS Configuration</h6>
+                                                <p class="mb-0">Set up SMS configuration to manage your message notifications.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-12">
+                                            <div class="setting-option-btn">
+                                                <a href="sms-setting.html" role="button">Configure</a>
+                                                <img src="./assets/images/cheron-right.svg" alt="cherion-right">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="setting-option">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-md-8 col-sm-12">
+                                            <div class="Email-configure-setting">
+                                                <h6>Email Configuration</h6>
+                                                <p class="mb-0">Configure your email settings to manage notifications and communication.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-12">
+                                            <div class="setting-option-btn">
+                                                <a href="email-seting.html" role="button">Configure</a>
+                                                <img src="./assets/images/cheron-right.svg" alt="cherion-right">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="setting-option">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-md-8 col-sm-12">
+                                            <div class="Email-template-setting">
+                                                <h6>Email Templates</h6>
+                                                <p class="mb-0">Manage your email templates to improve message efficiency.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-12">
+                                            <div class="setting-option-btn">
+                                                <a href="emailtemplate.html" role="button">Configure</a>
+                                                <img src="./assets/images/cheron-right.svg" alt="cherion-right">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="setting-option">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-md-8 col-sm-12">
+                                            <div class="WhatsApp-Instances-setting">
+                                                <h6>WhatsApp Instances</h6>
+                                                <p class="mb-0">Choose to temporarily deactivate or
+                                                    permanently delete your account and all associated
+                                                    data.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-12">
+                                            <div class="setting-option-btn">
+                                                <a href="whatsapp-setting.html" role="button">Connect</a>
+                                                <img src="./assets/images/cheron-right.svg" alt="cherion-right">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="version">
+                            <h6>Version 1.1</h6>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- team Access Permission -->
+    <div class="modal fade " id="teamAccessPermission" aria-labelledby="teamAccessPermissionLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Team Access &
+                                Permission
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-teamAccessPermission">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="at-hdg-div">
+                                    <h2 class="setting-modal-hdg">Team Access & Permission</h2>
+                                    <p class="setting-modal-p">Manage team members and their access levels,
+                                        assigning specific roles and permissions to control what they can view and
+                                        modify.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-div">
+                            <div class="table-head">
+                                <div class="table-div1 d-flex align-items-center justify-content-between mb-3">
+                                    <div class="table-heading">
+                                        <h4 class="mb-0">
+                                            User List
+                                        </h4>
+                                    </div>
+                                    <div class="table-div1-tabs d-flex align-items-center gap-3 ">
+
+                                        <div class="table-search d-flex align-items-center gap-3">
+                                            <input type="search" class="form-control search " id="dt-search"
+                                                placeholder="Search">
+                                        </div>
+                                        <div>
+                                            <button class="add-button" data-bs-toggle="modal"
+                                                data-bs-target="#addUserModal"> <img src="./assets/images/add.svg"
+                                                    alt="Add">Add User
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-list-div table-responsive">
+                                <table id="user-list-table" class="Table" style="width:100%">
+                                    <thead class="table-heading">
+                                        <tr>
+                                            <th>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </th>
+                                            <th>Sr.No</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Role</th>
+                                            <th>Status</th>
+                                            <th>Last Login</th>
+                                            <th>Credit Used</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>2</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>3</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>4</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>5</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="settings.html" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add User Modal-->
+    <div class="modal fade " id="addUserModal" aria-labelledby="addUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="link-item" data-bs-toggle="modal"
+                                    data-bs-target="#teamAccessPermission">Team Access &
+                                    Permission</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Add User</li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-toggle="modal"
+                        data-bs-target="#teamAccessPermission" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-teamAccessPermission">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="at-hdg-div">
+                                    <h2 class="setting-modal-hdg">Add User</h2>
+                                    <p class="setting-modal-p"> Input the new user's information, assign their role, and
+                                        configure their access permissions within the system.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamAccessPermissionForm">
+                            <!-- Wizard Steps Navigation -->
+                            <div class="steps d-flex justify-content-between align-items-center">
+                                <div class="step active" data-step="1">
+                                    <span>1</span>
+                                    <p>User Informations</p>
+                                </div>
+                                <div class="active-line"></div>
+                                <div class="step" data-step="2">
+                                    <span>2</span>
+                                    <p>Set Permissions</p>
+                                </div>
+                                <div class="active-line"></div>
+                                <div class="step" data-step="3">
+                                    <span>3</span>
+                                    <p>Review Details</p>
+                                </div>
+                            </div>
+
+                            <!-- <div class="step-indicator">
+                                <div class="step active">
+                                    <div class="circle">1</div>
+                                    <span class="step-details">User Information</span>
+                                </div>
+                                <div class="active-line active"></div>
+                                <div class="step">
+                                    <div class="circle">2</div>
+                                    <span class="step-details">Set Permissions</span>
+                                </div>
+                                <div class="active-line"></div>
+                                <div class="step">
+                                    <div class="circle">3</div>
+                                    <span class="step-details">Review Details</span>
+                                </div>
+                            </div> -->
+                            <!-- Wizard Form -->
+                            <form id="userForm">
+                                <!-- Step 1 -->
+                                <div class="step-content step-1">
+                                    <div class="row g-3 mb-3">
+                                        <div class="col-md-4">
+                                            <div class="drip-input-div">
+                                                <label for="profile-firstName" class="input-label">First
+                                                    Name*</label>
+                                                <input type="text" class="form-control input-text"
+                                                    id="profile-firstName" placeholder="Enter your First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="email-form-label">Sender Email*</label>
+                                            <input type="email" class="form-control email-input"
+                                                placeholder="Enter email id">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class=" input-label ">Role</label>
+                                            <select class="form-select form-control input-text">
+                                                <option>Admin</option>
+                                                <option>User</option>
+                                                <option>Editor</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" id="inviteLink">
+                                        <label class="form-check-label" for="inviteLink">
+                                            Send Invite Link <small class="text-muted">(A secure password creation link
+                                                will
+                                                be sent)</small>
+                                        </label>
+                                    </div>
+
+                                    <div class="tnext-div">
+                                        <a role="button" class="next-btn-template" id="next-btn">
+                                            Design
+                                            <img src="./assets/images/modal-arrow.svg" alt="right-arrow">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Step 2 -->
+                                <div class="step-content step-2 d-none">
+                                    <div class="user-permission-wrapper">
+                                        <div class="user-role-management">
+                                            <div class="user-role-management-header">
+                                                <h6>User & Role Management</h6>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                    <label class="form-check-label" for="smsCheck">Enable All</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch">
+                                                            <label class="form-check-label" for="smsCheck">View
+                                                                Users</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12"></div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12"></div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12"></div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-content step-3 d-none">
+                            <h5>Review Details</h5>
+                            <p>Review user details here before submitting.</p>
+
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn btn-secondary prev-btn">← Back</button>
+                                <button type="submit" class="btn btn-success">Submit ✔️</button>
+                            </div>
+                        </div>
+                        </form>
+                        <!-- /Wizard Form -->
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal-footer border-0 justify-content-start">
+                <a href="#" role="button" class="back-btn">
+                    <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                    Back
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- ============================== Change Password ========================= -->
+    <div class="modal fade " id="changePasswordModal" aria-labelledby="changePasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Change Password
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-changePasswordModal">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="changePassword-wrapper">
+                                    <div class="changePassword-title">
+                                        <div class="changePassword-img">
+                                            <img src="./assets/images/lock-icon.svg" alt="Lock">
+                                        </div>
+                                        <div>
+                                            <h6>Change Password</h6>
+                                            <p>Update the password you use to log in to your account</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="changePassword-form">
+                                        <div class="changePassword-input">
+                                            <div class="col-md-12 mb-3">
+                                                <div class="input_wrap">
+                                                    <input type="text" class="settings-input" required placeholder="" />
+                                                    <label>New Password</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="input_wrap">
+                                                    <input type="text" class="settings-input" required placeholder="" />
+                                                    <label>Cofirm New Password</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Password-requirent">
+                                            <div class="password-rule-wrapper">
+                                                <div class="password-rule"><img src="./assets/images/info-circle.svg"
+                                                        alt="info">
+                                                    <p>Must be at least 15 characters long </p>
+                                                </div>
+                                                <div class="password-rule"><img src="./assets/images/info-circle.svg"
+                                                        alt="info">
+                                                    <p>Must contain an uppercase and a lowercase letter (A, z) </p>
+                                                </div>
+                                                <div class="password-rule"><img src="./assets/images/info-circle.svg"
+                                                        alt="info">
+                                                    <p>Must contain a number</p>
+                                                </div>
+                                                <div class="password-rule"><img src="./assets/images/info-circle.svg"
+                                                        alt="info">
+                                                    <p>Must contain a special character (!, %, @, etc.)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="changePassword-button" data-bs-toggle="modal"
+                                        data-bs-target="#passwordChangedSuccessfully">
+                                        <a href="#" role="button" class="changePassword-btn">Change Password</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="settings.html" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================== two-Factor Auth 1 ========================= -->
+    <div class="modal fade " id="twoFactorAuthModal" aria-labelledby="twoFactorAuthModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Change Password
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-twoFactorAuthModal">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="two-factor-auth-wrapper">
+                                    <div class="two-factor-auth-title">
+                                        <div class="two-factor-auth-img">
+                                            <img src="./assets/images/two-factor-auth.svg" alt="Authentication">
+                                        </div>
+                                        <div>
+                                            <h6>Two-Factor Authentication (2FA) setup</h6>
+                                            <p>Keep In Touch requires you to protect your account with 2FA. How
+                                                would you like to receive one-time passwords (OTPs)?</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="two-factor-auth-form">
+                                        <div class="two-factor-auth-input">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="SMS">
+                                            </div>
+                                            <div class="two-factor-auth-input-text">
+                                                <h6 class="mb-0">SMS</h6>
+                                                <p class="mb-0">Receive Verification via SMS.</p>
+                                            </div>
+                                        </div>
+                                        <div class="two-factor-auth-input">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="E-mail">
+                                            </div>
+                                            <div class="two-factor-auth-input-text">
+                                                <h6 class="mb-0">E-mail</h6>
+                                                <p class="mb-0">Receive verification codes via email.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="two-factor-auth-button" data-bs-toggle="modal"
+                                        data-bs-target="#twoFactorAuthModal2">
+                                        <a href="#" role="button" class="two-factor-auth-btn">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="settings.html" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================== two-Factor Auth 1 ========================= -->
+    <div class="modal fade " id="twoFactorAuthModal2" aria-labelledby="twoFactorAuthModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Change Password
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-twoFactorAuthModal">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="two-factor-auth-wrapper2">
+                                    <div class="two-factor-auth-title">
+                                        <div class="two-factor-auth-img">
+                                            <img src="./assets/images/two-factor-auth.svg" alt="Authentication">
+                                        </div>
+                                        <div>
+                                            <h6>Two-Factor Authentication (2FA) setup</h6>
+                                        </div>
+                                    </div>
+                                    <div class="eamil-otp">
+                                        <div class="email-setup">
+                                            <h6>Email Setup</h6>
+                                            <p>We have sent you verification code to hello@keepintouch.com</p>
+                                        </div>
+                                        <div class="email-otp-steps-wrapper">
+                                            <div class="email-otp-step">
+                                                <h6>1. Go to your inbox</h6>
+                                                <p>Can't find the code make sure to check your spam
+                                                    folder</p>
+                                            </div>
+                                            <div class="email-otp-step">
+                                                <h6>2. Finish setup</h6>
+                                                <p>Enter the verification code we sent to your email. The code will be
+                                                    vaIid for 15 minutes.</p>
+                                            </div>
+                                        </div>
+                                        <div class="enter-otp">
+                                            <div class="row">
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="settings-input" required
+                                                            placeholder="" />
+                                                        <label>Enter OTP</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="two-factor-auth-otp-button">
+                                        <a href="#" role="button" class="two-factor-auth-btn-back"
+                                            data-bs-toggle="modal" data-bs-target="#twoFactorAuthModal">Back</a>
+                                        <a href="#" role="button" class="two-factor-auth-btn">Verify</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="settings.html" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================== Account Deactivate / Activate ========================= -->
+    <div class="modal fade " id="acctActivateModal" aria-labelledby="acctActivateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Account Deactivate /
+                                Activate
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-acctActivateModal">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="acctActivate-wrapper">
+                                    <div class="acctActivate-title">
+                                        <div class="acctActivate-img">
+                                            <img src="./assets/images/acct-deactivate.svg" alt="Account">
+                                        </div>
+                                        <div>
+                                            <h6>Account Deactivation/Deletion</h6>
+                                            <p>Choose to temporarily deactivate or permanently delete your account and
+                                                all associated data.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="acctActivate-form">
+                                        <div class="acctActivate-input">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="deactiveAcct">
+                                            </div>
+                                            <div class="acctActivate-input-text">
+                                                <h6 class="mb-0">Deactivate account <span><img
+                                                            src="./assets/images/info-circle.svg" alt="info-circle"
+                                                            data-bs-toggle="tooltip" data-bs-placement="right"
+                                                            data-bs-title="While your data might be preserved, you will
+                                                    not be able to access the portal or its functionalities until you
+                                                    choose to reactivate your account"></span></h6>
+                                                <p class="mb-0">If you proceed with deactivation, your account will be
+                                                    temporarily suspended.</p>
+                                            </div>
+                                        </div>
+                                        <div class="acctActivate-input delete-input">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="deleteAcct">
+                                            </div>
+                                            <div class="acctActivate-input-text ">
+                                                <h6 class="mb-0">Delete account <span><img
+                                                            src="./assets/images/info-circle.svg" alt="info-circle"
+                                                            data-bs-toggle="tooltip" data-bs-placement="right"
+                                                            data-bs-title="This action will permanently delete your account and all
+                                                    associated data from the email automation portal."></span></h6>
+                                                <p class="mb-0"> This process cannot be undone.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="acctActivate-button" data-bs-toggle="modal"
+                                        data-bs-target="#deleteAcctModal">
+                                        <a href="#" role="button" class="acctActivate-btn">Continue</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="settings.html" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================== Login History========================= -->
+    <div class="modal fade " id="loginHistoryModal" aria-labelledby="loginHistoryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Change Password
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-loginHistoryModal">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="loginHistory-wrapper">
+                                    <div class="loginHistory-title">
+                                        <div class="loginHistory-img">
+                                            <img src="./assets/images/login-history.svg" alt="Login History">
+                                        </div>
+                                        <div>
+                                            <h6>Login History</h6>
+                                            <p>Check for unauthorized access by reviewing your account's login activity.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="table-div">
+                                        <div class="table-head mb-0">
+                                            <div class="table-div1">
+                                                <div class="table-heading">
+                                                    <h4 class="mb-0">
+                                                        Credits History
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="login-history-table-div table-responsive">
+                                            <table id="login-history-table" class="Table" style="width:100%">
+                                                <thead class="table-heading">
+                                                    <tr>
+                                                        <th>Timestamp</th>
+                                                        <th>IP Address</th>
+                                                        <th>Device</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2023-10-05 09:15:32 UTC</td>
+                                                        <td>192.168.1.1</td>
+                                                        <td>Chrome (Windows 11)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-10-04 14:30:15 UTC</td>
+                                                        <td>10.0.0.2</td>
+                                                        <td>Safari (iPhone iOS 16)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-10-03 18:22:47 UTC</td>
+                                                        <td>203.0.113.42</td>
+                                                        <td>Firefox (MacOS Ventura)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-10-05 09:15:32 UTC</td>
+                                                        <td>192.168.1.1</td>
+                                                        <td>Chrome (Windows 11)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-10-05 09:15:32 UTC</td>
+                                                        <td>192.168.1.1</td>
+                                                        <td>Chrome (Windows 11)</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="settings.html" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================== Choose Language ========================= -->
+    <div class="modal fade " id="chooseLangModal" aria-labelledby="chooseLangModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Choose Language
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-chooseLangModal">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="chooseLang-wrapper">
+                                    <div class="chooseLang-title">
+                                        <div class="chooseLang-img">
+                                            <img src="./assets/images/choose-lang.svg" alt="Language">
+                                        </div>
+                                        <div>
+                                            <h6>Languages support for whatsapp messages</h6>
+                                            <p>Manage the language used for all WhatsApp message features within this
+                                                portal.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="language-wrapper">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-2 col-sm-12">
+                                                <div class="choose-lang-title">
+                                                    <h6>Choose Language</h6>
+                                                </div>
+                                                <div class="choose-lang">
+                                                    <div class="Search-lang">
+                                                        <input type="search" class="form-control search "
+                                                            id="searchLang" placeholder="Search language">
+                                                    </div>
+                                                    <div class="lang-options">
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="ArabicCheck">
+                                                            <label class="form-check-label"
+                                                                for="smsCheck">Arabic</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="CatalanCheck">
+                                                            <label class="form-check-label"
+                                                                for="smsCheck">Catalan</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="CzechCheck">
+                                                            <label class="form-check-label" for="smsCheck">Czech</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="EnglishCheck">
+                                                            <label class="form-check-label"
+                                                                for="smsCheck">English</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-2 col-sm-12">
+                                                <div class="choose-lang-title">
+                                                    <h6>Selected Language</h6>
+                                                </div>
+                                                <div class="choose-lang">
+                                                    <div class="lang-options">
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="ArabicCheck" checked>
+                                                            <label class="form-check-label"
+                                                                for="ArabicCheck">Arabic</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="CatalanCheck" checked>
+                                                            <label class="form-check-label"
+                                                                for="CatalanCheck">Catalan</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="CzechCheck" checked>
+                                                            <label class="form-check-label"
+                                                                for="CzechCheck">Czech</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="EnglishCheck" checked>
+                                                            <label class="form-check-label"
+                                                                for="EnglishCheck">English</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="FrenchCheck" checked>
+                                                            <label class="form-check-label"
+                                                                for="FrenchCheck">French</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="settings.html" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================ Delete user Modal ======================= -->
+    <div class="modal fade deleteModal" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title delete-modal-title" id="exampleModalLabel">Delete User</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="delete-img-div">
+                            <img src="./assets/images/delete-modal.svg" alt="delete-icon">
+                        </div>
+                        <div class="delete-modal-text">
+                            <p class="mb-0">Are you sure you want to delete the User?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end  gap-3">
+                        <button type="button" class="btn-grey" data-bs-target="#teamAccessPermission"
+                            data-bs-toggle="modal">Cancel</button>
+                        <button type="button" class="btn-red" data-bs-target="#teamAccessPermission"
+                            data-bs-toggle="modal">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================ Delete Account Modal ======================= -->
+    <div class="modal fade deleteModal" id="deleteAcctModal" tabindex="-1" aria-labelledby="deleteModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title delete-modal-title" id="deleteAcctModal">Confirm Account Deletion</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="delete-img-div">
+                            <img src="./assets/images/delete-modal.svg" alt="delete-icon">
+                        </div>
+                        <div class="delete-modal-text">
+                            <p class="mb-0">Are you sure you want to permanently delete your account? This action is
+                                irreversible.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end  gap-3">
+                        <button type="button" class="btn-grey" data-bs-target="#acctActivateModal"
+                            data-bs-toggle="modal">Cancel</button>
+                        <button type="button" class="btn-red" data-bs-target="#acctActivateModal"
+                            data-bs-toggle="modal">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================ Deactivate user Modal ======================= -->
+    <div class="modal fade deleteModal" id="deactivateModal" tabindex="-1" aria-labelledby="deactivateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title delete-modal-title" id="exampleModalLabel">Deactivate User</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="delete-img-div">
+                            <img src="./assets/images/delete-modal.svg" alt="delete-icon">
+                        </div>
+                        <div class="delete-modal-text">
+                            <p class="mb-0">Are you sure you want to deactivate the User?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end  gap-3">
+                        <button type="button" class="btn-grey" data-bs-target="#teamAccessPermission"
+                            data-bs-toggle="modal">Cancel</button>
+                        <button type="button" class="btn-red" data-bs-target="#teamAccessPermission"
+                            data-bs-toggle="modal">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================ Deactivate Account Modal ======================= -->
+    <div class="modal fade deleteModal" id="deactivateAcctModal" tabindex="-1" aria-labelledby="deactivateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title delete-modal-title" id="exampleModalLabel">Confirm Account Deactivation</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="delete-img-div">
+                            <img src="./assets/images/delete-modal.svg" alt="delete-icon">
+                        </div>
+                        <div class="delete-modal-text">
+                            <p class="mb-0">Are you sure you want to deactivate your account?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end  gap-3">
+                        <button type="button" class="btn-grey" data-bs-target="#acctActivateModal"
+                            data-bs-toggle="modal">Cancel</button>
+                        <button type="button" class="btn-red" data-bs-target="#acctActivateModal"
+                            data-bs-toggle="modal">Deactivation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================= Modal for Added Successfully ======================= -->
+
+    <div class="modal fade" id="passwordChangedSuccessfully" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="passwordChangedSuccessfullyLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content successfullyModal">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h4 class="modal-title successfullyModal-title" id="exampleModalLabel"></h4>
+                    <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="modal"
+                        aria-label="Close" aria-label="Close">
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column align-items-center gap-3">
+                        <div>
+                            <img src="./assets/images/successfully-icon.svg" alt="successfully icon">
+                        </div>
+                        <div class="successfully-title">
+                            <h4 class="mb-0">Password ChangedSuccessfully</h4>
+                        </div>
+                        <div class="successfully-text">
+                            <p class="mb-0">Your password has been successfully updated. You can now use your new
+                                password to log in</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+    <script>new DataTable('#login-history-table', {
+            layout: {
+                topStart: null,
+                topEnd: null,
+                bottomStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    }
+                },
+            }
+        });</script>
+    <script>new DataTable('#user-list-table', {
+            layout: {
+                topStart: null,
+                topEnd: null,
+                bottomStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    }
+                },
+            }
+        });</script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script>
+
+        // ================ Team Acccess & Permission Script For Wizard ==============
+
+        // // Next button functionality
+        // document.querySelectorAll("#next-btn").forEach((btn) => {
+        //     btn.addEventListener("click", () => {
+        //         const currentStep = document.querySelector(".step-content:not(.d-none)");
+        //         const nextStep = currentStep.nextElementSibling;
+
+        //         if (nextStep) {
+        //             currentStep.classList.add("d-none");
+        //             nextStep.classList.remove("d-none");
+
+        //             const stepNumber = parseInt(nextStep.classList[1].split("-")[1]);
+        //             document
+        //                 .querySelectorAll(".step")
+        //                 .forEach((s) => s.classList.remove("active"));
+        //             document
+        //                 .querySelector(`.step[data-step="${stepNumber}"]`)
+        //                 .classList.add("active");
+        //         }
+        //     });
+        // });
+
+        // // Previous button functionality
+        // document.querySelectorAll(".prev-btn").forEach((btn) => {
+        //     btn.addEventListener("click", () => {
+        //         const currentStep = document.querySelector(".step-content:not(.d-none)");
+        //         const prevStep = currentStep.previousElementSibling;
+
+        //         if (prevStep) {
+        //             currentStep.classList.add("d-none");
+        //             prevStep.classList.remove("d-none");
+
+        //             const stepNumber = parseInt(prevStep.classList[1].split("-")[1]);
+        //             document
+        //                 .querySelectorAll(".step")
+        //                 .forEach((s) => s.classList.remove("active"));
+        //             document
+        //                 .querySelector(`.step[data-step="${stepNumber}"]`)
+        //                 .classList.add("active");
+        //         }
+        //     });
+        // });
+
+    </script>
+</body>
+
+</html>

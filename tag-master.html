@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drip</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/KIT-favicon.png">
+</head>
+
+<body>
+    <div class="container-fluid p-0 layout">
+        <div class="row g-0">
+            <div class="col-lg-2 col-md-3 col-sm-12 d-none d-lg-block d-md-block sidebar-col">
+                <div class="sidebar" id="sidebar">
+                    <div class="menu-div1">
+                        <div class="logo">
+                            <span><img src="./assets/images/logo.svg" alt="brand-logo"></span>
+                        </div>
+                        <div class="sidebar-menu">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="">
+                                        <img src="./assets/images/dashboard-menu.svg" alt="dashboard-icon">
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="wallet.html">
+                                        <img src="./assets/images/wallet-menu.svg" alt="dashboard-icon">
+                                        <span>Wallet</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <div class="accordion" id="accordionContact">
+                                        <div class="accordion-item sidebar-accdn sidebar-accdn-active">
+                                            <div class="accordion-header">
+
+                                                <button class="accordion-button sidebar-accordion collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseaccordionContact" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <img src="./assets/images/contact-menu.svg" alt="">
+                                                    <span>Contact</span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseaccordionContact" class="accordion-collapse collapse show">
+                                                <div class="accordion-body contact-sub-items">
+                                                    <ul class="accdn-menu-list">
+                                                        <li class="menu-item">
+                                                            <a href="contact-listing.html">
+                                                                <img src="./assets/images/contact-listing1.svg"
+                                                                    alt="dashboard-icon">
+                                                                <span>Contact Listing</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item active">
+                                                            <a href="tag-master.html">
+                                                                <img src="./assets/images/tags-menu-selected.svg"
+                                                                    alt="dashboard-icon">
+                                                                <span>Tags</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="drip.html">
+                                        <img src="./assets/images/drip-icon.svg" alt="dashboard-icon">
+                                        <span>Drip</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="event.html">
+                                        <img src="./assets/images/event-icon.svg" alt="Event">
+                                        <span>Event</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item ">
+                                    <div class="accordion" id="accordionProduct">
+                                        <div class="accordion-item sidebar-accdn">
+                                            <div class="accordion-header">
+
+                                                <button class="accordion-button sidebar-accordion collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseaccordionProduct" aria-expanded="false"
+                                                    aria-controls="accordionProduct">
+                                                    <img src="./assets/images/product-menu.svg" alt="product">
+                                                    <span>Product Management</span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseaccordionProduct" class="accordion-collapse collapse">
+                                                <div class="accordion-body contact-sub-items">
+                                                    <ul class="accdn-menu-list">
+                                                        <li class="menu-item">
+                                                            <a href="products.html">
+                                                                <img src="./assets/images/contact-listing1.svg"
+                                                                    alt="dashboard-icon">
+                                                                <span>Products</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="product-category.html">
+                                                                <img src="./assets/images/product-category-menu.svg"
+                                                                    alt="dashboard-icon">
+                                                                <span>Product Category</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="reports.html">
+                                        <img src="./assets/images/reports-menu.svg" alt="Reports">
+                                        <span>Reports</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="plans.html">
+                                        <img src="./assets/images/plan-menu.svg" alt="Plans">
+                                        <span>Plans</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" data-bs-toggle="modal" data-bs-target="#teamAccessPermission">
+                                    <a href="#">
+                                        <img src="./assets/images/user-management-menu.svg" alt="user management">
+                                        <span>User Management</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="menu-div2">
+                        <div class="app-section-menu">
+                            <h6 class="app-text">Get the app</h6>
+                            <a class="apple-store">
+                                <img src="./assets/images/apple.svg" alt="apple-icon">
+                                <img src="./assets/images/appleText.svg" alt="apple-text">
+                            </a>
+                            <a class="play-store">
+                                <img src="./assets/images/google-play-logo.svg" alt="google-play-icon">
+                                <img src="./assets/images/playText.svg" alt="google-play-text">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-9 col-sm-12">
+                <div class="main-content">
+                    <div class="topbar d-none d-md-block d-lg-block">
+                        <div class="topbar-div">
+                            <div>
+                                <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
+                                    aria-label="breadcrumb">
+                                    <ol class="breadcrumb drip-breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#" class="link-item">Home</a></li>
+                                        <li class="breadcrumb-item active drip-active-item" aria-current="page">Tag
+                                            Master
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <div class="topbar-widgets">
+                                <div class="topbar-search-div">
+                                    <input type="search" class="form-control topbar-search" id="searchUniversal"
+                                        placeholder="Search">
+                                </div>
+                                <div class="notification">
+                                    <img src="./assets/images/notification.svg" alt="notification">
+                                </div>
+                                <div class="dropdown">
+                                    <div class="profile-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./assets/images/profile.svg" alt="profile">
+                                    </div>
+                                    <ul class="dropdown-menu ">
+                                        <li class="profile-menu-item profile-name">
+                                            <a class="dropdown-item" href="#"><img src="./assets/images/profile-img.png"
+                                                    class="profile-img" alt="profile">Atharva Mohurle</a>
+                                        </li>
+                                        <li class="profile-menu-item">
+                                            <a class="dropdown-item" href="settings.html"><img
+                                                    src="./assets/images/setting-menu.svg" alt="setting">Settings</a>
+                                        </li>
+                                        <li class="profile-menu-item"><a class="dropdown-item" href="sign-in.html"><img
+                                                    src="./assets/images/logout.svg" alt="Logout">Log Out</a></li>
+                                    </ul>
+                                </div>
+                                <div class="credits">
+                                    <img src="./assets/images/Coins.svg" alt="coins">
+                                    <span class="topbar-widgets-text">200/200</span>
+                                    <img src="./assets/images/alert-circle.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="topbar d-sm-block d-md-none d-lg-none d-flex align-items-center justify-content-between">
+                        <span><img src="./assets/images/KIT-favicon.png" class="mobile-logo" alt="brand-logo"></span>
+
+                        <div class="drip-offcanvas-div d-flex align-items-center gap-2">
+                            <div class="topbar-widgets d-flex align-items-center gap-2">
+                                <div class="notification">
+                                    <img src="./assets/images/notification.svg" alt="notification">
+                                </div>
+                                <div class="dropdown">
+                                    <div class="profile-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./assets/images/profile.svg" alt="profile">
+                                    </div>
+                                    <ul class="dropdown-menu ">
+                                        <li class="profile-menu-item profile-name">
+                                            <a class="dropdown-item" href="#"><img src="./assets/images/profile-img.png"
+                                                    class="profile-img" alt="profile">Atharva Mohurle</a>
+                                        </li>
+                                        <li class="profile-menu-item">
+                                            <a class="dropdown-item" href="settings.html"><img
+                                                    src="./assets/images/setting-menu.svg" alt="setting">Settings</a>
+                                        </li>
+                                        <li class="profile-menu-item"><a class="dropdown-item" href="sign-in.html"><img
+                                                    src="./assets/images/logout.svg" alt="Logout">Log Out</a></li>
+                                    </ul>
+                                </div>
+                                <div class="credits">
+                                    <img src="./assets/images/Coins.svg" alt="coins">
+                                    <span class="topbar-widgets-text">200/200</span>
+                                    <img src="./assets/images/alert-circle.svg" alt="">
+                                </div>
+                            </div>
+                            <button class="off-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                                aria-controls="offcanvasScrolling">
+                                <img src="./assets/images/offcanvas-right-icon.svg" alt="offcanvasBtn">
+                            </button>
+
+                            <div class="offcanvas offcanvas-end site-offcanvas offcanvas-sidebar" data-bs-scroll="true"
+                                data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                                aria-labelledby="offcanvasScrollingLabel">
+                                <div class="offcanvas-header px-3">
+                                    <div class="logo">
+                                        <span><img src="./assets/images/logo.svg" alt="brand-logo"></span>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body p-0">
+                                    <div class="sidebar-mobile" id="sidebar">
+                                        <div class="menu-div1">
+                                            <div class="sidebar-menu">
+                                                <ul class="menu-list">
+                                                    <li class="menu-item">
+                                                        <a href="">
+                                                            <img src="./assets/images/dashboard-menu.svg"
+                                                                alt="dashboard-icon">
+                                                            <span>Dashboard</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="wallet.html">
+                                                            <img src="./assets/images/wallet-menu.svg"
+                                                                alt="dashboard-icon">
+                                                            <span>Wallet</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <div class="accordion" id="accordionContact">
+                                                            <div
+                                                                class="accordion-item sidebar-accdn sidebar-accdn-active">
+                                                                <div class="accordion-header">
+
+                                                                    <button
+                                                                        class="accordion-button sidebar-accordion collapsed"
+                                                                        type="button" data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapseaccordionContact"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="collapseOne">
+                                                                        <img src="./assets/images/contact-menu.svg"
+                                                                            alt="">
+                                                                        <span>Contact</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div id="collapseaccordionContact"
+                                                                    class="accordion-collapse collapse show">
+                                                                    <div class="accordion-body contact-sub-items">
+                                                                        <ul class="accdn-menu-list">
+                                                                            <li class="menu-item">
+                                                                                <a href="contact-listing.html">
+                                                                                    <img src="./assets/images/contact-listing1.svg"
+                                                                                        alt="dashboard-icon">
+                                                                                    <span>Contact Listing</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item active">
+                                                                                <a href="tag-master.html">
+                                                                                    <img src="./assets/images/tags-menu-selected.svg"
+                                                                                        alt="dashboard-icon">
+                                                                                    <span>Tags</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="drip.html">
+                                                            <img src="./assets/images/drip-icon.svg"
+                                                                alt="dashboard-icon">
+                                                            <span>Drip</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="event.html">
+                                                            <img src="./assets/images/event-icon.svg" alt="Event">
+                                                            <span>Event</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item ">
+                                                        <div class="accordion" id="accordionProduct">
+                                                            <div class="accordion-item sidebar-accdn">
+                                                                <div class="accordion-header">
+
+                                                                    <button
+                                                                        class="accordion-button sidebar-accordion collapsed"
+                                                                        type="button" data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapseaccordionProduct"
+                                                                        aria-expanded="false"
+                                                                        aria-controls="accordionProduct">
+                                                                        <img src="./assets/images/product-menu.svg"
+                                                                            alt="product">
+                                                                        <span>Product Management</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div id="collapseaccordionProduct"
+                                                                    class="accordion-collapse collapse">
+                                                                    <div class="accordion-body contact-sub-items">
+                                                                        <ul class="accdn-menu-list">
+                                                                            <li class="menu-item">
+                                                                                <a href="products.html">
+                                                                                    <img src="./assets/images/contact-listing1.svg"
+                                                                                        alt="dashboard-icon">
+                                                                                    <span>Products</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item">
+                                                                                <a href="product-category.html">
+                                                                                    <img src="./assets/images/product-category-menu.svg"
+                                                                                        alt="dashboard-icon">
+                                                                                    <span>Product Category</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="reports.html">
+                                                            <img src="./assets/images/reports-menu.svg" alt="Reports">
+                                                            <span>Reports</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="plans.html">
+                                                            <img src="./assets/images/plan-menu.svg" alt="Plans">
+                                                            <span>Plans</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item" data-bs-toggle="modal"
+                                                        data-bs-target="#teamAccessPermission">
+                                                        <a href="#">
+                                                            <img src="./assets/images/user-management-menu.svg"
+                                                                alt="user management">
+                                                            <span>User Management</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="menu-div2">
+                                            <div class="app-section-menu">
+                                                <h6 class="app-text">Get the app</h6>
+                                                <a class="apple-store">
+                                                    <img src="./assets/images/apple.svg" alt="apple-icon">
+                                                    <img src="./assets/images/appleText.svg" alt="apple-text">
+                                                </a>
+                                                <a class="play-store">
+                                                    <img src="./assets/images/google-play-logo.svg"
+                                                        alt="google-play-icon">
+                                                    <img src="./assets/images/playText.svg" alt="google-play-text">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="page-header">
+                            <div class="heading">
+                                <h4>Tag Master</h4>
+                            </div>
+
+                            <button class="add-button" data-bs-toggle="modal" data-bs-target="#addTagsModal"> <img
+                                    src="./assets/images/add.svg" alt="addbtn">Add New</button>
+                        </div>
+                        <div class="table-div">
+                            <div class="table-head">
+                                <div class="table-div1 d-flex align-items-center justify-content-between">
+                                    <div class="table-heading">
+                                        <h4 class="mb-0">
+                                            Tags
+                                        </h4>
+                                    </div>
+                                    <div class="table-div1-tabs d-flex align-items-center gap-3 ">
+
+                                    </div>
+                                    <div class="table-search d-flex align-items-center gap-3">
+                                        <input type="search" class="form-control search " id="dt-search"
+                                            placeholder="Search Tags">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tags-table-div table-responsive">
+                                <table id="tags-table" class="Table" style="width:100%">
+                                    <thead class="table-heading">
+                                        <tr>
+                                            <th>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </th>
+                                            <th>Sr.No</th>
+                                            <th>Name</th>
+                                            <th>Contact Count</th>
+                                            <th>Description</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td class="table-text-dark" data-bs-toggle="offcanvas"
+                                                data-bs-target="#contactCountOffcanvas"
+                                                aria-controls="contactCountOffcanvas">8</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit</td>
+                                            <td>
+                                                <div
+                                                    class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="./assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit">
+                                                    <img src="./assets/images/delete.svg" alt="delete"
+                                                        data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                        data-bs-placement="bottom" title="Delete">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>2</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td class="table-text-dark" data-bs-toggle="offcanvas"
+                                                data-bs-target="#contactCountOffcanvas"
+                                                aria-controls="contactCountOffcanvas">8</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                            <td>
+                                                <div
+                                                    class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="./assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit">
+                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
+                                                        title="Delete">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>3</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td class="table-text-dark" data-bs-toggle="offcanvas"
+                                                data-bs-target="#contactCountOffcanvas"
+                                                aria-controls="contactCountOffcanvas">8</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit</td>
+                                            <td>
+                                                <div
+                                                    class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="./assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit">
+                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
+                                                        title="Delete">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>4</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td class="table-text-dark" data-bs-toggle="offcanvas"
+                                                data-bs-target="#contactCountOffcanvas"
+                                                aria-controls="contactCountOffcanvas">8</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit</td>
+                                            <td>
+                                                <div
+                                                    class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="./assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit">
+                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
+                                                        title="Delete">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>5</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td class="table-text-dark" data-bs-toggle="offcanvas"
+                                                data-bs-target="#contactCountOffcanvas"
+                                                aria-controls="contactCountOffcanvas">8</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit</td>
+                                            <td>
+                                                <div
+                                                    class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="./assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit">
+                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
+                                                        title="Delete">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>6</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td class="table-text-dark" data-bs-toggle="offcanvas"
+                                                data-bs-target="#contactCountOffcanvas"
+                                                aria-controls="contactCountOffcanvas">8</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit</td>
+                                            <td>
+                                                <div
+                                                    class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="./assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit">
+                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
+                                                        title="Delete">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>7</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td class="table-text-dark" data-bs-toggle="offcanvas"
+                                                data-bs-target="#contactCountOffcanvas"
+                                                aria-controls="contactCountOffcanvas">8</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit</td>
+                                            <td>
+                                                <div
+                                                    class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="./assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit">
+                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
+                                                        title="Delete">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>8</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td class="table-text-dark" data-bs-toggle="offcanvas"
+                                                data-bs-target="#contactCountOffcanvas"
+                                                aria-controls="contactCountOffcanvas">8</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit</td>
+                                            <td>
+                                                <div
+                                                    class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="./assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit">
+                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
+                                                        title="Delete">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>9</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td class="table-text-dark" data-bs-toggle="offcanvas"
+                                                data-bs-target="#contactCountOffcanvas"
+                                                aria-controls="contactCountOffcanvas">8</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit</td>
+                                            <td>
+                                                <div
+                                                    class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="./assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit">
+                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
+                                                        title="Delete">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>10</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td class="table-text-dark" data-bs-toggle="offcanvas"
+                                                data-bs-target="#contactCountOffcanvas"
+                                                aria-controls="contactCountOffcanvas">8</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit</td>
+                                            <td>
+                                                <div
+                                                    class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="./assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit">
+                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
+                                                        title="Delete">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>11</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td class="table-text-dark" data-bs-toggle="offcanvas"
+                                                data-bs-target="#contactCountOffcanvas"
+                                                aria-controls="contactCountOffcanvas">8</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit</td>
+                                            <td>
+                                                <div
+                                                    class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="./assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit">
+                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
+                                                        title="Delete">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>12</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td class="table-text-dark" data-bs-toggle="offcanvas"
+                                                data-bs-target="#contactCountOffcanvas"
+                                                aria-controls="contactCountOffcanvas">8</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit</td>
+                                            <td>
+                                                <div
+                                                    class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="./assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit">
+                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
+                                                        title="Delete">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>13</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td class="table-text-dark" data-bs-toggle="offcanvas"
+                                                data-bs-target="#contactCountOffcanvas"
+                                                aria-controls="contactCountOffcanvas">8</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit</td>
+                                            <td>
+                                                <div
+                                                    class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="./assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit">
+                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
+                                                        title="Delete">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>14</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td class="table-text-dark" data-bs-toggle="offcanvas"
+                                                data-bs-target="#contactCountOffcanvas"
+                                                aria-controls="contactCountOffcanvas">8</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit</td>
+                                            <td>
+                                                <div
+                                                    class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="./assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit">
+                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
+                                                        title="Delete">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="version">
+                            <h6>Version 1.1</h6>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ======================= Modal for Add Tags ======================= -->
+
+    <div class="modal fade" id="addTagsModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-labelledby="addTagsModal" aria-hidden="true ">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content add-modal">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h4 class="modal-title add-modal-title" id="exampleModalLabel">Add Tags</h4>
+                    <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="modal"
+                        aria-label="Close" aria-label="Close">
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="drip-input-div">
+                            <label for="dripInput1" class="form-label input-label mb-1">Tags
+                                Name</label>
+                            <input type="text" class="form-control input-text" id="dripInput1"
+                                placeholder="Enter your drip name">
+                        </div>
+                        <div class="drip-input-div">
+                            <label for="dripInput1" class="form-label input-label mb-1">Tag Description
+                                (Optional)</label>
+                            <textarea class="form-control text-area" style="resize: none;"
+                                placeholder="Enter description" rows="5"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end  gap-3">
+                        <button type="button" class="btn-grey">Back</button>
+                        <button type="button" class="btn-red" data-bs-toggle="modal"
+                            data-bs-target="#tagAddedSuccessfully">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================= Modal for Tag Added Successfully ======================= -->
+
+    <div class="modal fade" id="tagAddedSuccessfully" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="tagAddedSuccessfully" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content successfullyModal">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h4 class="modal-title successfullyModal-title" id="exampleModalLabel"></h4>
+                    <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="modal"
+                        aria-label="Close" aria-label="Close">
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column align-items-center gap-3">
+                        <div>
+                            <img src="./assets/images/successfully-icon.svg" alt="successfully icon">
+                        </div>
+                        <div class="successfully-title">
+                            <h4 class="mb-0">Tag Added Successfully</h4>
+                        </div>
+                        <div class="successfully-text">
+                            <p class="mb-0">Ex consequuntur autem quidem magnam numquam quia. Et aliquid earum
+                                voluptatem ullam fugiat fugiat esse. Eligendi qui cum commodi ipsam recusandae.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============================== Contact Count offcanvas =========================== -->
+
+    <div class="offcanvas offcanvas-end contact-count-offcanvas" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" id="contactCountOffcanvas" aria-labelledby="contactCountOffcanvasLabel">
+        <div class="offcanvas-header d-flex align-items-center justify-content-between">
+            <h5 class="offcanvas-title title-offcanvas" id="contactCountOffcanvasLabel">Contact Count</h5>
+            <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+        </div>
+        <div class="offcanvas-body d-flex flex-column gap-3">
+            <div class="contact-count">Total Contacts: 8</div>
+
+            <div class="contact-detail">
+                <div class="contact">Contact 1</div>
+                <div class="contact">Contact 2</div>
+                <div class="contact">Contact 3</div>
+                <div class="contact">Contact 4</div>
+                <div class="contact">Contact 5</div>
+                <div class="contact">Contact 6</div>
+                <div class="contact">Contact 7</div>
+                <div class="contact">Contact 8</div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================ Delete Modal ======================= -->
+
+    <div class="modal fade deleteModal " id="deleteModal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title delete-modal-title" id="exampleModalLabel">Delete Tag</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="delete-img-div">
+                            <img src="./assets/images/delete-modal.svg" alt="">
+                        </div>
+                        <div class="delete-modal-text">
+                            <p class="mb-0">Are you sure you want to delete the contact?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end  gap-3">
+                        <button type="button" class="btn-grey" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn-red">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- team Access Permission-->
+    <div class="modal fade " id="teamAccessPermission" aria-labelledby="teamAccessPermissionLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Team Access &
+                                Permission
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-teamAccessPermission">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="at-hdg-div">
+                                    <h2 class="setting-modal-hdg">Team Access & Permission</h2>
+                                    <p class="setting-modal-p">Manage team members and their access levels,
+                                        assigning specific roles and permissions to control what they can view and
+                                        modify.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-div">
+                            <div class="table-head">
+                                <div class="table-div1 d-flex align-items-center justify-content-between mb-3">
+                                    <div class="table-heading">
+                                        <h4 class="mb-0">
+                                            User List
+                                        </h4>
+                                    </div>
+                                    <div class="table-div1-tabs d-flex align-items-center gap-3 ">
+
+                                        <div class="table-search d-flex align-items-center gap-3">
+                                            <input type="search" class="form-control search " id="dt-search"
+                                                placeholder="Search">
+                                        </div>
+                                        <div>
+                                            <button class="add-button" data-bs-toggle="modal"
+                                                data-bs-target="#addUserModal"> <img src="./assets/images/add.svg"
+                                                    alt="Add">Add User
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-list-div table-responsive">
+                                <table id="user-list-table" class="Table" style="width:100%">
+                                    <thead class="table-heading">
+                                        <tr>
+                                            <th>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </th>
+                                            <th>Sr.No</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Role</th>
+                                            <th>Status</th>
+                                            <th>Last Login</th>
+                                            <th>Credit Used</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>2</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>3</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>4</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>5</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="settings.html" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add User Modal-->
+    <div class="modal fade " id="addUserModal" aria-labelledby="addUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="link-item" data-bs-toggle="modal"
+                                    data-bs-target="#teamAccessPermission">Team Access &
+                                    Permission</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Add User</li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-toggle="modal"
+                        data-bs-target="#teamAccessPermission" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-teamAccessPermission">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="at-hdg-div">
+                                    <h2 class="setting-modal-hdg">Add User</h2>
+                                    <p class="setting-modal-p"> Input the new user's information, assign their role, and
+                                        configure their access permissions within the system.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamAccessPermissionForm">
+                            <!-- Wizard Steps Navigation -->
+                            <!-- <div class="steps mb-4 d-flex justify-content-between align-items-center">
+                            <div class="step active" data-step="1">
+                                <span>1</span>
+                                <p>User Information</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="step" data-step="2">
+                                <span>2</span>
+                                <p>Set Permissions</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="step" data-step="3">
+                                <span>3</span>
+                                <p>Review Details</p>
+                            </div>
+                        </div> -->
+
+                            <div class="step-indicator">
+                                <div class="step active">
+                                    <div class="circle">1</div>
+                                    <span class="step-details">User Information</span>
+                                </div>
+                                <div class="active-line active"></div>
+                                <div class="step">
+                                    <div class="circle">2</div>
+                                    <span class="step-details">Set Permissions</span>
+                                </div>
+                                <div class="active-line"></div>
+                                <div class="step">
+                                    <div class="circle">3</div>
+                                    <span class="step-details">Review Details</span>
+                                </div>
+                            </div>
+                            <!-- Wizard Form -->
+                            <form id="userForm">
+                                <!-- Step 1 -->
+                                <div class="step-content step-1">
+                                    <div class="row g-3 mb-3">
+                                        <div class="col-md-4">
+                                            <div class="drip-input-div">
+                                                <label for="profile-firstName" class="input-label">First
+                                                    Name*</label>
+                                                <input type="text" class="form-control input-text"
+                                                    id="profile-firstName" placeholder="Enter your First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="email-form-label">Sender Email*</label>
+                                            <input type="email" class="form-control email-input"
+                                                placeholder="Enter email id">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class=" input-label ">Role</label>
+                                            <select class="form-select form-control input-text">
+                                                <option>Admin</option>
+                                                <option>User</option>
+                                                <option>Editor</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" id="inviteLink">
+                                        <label class="form-check-label" for="inviteLink">
+                                            Send Invite Link <small class="text-muted">(A secure password creation link
+                                                will
+                                                be sent)</small>
+                                        </label>
+                                    </div>
+
+                                   <div class="tnext-div">
+                                        <a role="button" class="next-btn-template" id="next-btn">
+                                            Design
+                                            <img src="./assets/images/modal-arrow.svg" alt="right-arrow">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Step 2 -->
+                                <div class="step-content step-2 d-none">
+                                    <h5>Set Permissions</h5>
+                                    <p>Assign permissions here (demo placeholder)</p>
+                                    <div class="row g-3 mb-3">
+                                        <div class="col-md-4">
+                                            <div class="drip-input-div">
+                                                <label for="profile-firstName" class="input-label">First
+                                                    Name*</label>
+                                                <input type="text" class="form-control input-text"
+                                                    id="profile-firstName" placeholder="Enter your First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="email-form-label">Sender Email*</label>
+                                            <input type="email" class="form-control email-input"
+                                                placeholder="Enter email id">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class=" input-label ">Role</label>
+                                            <select class="form-select form-control input-text">
+                                                <option>Admin</option>
+                                                <option>User</option>
+                                                <option>Editor</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <button type="button" class="btn btn-secondary prev-btn">← Back</button>
+                                        <button type="button" class="btn btn-danger next-btn">Next ➔</button>
+                                    </div>
+                                </div>
+
+                                <!-- Step 3 -->
+                                <div class="step-content step-3 d-none">
+                                    <h5>Review Details</h5>
+                                    <p>Review user details here before submitting.</p>
+
+                                    <div class="d-flex justify-content-between">
+                                        <button type="button" class="btn btn-secondary prev-btn">← Back</button>
+                                        <button type="submit" class="btn btn-success">Submit ✔️</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- /Wizard Form -->
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="#" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl,
+            {
+                html: true
+            }
+        ))
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[title]'));
+            tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+    <script>new DataTable('#tags-table', {
+            layout: {
+                topStart: null,
+                topEnd: null,
+                bottomStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    }
+                },
+            }
+        });</script>
+    <script>new DataTable('#user-list-table', {
+            layout: {
+                topStart: null,
+                topEnd: null,
+                bottomStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    }
+                },
+            }
+        });</script>
+</body>
+
+</html>

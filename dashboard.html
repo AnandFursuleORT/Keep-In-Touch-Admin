@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/images/KIT-favicon.png">
+</head>
+
+<body>
+    <div class="container-fluid p-0 layout">
+        <div class="row g-0">
+            <div class="col-lg-2 col-md-12 col-sm-12 d-none d-lg-block d-md-block sidebar-col">
+                <div class="sidebar" id="sidebar">
+                    <div class="menu-div1">
+                        <div class="logo">
+                            <span><img src="Assets/images/logo.svg" alt="brand-logo"></span>
+                        </div>
+                        <div class="sidebar-menu">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="dashboard.html">
+                                        <img src="Assets/images/dashboard-menu.svg" alt="dashboard-icon">
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item active">
+                                    <a href="wallet.html">
+                                        <img src="assets/images/wallet-selected.svg" alt="dashboard-icon">
+                                        <span>Wallet</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <div class="accordion" id="accordionContact">
+                                        <div class="accordion-item sidebar-accdn">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button sidebar-accordion collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseaccordionContact" aria-expanded="false"
+                                                    aria-controls="collapseOne">
+                                                    <img src="assets/images/contact-menu.svg" alt="">
+                                                    <span class="ps-3">Contact</span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseaccordionContact" class="accordion-collapse collapse">
+                                                <div class="accordion-body contact-sub-items">
+                                                    <ul class="menu-list">
+                                                        <li class="menu-item">
+                                                            <a href="contact-listing.html">
+                                                                <img src="assets/images/contact-listing1.svg"
+                                                                    alt="dashboard-icon">
+                                                                <span>Contact Listing</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="tag-master.html">
+                                                                <img src="assets/images/tags.svg" alt="dashboard-icon">
+                                                                <span>Tags</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="drip.html">
+                                        <img src="assets/images/drip-icon.svg" alt="Drip">
+                                        <span>Drip</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="event.html">
+                                        <img src="assets/images/event-icon.svg" alt="Event">
+                                        <span>Event</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item ">
+                                    <div class="accordion" id="accordionProduct">
+                                        <div class="accordion-item sidebar-accdn">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button sidebar-accordion collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseaccordionProduct" aria-expanded="false"
+                                                    aria-controls="accordionProduct">
+                                                    <img src="assets/images/product-menu.svg" alt="product">
+                                                    <span class="ps-3">Product Management</span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseaccordionProduct" class="accordion-collapse collapse">
+                                                <div class="accordion-body contact-sub-items">
+                                                    <ul class="menu-list">
+                                                        <li class="menu-item">
+                                                            <a href="products.html">
+                                                                <img src="assets/images/contact-listing1.svg"
+                                                                    alt="product">
+                                                                <span>Products</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="product-category.html">
+                                                                <img src="assets/images/product-category-menu.svg"
+                                                                    alt="product">
+                                                                <span>Product Category</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="reports.html">
+                                        <img src="assets/images/reports-menu.svg" alt="Reports">
+                                        <span>Reports</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="plans.html">
+                                        <img src="assets/images/plan-menu.svg" alt="Plans">
+                                        <span>Plans</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="user-management.html">
+                                        <img src="assets/images/user-management-menu.svg" alt="user management">
+                                        <span>User Management</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="menu-div2">
+                        <div class="app-section-menu">
+                            <h6 class="app-text">Get the app</h6>
+                            <a class="apple-store">
+                                <img src="assets/images/apple.svg" alt="apple-icon">
+                                <img src="assets/images/appleText.svg" alt="apple-text">
+                            </a>
+                            <a class="play-store">
+                                <img src="assets/images/google-play-logo.svg" alt="google-play-icon">
+                                <img src="assets/images/playText.svg" alt="google-play-text">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-12 col-sm-12">
+                <div class="main-content">
+                    <div class="topbar d-none d-md-block d-lg-block">
+                        <div class="topbar-div">
+                            <div class="profile-name">
+                                <h4>Hello, Atharva Mohurle</h4>
+                            </div>
+                            <div class="topbar-widgets">
+                                <div class="notification ">
+                                    <img src="assets/images/notification.svg" alt="notification">
+                                </div>
+                                <div class="dropdown">
+                                    <div class="profile-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/images/profile.svg" alt="profile">
+                                        <ul class="dropdown-menu ">
+                                            <li class="menu-item profile-name">
+                                                <a class="dropdown-item" href="#"><img
+                                                        src="assets/images/profile-img.png" class="profile-img"
+                                                        alt="profile">Atharva Mohurle</a>
+                                            </li>
+                                            <li class="profile-menu-item">
+                                                <a class="dropdown-item" href="#"><img
+                                                        src="assets/images/setting-menu.svg" alt="setting">Settings</a>
+                                            </li>
+                                            <li class="profile-menu-item"><a class="dropdown-item" href="#"><img
+                                                        src="assets/images/logout.svg" alt="Logout">Log Out</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="credits">
+                                    <img src="assets/images/Coins.svg" alt="coins">
+                                    <span class="topbar-widgets-text">200/200</span>
+                                    <img src="assets/images/alert-circle.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="topbar d-sm-block d-md-none d-lg-none">
+                        <span><img src="assets/images/KIT-favicon.png" class="mobile-logo" alt="brand-logo"></span>
+
+                        <div class="drip-offcanvas-div">
+                            <div class="topbar-widgets">
+                                <div class="notification">
+                                    <img src="assets/images/notification.svg" alt="notification">
+                                </div>
+                                <div class="dropdown">
+                                    <div class="profile-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/images/profile.svg" alt="profile">
+                                        <ul class="dropdown-menu ">
+                                            <li class="menu-item">
+                                                <a class="dropdown-item" href="#"><img
+                                                        src="assets/images/profile-img.png" class="profile-img"
+                                                        alt="profile">Atharva Mohurle</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="dropdown-item" href="settings.html"><img
+                                                        src="assets/images/setting-menu.svg" alt="setting">Settings</a>
+                                            </li>
+                                            <li class="menu-item"><a class="dropdown-item" href="sign-in.html"><img
+                                                        src="assets/images/logout.svg" alt="Logout">Log Out</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="credits">
+                                    <img src="assets/images/Coins.svg" alt="coins">
+                                    <span class="topbar-widgets-text">200/200</span>
+                                    <img src="assets/images/alert-circle.svg" alt="">
+                                </div>
+                            </div>
+                            <button class="off-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                                aria-controls="offcanvasScrolling">
+                                <img src="assets/images/offcanvas-right-icon.svg" alt="offcanvasBtn">
+                            </button>
+
+                            <div class="offcanvas offcanvas-end site-offcanvas" data-bs-scroll="true"
+                                data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                                aria-labelledby="offcanvasScrollingLabel">
+                                <div class="offcanvas-header px-3">
+                                    <div class="logo">
+                                        <span><img src="assets/images/logo.svg" alt="brand-logo"></span>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body p-0">
+                                    <div class="sidebar" id="sidebar">
+                                        <div class="menu-div1">
+                                            <div class="sidebar-menu">
+                                                <ul class="menu-list">
+                                                    <li class="menu-item">
+                                                        <a href="">
+                                                            <img src="Assets/images/dashboard-menu.svg"
+                                                                alt="dashboard-icon">
+                                                            <span>Dashboard</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item active">
+                                                        <a href="wallet.html">
+                                                            <img src="assets/images/wallet-selected.svg"
+                                                                alt="dashboard-icon">
+                                                            <span>Wallet</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <div class="accordion" id="accordionContact">
+                                                            <div class="accordion-item sidebar-accdn">
+                                                                <div class="accordion-header">
+                                                                    <button
+                                                                        class="accordion-button sidebar-accordion collapsed"
+                                                                        type="button" data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapseaccordionContact"
+                                                                        aria-expanded="false"
+                                                                        aria-controls="collapseOne">
+                                                                        <img src="assets/images/contact-menu.svg"
+                                                                            alt="">
+                                                                        <span class="ps-3">Contact</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div id="collapseaccordionContact"
+                                                                    class="accordion-collapse collapse">
+                                                                    <div class="accordion-body contact-sub-items">
+                                                                        <ul class="menu-list">
+                                                                            <li class="menu-item">
+                                                                                <a href="contact-listing.html">
+                                                                                    <img src="assets/images/contact-listing1.svg"
+                                                                                        alt="dashboard-icon">
+                                                                                    <span>Contact Listing</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item">
+                                                                                <a href="tag-master.html">
+                                                                                    <img src="assets/images/tags.svg"
+                                                                                        alt="dashboard-icon">
+                                                                                    <span>Tags</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="event.html">
+                                                            <img src="assets/images/event-icon.svg" alt="Event">
+                                                            <span>Event</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item ">
+                                                        <div class="accordion" id="accordionProduct">
+                                                            <div class="accordion-item sidebar-accdn">
+                                                                <div class="accordion-header">
+                                                                    <button
+                                                                        class="accordion-button sidebar-accordion collapsed"
+                                                                        type="button" data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapseaccordionProduct"
+                                                                        aria-expanded="false"
+                                                                        aria-controls="accordionProduct">
+                                                                        <img src="assets/images/product-menu.svg"
+                                                                            alt="product">
+                                                                        <span class="ps-3">Product Management</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div id="collapseaccordionProduct"
+                                                                    class="accordion-collapse collapse">
+                                                                    <div class="accordion-body contact-sub-items">
+                                                                        <ul class="menu-list">
+                                                                            <li class="menu-item">
+                                                                                <a href="products.html">
+                                                                                    <img src="assets/images/contact-listing1.svg"
+                                                                                        alt="product">
+                                                                                    <span>Products</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item">
+                                                                                <a href="product-category.html">
+                                                                                    <img src="assets/images/product-category-menu.svg"
+                                                                                        alt="product">
+                                                                                    <span>Product Category</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="reports.html">
+                                                            <img src="assets/images/reports-menu.svg" alt="Reports">
+                                                            <span>Reports</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="plans.html">
+                                                            <img src="assets/images/plan-menu.svg" alt="Plans">
+                                                            <span>Plans</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="user-management.html">
+                                                            <img src="assets/images/user-management-menu.svg"
+                                                                alt="user management">
+                                                            <span>User Management</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="menu-div2">
+                                            <div class="sidebar-menu">
+                                                <ul class="menu-list2">
+                                                    <li class="menu-item">
+                                                        <a href="">
+                                                            <img src="Assets/images/help.svg" alt="Help & Support">
+                                                            <span>Help & Support</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="settings.html">
+                                                            <img src="assets/images/setting-menu.svg" alt="Settings">
+                                                            <span>Settings</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="profile-menu mt-auto p-4">
+                                                <div class="profile">
+                                                    <img src="assets/images/profile.svg" alt="profile">
+                                                    <span class="profile-name">Atharva Mohurle</span>
+                                                </div>
+                                            </div>
+                                            <div class="app-section-menu">
+                                                <h6 class="app-text">Get the app</h6>
+                                                <a class="apple-store">
+                                                    <img src="assets/images/apple.svg" alt="apple-icon">
+                                                    <img src="assets/images/appleText.svg" alt="apple-text">
+                                                </a>
+                                                <a class="play-store">
+                                                    <img src="assets/images/google-play-logo.svg"
+                                                        alt="google-play-icon">
+                                                    <img src="assets/images/playText.svg" alt="google-play-text">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="page-header">
+                            <div class="heading">
+                                <h4>Dashboard</h4>
+                            </div>
+                            <div class="dashboard-date-range">
+                                <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+                            </div>
+                        </div>
+
+                        <div class="container">
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>new DataTable('#example', {
+            layout: {
+                topStart: null,
+                topEnd: null,
+                bottomStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    }
+                },
+            }
+        });</script>
+
+<script>
+    $(function () {
+        $('input[name="daterange"]').daterangepicker({
+            opens:'left',
+            showDropdowns: true
+        });
+    });
+</script>
+
+</body>
+
+</html>
