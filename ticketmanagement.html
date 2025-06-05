@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/KIT-favicon.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 </head>
 
 <body>
@@ -37,7 +38,7 @@
                                 </li>
                                 <li class="menu-item">
                                     <div class="accordion" id="accordionSupport">
-                                        <div class="accordion-item sidebar-accdn">
+                                        <div class="accordion-item sidebar-accdn sidebar-accdn-active">
                                             <div class="accordion-header">
                                                 <button class="accordion-button sidebar-accordion collapsed"
                                                     type="button" data-bs-toggle="collapse"
@@ -47,19 +48,25 @@
                                                     <span>Support</span>
                                                 </button>
                                             </div>
-                                            <div id="collapseaccordionSupport" class="accordion-collapse collapse">
+                                            <div id="collapseaccordionSupport" class="accordion-collapse collapse show">
                                                 <div class="accordion-body contact-sub-items">
                                                     <ul class="accdn-menu-list">
                                                         <li class="menu-item">
-                                                            <a href="drip.html">
-                                                                <img src="./assets/images/drip-icon.svg" alt="Drip">
-                                                                <span>Drips</span>
+                                                            <a href="category.html">
+                                                                <img src="./assets/images/tags.svg" alt="Category">
+                                                                <span>Category</span>
                                                             </a>
                                                         </li>
                                                         <li class="menu-item">
-                                                            <a href="leads.html">
-                                                                <img src="./assets/images/tags.svg" alt="Leads">
-                                                                <span>Leads</span>
+                                                            <a href="subcategory.html">
+                                                                <img src="./assets/images/tags.svg" alt="Sub-category">
+                                                                <span>Sub-category</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item active">
+                                                            <a href="ticketmanagement.html">
+                                                                <img src="./assets/images/tags.svg" alt="Ticket Management">
+                                                                <span>Ticket Management</span>
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -116,7 +123,7 @@
                                         <span>Credit Rate</span>
                                     </a>
                                 </li>
-                                <li class="menu-item active">
+                                <li class="menu-item">
                                     <a href="settings.html">
                                         <img src="./assets/images/setting-menu.svg" alt="setting">
                                         <span>Settings</span>
@@ -149,10 +156,9 @@
                                 <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
                                     aria-label="breadcrumb">
                                     <ol class="breadcrumb drip-breadcrumb">
-                                        <li class="breadcrumb-item"><a href="dashboard.html" class="link-item">Home</a></li> 
-                                        <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li> 
-                                        <li class="breadcrumb-item active active-item" aria-current="page">Email Configuration
-                                        </li>
+                                        <li class="breadcrumb-item"><a href="#" class="link-item">Home</a></li>
+                                        <li class="breadcrumb-item"><a class="link-item">Support</a></li>
+                                        <li class="breadcrumb-item active active-item" aria-current="page">Ticket Management</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -268,18 +274,22 @@
                                                                     class="accordion-collapse collapse">
                                                                     <div class="accordion-body contact-sub-items">
                                                                         <ul class="accdn-menu-list">
-                                                                            <li class="menu-item">
-                                                                                <a href="drip.html">
-                                                                                    <img src="./assets/images/drip-icon.svg"
-                                                                                        alt="Drip">
-                                                                                    <span>Drips</span>
+                                                                            <li class="menu-item active">
+                                                                                <a href="category.html">
+                                                                                    <img src="./assets/images/tags.svg" alt="Category">
+                                                                                    <span>Category</span>
                                                                                 </a>
                                                                             </li>
                                                                             <li class="menu-item">
-                                                                                <a href="leads.html">
-                                                                                    <img src="./assets/images/tags.svg"
-                                                                                        alt="Leads">
-                                                                                    <span>Leads</span>
+                                                                                <a href="subcategory.html">
+                                                                                    <img src="./assets/images/tags.svg" alt="Sub-category">
+                                                                                    <span>Sub-category</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item">
+                                                                                <a href="ticketmanagement.html">
+                                                                                    <img src="./assets/images/tags.svg" alt="Ticket Management">
+                                                                                    <span>Ticket Management</span>
                                                                                 </a>
                                                                             </li>
                                                                         </ul>
@@ -370,35 +380,31 @@
                         </div>
                     </div>
                     <div class="page-content">
-                        <div class="page-header">
+                        <div class="drip-header">
                             <div class="heading">
-                                <h4>Email Configuration</h4>
+                                <h4>Tickets Management</h4>
                             </div>
                         </div>
 
-                        <div class="setting-section-sms">
-                            <div class="setting-upload-wrapper">
-                                <div class="upload-div">
-                                    <div class="setting-input">
-                                        <label for="formFile" class="form-label">Upload Excel</label>
-                                        <input class="form-control" type="file" id="formFile">
-                                    </div>
-                                    <button class="upload-button">Upload</button>
-                                </div>
-                                <a href="#" class="download-sheet">Download Sample Sheet</a>
-                            </div>
+                        <!-- <div class="setting-section-sms">
+                            </div> -->
                             <div class="setting-wrapper">
                                 <div class="table-div">
-                                    <div class="table-head">
-                                        <div class="table-div1">
-                                            <!-- <div class="table-heading">
-                                            <h4 class="mb-0">
-                                            User List
-                                        </h4>
-                                            </div> -->
-                                            <div class="table-search">
+                                    <div class="ticket-table-head">
+                                        <div class="ticket-div1">
+                                            <div class="ticket-search">
                                                 <input type="search" class="form-control search " id="dt-search"
-                                                    placeholder="Search">
+                                                    placeholder="Search Ticket">
+                                            </div>
+                                            <div class="search-ticket-buttons">
+                                                <div class="export" role="button">
+                                                    <img src="./assets/images/export.svg" alt="export">
+                                                    <span>Export</span>
+                                                </div>
+                                                <div class="table-filter" data-bs-toggle="offcanvas"
+                                                    data-bs-target="#filterContact" aria-controls="offcanvasRight">
+                                                    <img src="./assets/images/filter.svg" alt="filter">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -413,9 +419,11 @@
                                                         </div>
                                                     </th>
                                                     <th>Sr.No</th>
-                                                    <th>Email</th>
-                                                    <th>Domain</th>
-                                                    <th>Token</th>
+                                                    <th>Customer ID</th>
+                                                    <th>Ticket ID</th>
+                                                    <th>Priority</th>
+                                                    <th>Title</th>
+                                                    <th>Date Created</th>
                                                     <th>Status</th>
                                                     <th>Action</th>
                                                 </tr>
@@ -429,9 +437,11 @@
                                                         </div>
                                                     </td>
                                                     <td>1</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
+                                                    <td>11875</td>
+                                                    <td>5290</td>
+                                                    <td><span class="badge badge-light-warning">Low</span></td>
+                                                    <td>Title</td>
+                                                    <td>13 Jan, 2025 10:53:14 AM</td>
                                                     <td>
                                                         <div class="form-check form-switch">
                                                             <input class="form-check-input setting-switch"
@@ -441,17 +451,9 @@
                                                     <td>
                                                         <div class="table-action">
                                                             <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestEmailModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
                                                                 data-bs-target="#updateEmailModal" title="update"><img
                                                                     src="./assets/images/eye-icon.svg"
                                                                     alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
-                                                            </a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -463,9 +465,11 @@
                                                         </div>
                                                     </td>
                                                     <td>2</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
+                                                    <td>11875</td>
+                                                    <td>5290</td>
+                                                    <td><span class="badge badge-light-orange">Medium</span></td>
+                                                    <td>Title</td>
+                                                    <td>13 Jan, 2025 10:53:14 AM</td>
                                                     <td>
                                                         <div class="form-check form-switch">
                                                             <input class="form-check-input setting-switch"
@@ -475,17 +479,9 @@
                                                     <td>
                                                         <div class="table-action">
                                                             <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
+                                                                data-bs-target="#updateEmailModal" title="update"><img
                                                                     src="./assets/images/eye-icon.svg"
                                                                     alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
-                                                            </a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -497,9 +493,11 @@
                                                         </div>
                                                     </td>
                                                     <td>3</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
+                                                    <td>11875</td>
+                                                    <td>5290</td>
+                                                    <td><span class="badge badge-light-warning">Low</span></td>
+                                                    <td>Title</td>
+                                                    <td>13 Jan, 2025 10:53:14 AM</td>
                                                     <td>
                                                         <div class="form-check form-switch">
                                                             <input class="form-check-input setting-switch"
@@ -509,17 +507,9 @@
                                                     <td>
                                                         <div class="table-action">
                                                             <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
+                                                                data-bs-target="#updateEmailModal" title="update"><img
                                                                     src="./assets/images/eye-icon.svg"
                                                                     alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
-                                                            </a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -531,9 +521,11 @@
                                                         </div>
                                                     </td>
                                                     <td>4</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
+                                                    <td>11875</td>
+                                                    <td>5290</td>
+                                                    <td><span class="badge badge-light-danger">High</span></td>
+                                                    <td>Title</td>
+                                                    <td>13 Jan, 2025 10:53:14 AM</td>
                                                     <td>
                                                         <div class="form-check form-switch">
                                                             <input class="form-check-input setting-switch"
@@ -543,17 +535,9 @@
                                                     <td>
                                                         <div class="table-action">
                                                             <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
+                                                                data-bs-target="#updateEmailModal" title="update"><img
                                                                     src="./assets/images/eye-icon.svg"
                                                                     alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
-                                                            </a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -565,9 +549,11 @@
                                                         </div>
                                                     </td>
                                                     <td>5</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
+                                                    <td>11875</td>
+                                                    <td>5290</td>
+                                                    <td><span class="badge badge-light-orange">Medium</span></td>
+                                                    <td>Title</td>
+                                                    <td>13 Jan, 2025 10:53:14 AM</td>
                                                     <td>
                                                         <div class="form-check form-switch">
                                                             <input class="form-check-input setting-switch"
@@ -577,16 +563,9 @@
                                                     <td>
                                                         <div class="table-action">
                                                             <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
+                                                                data-bs-target="#updateEmailModal" title="update"><img
                                                                     src="./assets/images/eye-icon.svg"
                                                                     alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
                                                             </a>
                                                         </div>
                                                     </td>
@@ -607,39 +586,201 @@
             </div>
         </div>
     </div>
+    
+    <!-- =============================== Filter-offcanvas =========================== -->
+
+    <div class="offcanvas offcanvas-end filter-offcanvas" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" id="filterContact" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title title-offcanvas" id="offcanvasRightLabel">Filter</h5>
+            <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+        </div>
+        <div class="offcanvas-body">
+            <div class="accordion" id="accordionExample">
+                <!-- date filter code -->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#f-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Date
+                        </button>
+                    </h2>
+                    <div id="f-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="filter-date-range">
+                                <input type="text" name="daterange" class="filter-date w-100" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tag filter code -->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#f-collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                            Priority
+                        </button>
+                    </h2>
+                    <div id="f-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div id="tagList">
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="capt" name="rank"
+                                        value="Captains/Masters">
+                                    <label class="form-check-label filter-label" for="capt">Low
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="officers"
+                                        name="rank" value="Officers">
+                                    <label class="form-check-label filter-label" for="officers">Medium
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="ratings"
+                                        name="rank" value="Ratings">
+                                    <label class="form-check-label filter-label" for="ratings">High
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- References  Watch filter code -->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#f-collapseFive" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Status
+                        </button>
+                    </h2>
+                    <div id="f-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ">
+                            <div id="referenceList">
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="b1" name="Bridge"
+                                        value="B1">
+                                    <label class="form-check-label filter-label" for="b1">Active</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="b2" name="Bridge"
+                                        value="B2">
+                                    <label class="form-check-label filter-label" for="b2">Inactive</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-footer-btn">
+                <button type="button" class="btn-grey">Reset All</button>
+                <button type="button" class="btn-red">Apply</button>
+            </div>
+        </div>
+    </div>
+
     <!-- update SMS Modal -->
     <div class="modal fade" id="updateEmailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="updateEmailModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content add-modal">
-                <div class="modal-header d-flex align-items-center justify-content-between">
-                    <h4 class="modal-title add-modal-title" id="exampleModalLabel">Update</h4>
-                    <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="modal"
-                        aria-label="Close" aria-label="Close">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="link-item">Home</a></li>
+                            <li class="breadcrumb-item"><a class="link-item">Support</a></li>
+                            <li class="breadcrumb-item active active-item" aria-current="page">Ticket Management</li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="drip-input-div">
-                                <label for="dripInput1" class="form-label input-label mb-1">Domain Name</label>
-                                <input type="text" class="form-control input-text" id="DomainName"
-                                    placeholder="Enter Domain Name">
+                    <div class="update-form-wrapper">
+                        <div class="ticket-form-header">
+                            <div>
+                                <img src="./assets/images/file-verified.svg" style="height: 50px;">
+                            </div>
+                            <div class="ticket-form-header-data">
+                                <div>
+                                    <h5>Title</h5>
+                                </div>
+                                <div class="ticket-form-header-details">
+                                    <span>Category: Email/Outlook</span>
+                                    <span>SubCategory: Outlook not opening</span>
+                                    <span>By: DemoClient</span>
+                                    <span>Created: 2025-02-19, 10:53:14 AM</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="drip-input-div">
-                                <label for="dripInput1" class="form-label input-label mb-1">Token</label>
-                                <textarea class="form-control text-area" style="resize: none;" placeholder="Enter Token"
-                                    rows="4"></textarea>
+                        <div class="ticket-view-form">
+                            <div class="ticket-form-section1">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="drip-input-div">
+                                            <label for="dripInput1" class="form-label input-label mb-1">Priority</label>
+                                            <input type="text" class="form-control input-text" id="DomainName"
+                                            placeholder="Priority">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="drip-input-div">
+                                            <label for="dripInput1" class="form-label input-label mb-1">Assigned To</label>
+                                            <input type="text" class="form-control input-text" id="DomainName"
+                                            placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="drip-input-div">
+                                            <label for="dripInput1" class="form-label input-label mb-1">Status</label>
+                                            <input type="text" class="form-control input-text" id="DomainName"
+                                            placeholder="New">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="drip-input-div">
+                                            <label for="dripInput1" class="form-label input-label mb-1">Forward To</label>
+                                            <select id="domain-email-template" class="form-select domain-select">
+                                                <option selected>Select Employee</option>
+                                                <option value="1">Employee 1</option>
+                                                <option value="2">Employee 2</option>
+                                                <option value="3">Employee 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket-form-section2">
+                                <div class="row">
+                                    <div class="drip-input-div">
+                                        <label for="formFile" class="form-label">Acknowledgments</label>
+                                        <textarea class="form-control text-area" style="resize: none;" placeholder="Share your knowledge"
+                                        rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="setting-input">
+                                            <label for="formFile" class="form-label">Attachments</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ticket-form-buttons">
+                                    <button class="submit-btn">Submit</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <div class="setting-form-buttons">
-                        <button class="cancel-btn" data-bs-dismiss="modal" aria-label="Close">Discard</button>
-                        <button class="submit-btn">Submit</button>
-                    </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="ticketmanagement.html" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
                 </div>
             </div>
         </div>
@@ -732,6 +873,20 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>new DataTable('#login-history-table', {
+            layout: {
+                topStart: null,
+                topEnd: null,
+                bottomStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    }
+                },
+            }
+        });</script>
     <script>new DataTable('#email-config-table', {
             layout: {
                 topStart: null,
@@ -749,6 +904,16 @@
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
+    
+<script>
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'left'
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+</script>
 </body>
 
 </html>

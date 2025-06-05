@@ -37,7 +37,7 @@
                                 </li>
                                 <li class="menu-item">
                                     <div class="accordion" id="accordionSupport">
-                                        <div class="accordion-item sidebar-accdn">
+                                        <div class="accordion-item sidebar-accdn sidebar-accdn-active">
                                             <div class="accordion-header">
                                                 <button class="accordion-button sidebar-accordion collapsed"
                                                     type="button" data-bs-toggle="collapse"
@@ -47,19 +47,25 @@
                                                     <span>Support</span>
                                                 </button>
                                             </div>
-                                            <div id="collapseaccordionSupport" class="accordion-collapse collapse">
+                                            <div id="collapseaccordionSupport" class="accordion-collapse collapse show">
                                                 <div class="accordion-body contact-sub-items">
                                                     <ul class="accdn-menu-list">
                                                         <li class="menu-item">
-                                                            <a href="drip.html">
-                                                                <img src="./assets/images/drip-icon.svg" alt="Drip">
-                                                                <span>Drips</span>
+                                                            <a href="category.html">
+                                                                <img src="./assets/images/tags.svg" alt="Category">
+                                                                <span>Category</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item active">
+                                                            <a href="subcategory.html">
+                                                                <img src="./assets/images/tags.svg" alt="Sub-category">
+                                                                <span>Sub-category</span>
                                                             </a>
                                                         </li>
                                                         <li class="menu-item">
-                                                            <a href="leads.html">
-                                                                <img src="./assets/images/tags.svg" alt="Leads">
-                                                                <span>Leads</span>
+                                                            <a href="ticketmanagement.html">
+                                                                <img src="./assets/images/tags.svg" alt="Ticket Management">
+                                                                <span>Ticket Management</span>
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -116,7 +122,7 @@
                                         <span>Credit Rate</span>
                                     </a>
                                 </li>
-                                <li class="menu-item active">
+                                <li class="menu-item">
                                     <a href="settings.html">
                                         <img src="./assets/images/setting-menu.svg" alt="setting">
                                         <span>Settings</span>
@@ -150,8 +156,8 @@
                                     aria-label="breadcrumb">
                                     <ol class="breadcrumb drip-breadcrumb">
                                         <li class="breadcrumb-item"><a href="dashboard.html" class="link-item">Home</a></li> 
-                                        <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li> 
-                                        <li class="breadcrumb-item active active-item" aria-current="page">Email Configuration
+                                        <li class="breadcrumb-item"><a class="link-item">Support</a></li> 
+                                        <li class="breadcrumb-item active active-item" aria-current="page">Sub-category
                                         </li>
                                     </ol>
                                 </nav>
@@ -268,18 +274,22 @@
                                                                     class="accordion-collapse collapse">
                                                                     <div class="accordion-body contact-sub-items">
                                                                         <ul class="accdn-menu-list">
-                                                                            <li class="menu-item">
-                                                                                <a href="drip.html">
-                                                                                    <img src="./assets/images/drip-icon.svg"
-                                                                                        alt="Drip">
-                                                                                    <span>Drips</span>
+                                                                            <li class="menu-item active">
+                                                                                <a href="category.html">
+                                                                                    <img src="./assets/images/tags.svg" alt="Category">
+                                                                                    <span>Category</span>
                                                                                 </a>
                                                                             </li>
                                                                             <li class="menu-item">
-                                                                                <a href="leads.html">
-                                                                                    <img src="./assets/images/tags.svg"
-                                                                                        alt="Leads">
-                                                                                    <span>Leads</span>
+                                                                                <a href="subcategory.html">
+                                                                                    <img src="./assets/images/tags.svg" alt="Sub-category">
+                                                                                    <span>Sub-category</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item">
+                                                                                <a href="ticketmanagement.html">
+                                                                                    <img src="./assets/images/tags.svg" alt="Ticket Management">
+                                                                                    <span>Ticket Management</span>
                                                                                 </a>
                                                                             </li>
                                                                         </ul>
@@ -370,22 +380,35 @@
                         </div>
                     </div>
                     <div class="page-content">
-                        <div class="page-header">
+                        <div class="drip-header">
                             <div class="heading">
-                                <h4>Email Configuration</h4>
+                                <h4>Sub-Category</h4>
                             </div>
                         </div>
 
-                        <div class="setting-section-sms">
-                            <div class="setting-upload-wrapper">
-                                <div class="upload-div">
-                                    <div class="setting-input">
-                                        <label for="formFile" class="form-label">Upload Excel</label>
-                                        <input class="form-control" type="file" id="formFile">
+                        <div class="setting-section-one">
+                            <div class="subcategory-wrapper">
+                                <div class="subcategory-div">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="drip-input-div">
+                                            <label for="domain-email-template" class="input-label">Category</label>
+                                            <select id="domain-email-template" class="form-select domain-select">
+                                                <option selected>Select Category</option>
+                                                <option value="1">Category 1</option>
+                                                <option value="2">Category 2</option>
+                                                <option value="3">Category 3</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <button class="upload-button">Upload</button>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="drip-input-div">
+                                            <label for="dripInput1" class="form-label input-label mb-1">Sub-Category Name</label>
+                                            <input type="text" class="form-control input-text" id="DomainName"
+                                            placeholder="Enter Sub-Category Name">
+                                        </div>
+                                    </div>
+                                    <button class="red-button">Save</button>
                                 </div>
-                                <a href="#" class="download-sheet">Download Sample Sheet</a>
                             </div>
                             <div class="setting-wrapper">
                                 <div class="table-div">
@@ -413,9 +436,9 @@
                                                         </div>
                                                     </th>
                                                     <th>Sr.No</th>
-                                                    <th>Email</th>
-                                                    <th>Domain</th>
-                                                    <th>Token</th>
+                                                    <th>Category</th>
+                                                    <th>Sub Category</th>
+                                                    <th>Date Created</th>
                                                     <th>Status</th>
                                                     <th>Action</th>
                                                 </tr>
@@ -429,9 +452,9 @@
                                                         </div>
                                                     </td>
                                                     <td>1</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
+                                                    <td>Category</td>
+                                                    <td>Sub Category</td>
+                                                    <td>13 Jan, 2025</td>
                                                     <td>
                                                         <div class="form-check form-switch">
                                                             <input class="form-check-input setting-switch"
@@ -444,10 +467,6 @@
                                                                 data-bs-target="#TestEmailModal" title="Test">
                                                                 <img src="./assets/images/edit.svg" alt="Edit">
                                                             </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateEmailModal" title="update"><img
-                                                                    src="./assets/images/eye-icon.svg"
-                                                                    alt="eye-icon"></a>
                                                             <a href="#" data-bs-toggle="modal" data-bs-target="#"
                                                                 title="Delete">
                                                                 <img src="./assets/images/delete.svg" alt="delete">
@@ -455,7 +474,7 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                               <tr>
                                                     <td>
                                                         <div class="form-check">
                                                             <input class="form-check-input" type="checkbox" value=""
@@ -463,9 +482,9 @@
                                                         </div>
                                                     </td>
                                                     <td>2</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
+                                                    <td>Category</td>
+                                                    <td>Sub Category</td>
+                                                    <td>13 Jan, 2025</td>
                                                     <td>
                                                         <div class="form-check form-switch">
                                                             <input class="form-check-input setting-switch"
@@ -475,13 +494,9 @@
                                                     <td>
                                                         <div class="table-action">
                                                             <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
+                                                                data-bs-target="#TestEmailModal" title="Test">
                                                                 <img src="./assets/images/edit.svg" alt="Edit">
                                                             </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
-                                                                    src="./assets/images/eye-icon.svg"
-                                                                    alt="eye-icon"></a>
                                                             <a href="#" data-bs-toggle="modal" data-bs-target="#"
                                                                 title="Delete">
                                                                 <img src="./assets/images/delete.svg" alt="delete">
@@ -497,9 +512,9 @@
                                                         </div>
                                                     </td>
                                                     <td>3</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
+                                                    <td>Category</td>
+                                                    <td>Sub Category</td>
+                                                    <td>13 Jan, 2025</td>
                                                     <td>
                                                         <div class="form-check form-switch">
                                                             <input class="form-check-input setting-switch"
@@ -509,13 +524,9 @@
                                                     <td>
                                                         <div class="table-action">
                                                             <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
+                                                                data-bs-target="#TestEmailModal" title="Test">
                                                                 <img src="./assets/images/edit.svg" alt="Edit">
                                                             </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
-                                                                    src="./assets/images/eye-icon.svg"
-                                                                    alt="eye-icon"></a>
                                                             <a href="#" data-bs-toggle="modal" data-bs-target="#"
                                                                 title="Delete">
                                                                 <img src="./assets/images/delete.svg" alt="delete">
@@ -531,9 +542,9 @@
                                                         </div>
                                                     </td>
                                                     <td>4</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
+                                                    <td>Category</td>
+                                                    <td>Sub Category</td>
+                                                    <td>13 Jan, 2025</td>
                                                     <td>
                                                         <div class="form-check form-switch">
                                                             <input class="form-check-input setting-switch"
@@ -543,13 +554,9 @@
                                                     <td>
                                                         <div class="table-action">
                                                             <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
+                                                                data-bs-target="#TestEmailModal" title="Test">
                                                                 <img src="./assets/images/edit.svg" alt="Edit">
                                                             </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
-                                                                    src="./assets/images/eye-icon.svg"
-                                                                    alt="eye-icon"></a>
                                                             <a href="#" data-bs-toggle="modal" data-bs-target="#"
                                                                 title="Delete">
                                                                 <img src="./assets/images/delete.svg" alt="delete">
@@ -565,9 +572,9 @@
                                                         </div>
                                                     </td>
                                                     <td>5</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
+                                                    <td>Category</td>
+                                                    <td>Sub Category</td>
+                                                    <td>13 Jan, 2025</td>
                                                     <td>
                                                         <div class="form-check form-switch">
                                                             <input class="form-check-input setting-switch"
@@ -577,13 +584,9 @@
                                                     <td>
                                                         <div class="table-action">
                                                             <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
+                                                                data-bs-target="#TestEmailModal" title="Test">
                                                                 <img src="./assets/images/edit.svg" alt="Edit">
                                                             </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
-                                                                    src="./assets/images/eye-icon.svg"
-                                                                    alt="eye-icon"></a>
                                                             <a href="#" data-bs-toggle="modal" data-bs-target="#"
                                                                 title="Delete">
                                                                 <img src="./assets/images/delete.svg" alt="delete">
@@ -732,6 +735,17 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+    <script>new DataTable('#login-history-table', {
+            layout: {
+                topStart: null,
+                topEnd: null,
+                bottomStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    }
+                },
+            }
+        });</script>
     <script>new DataTable('#email-config-table', {
             layout: {
                 topStart: null,

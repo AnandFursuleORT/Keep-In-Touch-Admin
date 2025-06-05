@@ -1232,6 +1232,13 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     color: #EDC00E;
 }
 
+.badge-light-orange {
+    border: 1px solid rgba(237, 118, 14, 0.4);
+    background: rgba(253, 207, 182, 0.614);
+    color: #ed8c0e;
+}
+
+
 .badge-light-pending {
     border: 1px solid rgba(33, 97, 230, 0.40);
     background: rgba(187, 209, 254, 0.50);
@@ -2745,6 +2752,8 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     padding: 2px !important;
     background-color: #DEE2E9 !important;
     background-image: url("../images/Switch.svg") !important;
+    height: 14px;
+    width: 30px !important;
 }
 
 .setting-switch:checked {
@@ -4722,7 +4731,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     padding: 4px 10px;
 }
 
-.upload-button {
+.red-button {
     padding: 8px 16px;
     border-radius: 8px;
     background: #E94B50;
@@ -4780,8 +4789,213 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border-radius: 12px;
     border: 1px solid #DEE2E9;
     color: #67779A;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     background-image: url("../images/dropdown-arrow.svg");
     background-size: 18px 18px;
 }
+
+.customer-name img {
+    height: 30px;
+    width: 30px;
+}
+
+.customer-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.credit-rate-wrapper {
+    border-radius: 16px;
+    border: 1px solid #EBEDF1;
+    background: #FFF;
+    padding: 16px;
+}
+
+.rate-wrapper {
+    border-radius: 16px;
+    border: 1px solid #EBEDF1;
+    background: #FFF;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.rate-title h6 {
+    color: #0E285E;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 0px;
+}
+
+.rates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rates h6 {
+    color: #67779A;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+.rates span,
+.rates input {
+    color: #0E285E;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+
+}
+
+.credit-rates {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.custom-credit-rates {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.rates input {
+    padding: 6px 10px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 400;
+    width: 80px;
+}
+
+.rates input:focus-visible {
+    outline: none;
+
+}
+
+.select-customer {
+    padding: 12px 12px 12px 12px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #67779A;
+    font-size: 12px;
+    font-weight: 400;
+    background-image: url("../images/dropdown-arrow.svg");
+    background-size: 18px 18px;
+}
+
+/* Category */
+.setting-section-one {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.category-div,
+.subcategory-div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.category-wrapper,
+.subcategory-wrapper {
+    border-radius: 16px;
+    border: 1px solid #EBEDF1;
+    background: #FFF;
+    padding: 16px;
+}
+
+/* tickets */
+
+.ticket-div1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    justify-content: space-between;
+}
+
+.ticket-search {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.search-ticket-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.ticket-form-buttons {
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+}
+
+.ticket-view-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ticket-form-header {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.ticket-form-header-details {
+    font-size: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    color: #67779A;
+}
+
+.ticket-form-header-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-form-header-data h5 {
+    font-size: 16px;
+    color: #0E285E;
+    font-weight: 600;
+}
+
+.ticket-form-section2 label {
+    font-size: 16px;
+    color: #0E285E;
+    font-weight: 600;
+}
+
+.ticket-form-section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ticket-form-section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter-date-range {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-date:focus-visible {
+    outline: none !important;
+}
+
+/* 13 Jan, 2025 */

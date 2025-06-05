@@ -29,7 +29,7 @@
                                         <span>Dashboard</span>
                                     </a>
                                 </li>
-                                <li class="menu-item">
+                                <li class="menu-item active">
                                     <a href="customer-management.html">
                                         <img src="./assets/images/user-management-menu.svg" alt="Customer-icon">
                                         <span>Customer Management</span>
@@ -116,7 +116,7 @@
                                         <span>Credit Rate</span>
                                     </a>
                                 </li>
-                                <li class="menu-item active">
+                                <li class="menu-item">
                                     <a href="settings.html">
                                         <img src="./assets/images/setting-menu.svg" alt="setting">
                                         <span>Settings</span>
@@ -149,9 +149,12 @@
                                 <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
                                     aria-label="breadcrumb">
                                     <ol class="breadcrumb drip-breadcrumb">
-                                        <li class="breadcrumb-item"><a href="dashboard.html" class="link-item">Home</a></li> 
-                                        <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li> 
-                                        <li class="breadcrumb-item active active-item" aria-current="page">Email Configuration
+                                        <li class="breadcrumb-item"><a href="dashboard.html" class="link-item">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a href="settings.html"
+                                                class="link-item">Settings</a></li>
+                                        <li class="breadcrumb-item active active-item" aria-current="page">Email
+                                            Configuration
                                         </li>
                                     </ol>
                                 </nav>
@@ -372,229 +375,233 @@
                     <div class="page-content">
                         <div class="page-header">
                             <div class="heading">
-                                <h4>Email Configuration</h4>
+                                <h4>Customer Management</h4>
                             </div>
+                            <button class="add-button"> <img src="./assets/images/add.svg" alt="">Add Customer</button>
                         </div>
-
-                        <div class="setting-section-sms">
-                            <div class="setting-upload-wrapper">
-                                <div class="upload-div">
-                                    <div class="setting-input">
-                                        <label for="formFile" class="form-label">Upload Excel</label>
-                                        <input class="form-control" type="file" id="formFile">
-                                    </div>
-                                    <button class="upload-button">Upload</button>
-                                </div>
-                                <a href="#" class="download-sheet">Download Sample Sheet</a>
-                            </div>
-                            <div class="setting-wrapper">
-                                <div class="table-div">
-                                    <div class="table-head">
-                                        <div class="table-div1">
-                                            <!-- <div class="table-heading">
+                        <div class="table-div">
+                            <div class="table-head">
+                                <div class="table-div1">
+                                    <!-- <div class="table-heading">
                                             <h4 class="mb-0">
                                             User List
                                         </h4>
                                             </div> -->
-                                            <div class="table-search">
-                                                <input type="search" class="form-control search " id="dt-search"
-                                                    placeholder="Search">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="email-config-div table-responsive">
-                                        <table id="email-config-table" class="Table" style="width:100%">
-                                            <thead class="table-heading">
-                                                <tr>
-                                                    <th>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="checkDefault">
-                                                        </div>
-                                                    </th>
-                                                    <th>Sr.No</th>
-                                                    <th>Email</th>
-                                                    <th>Domain</th>
-                                                    <th>Token</th>
-                                                    <th>Status</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="checkDefault">
-                                                        </div>
-                                                    </td>
-                                                    <td>1</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
-                                                    <td>
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input setting-switch"
-                                                                type="checkbox" id="autoDetectSwitch">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="table-action">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestEmailModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateEmailModal" title="update"><img
-                                                                    src="./assets/images/eye-icon.svg"
-                                                                    alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
-                                                            </a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="checkDefault">
-                                                        </div>
-                                                    </td>
-                                                    <td>2</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
-                                                    <td>
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input setting-switch"
-                                                                type="checkbox" id="autoDetectSwitch">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="table-action">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
-                                                                    src="./assets/images/eye-icon.svg"
-                                                                    alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
-                                                            </a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="checkDefault">
-                                                        </div>
-                                                    </td>
-                                                    <td>3</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
-                                                    <td>
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input setting-switch"
-                                                                type="checkbox" id="autoDetectSwitch">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="table-action">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
-                                                                    src="./assets/images/eye-icon.svg"
-                                                                    alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
-                                                            </a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="checkDefault">
-                                                        </div>
-                                                    </td>
-                                                    <td>4</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
-                                                    <td>
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input setting-switch"
-                                                                type="checkbox" id="autoDetectSwitch">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="table-action">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
-                                                                    src="./assets/images/eye-icon.svg"
-                                                                    alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
-                                                            </a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="checkDefault">
-                                                        </div>
-                                                    </td>
-                                                    <td>5</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>demo.theitmatic.online</td>
-                                                    <td>eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJbmZpbml0byIsImlhd...</td>
-                                                    <td>
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input setting-switch"
-                                                                type="checkbox" id="autoDetectSwitch">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="table-action">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
-                                                                    src="./assets/images/eye-icon.svg"
-                                                                    alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
-                                                            </a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="table-search">
+                                        <input type="search" class="form-control search " id="dt-search"
+                                            placeholder="Search">
                                     </div>
                                 </div>
+                            </div>
+                            <div class="customer-table-div table-responsive">
+                                <table id="customer-table" class="Table" style="width:100%">
+                                    <thead class="table-heading">
+                                        <tr>
+                                            <th>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </th>
+                                            <th>Sr.No</th>
+                                            <th>Name</th>
+                                            <th>Plan</th>
+                                            <th>Mobile No.</th>
+                                            <th>Email</th>
+                                            <th>Last Login</th>
+                                            <th>Status</th>
+                                            <th>Registered On</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="customer-name">
+                                                    <img src="./assets/images/profile-img.png" alt="Profile">
+                                                    Samual Smith
+                                                </div>
+                                            </td>
+                                            <td>Plan</td>
+                                            <td>9876543210</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>15-05-2025</td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                </div>
+                                            </td>
+                                            <td>15-05-2025</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
+                                                        title="View"><img src="./assets/images/eye-icon.svg"
+                                                            alt="eye-icon"></a>
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
+                                                        title="Delete">
+                                                        <img src="./assets/images/delete.svg" alt="delete">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="customer-name">
+                                                    <img src="./assets/images/profile-img.png" alt="Profile">
+                                                    Samual Smith
+                                                </div>
+                                            </td>
+                                            <td>Plan</td>
+                                            <td>9876543210</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>15-05-2025</td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                </div>
+                                            </td>
+                                            <td>15-05-2025</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
+                                                        title="View"><img src="./assets/images/eye-icon.svg"
+                                                            alt="eye-icon"></a>
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
+                                                        title="Delete">
+                                                        <img src="./assets/images/delete.svg" alt="delete">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>3</td>
+                                            <td>
+                                                <div class="customer-name">
+                                                    <img src="./assets/images/profile-img.png" alt="Profile">
+                                                    Samual Smith
+                                                </div>
+                                            </td>
+                                            <td>Plan</td>
+                                            <td>9876543210</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>15-05-2025</td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                </div>
+                                            </td>
+                                            <td>15-05-2025</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
+                                                        title="View"><img src="./assets/images/eye-icon.svg"
+                                                            alt="eye-icon"></a>
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
+                                                        title="Delete">
+                                                        <img src="./assets/images/delete.svg" alt="delete">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>4</td>
+                                            <td>
+                                                <div class="customer-name">
+                                                    <img src="./assets/images/profile-img.png" alt="Profile">
+                                                    Samual Smith
+                                                </div>
+                                            </td>
+                                            <td>Plan</td>
+                                            <td>9876543210</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>15-05-2025</td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                </div>
+                                            </td>
+                                            <td>15-05-2025</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
+                                                        title="View"><img src="./assets/images/eye-icon.svg"
+                                                            alt="eye-icon"></a>
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
+                                                        title="Delete">
+                                                        <img src="./assets/images/delete.svg" alt="delete">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
+                                            <td>5</td>
+                                            <td>
+                                                <div class="customer-name">
+                                                    <img src="./assets/images/profile-img.png" alt="Profile">
+                                                    Samual Smith
+                                                </div>
+                                            </td>
+                                            <td>Plan</td>
+                                            <td>9876543210</td>
+                                            <td>abc@gmail.com</td>
+                                            <td>15-05-2025</td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                </div>
+                                            </td>
+                                            <td>15-05-2025</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
+                                                        title="View"><img src="./assets/images/eye-icon.svg"
+                                                            alt="eye-icon"></a>
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
+                                                        title="Delete">
+                                                        <img src="./assets/images/delete.svg" alt="delete">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -732,7 +739,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
-    <script>new DataTable('#email-config-table', {
+    <script>new DataTable('#customer-table', {
             layout: {
                 topStart: null,
                 topEnd: null,
@@ -741,8 +748,7 @@
                         menu: [10, 25, 50, 100]
                     }
                 },
-            },
-
+            }, autoWidth: false,
         });
     </script>
     <script>
