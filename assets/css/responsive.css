@@ -563,14 +563,16 @@
         font-size: 12px;
     }
 
-    .btn-grey {
+    .btn-grey,
+    .btn-red {
         padding: 6px 10px;
         font-size: 12px;
     }
 
-    .btn-red {
-        padding: 6px 10px;
-        font-size: 12px;
+    .applyBtn,
+    .cancelBtn {
+        padding: 2px 4px !important;
+        font-size: 12px !important;
     }
 
     /* Add contact modal */
@@ -628,7 +630,8 @@
         height: 14px;
     }
 
-    .addContact-email-input {
+    .addContact-email-input,
+    .addContact-number-input {
         padding: 8px 16px 10px 42px;
         background-size: 14px;
         font-size: 12px;
@@ -883,11 +886,6 @@
 
     /* sign-up css */
 
-    .sign-in {
-        gap: 12px;
-        padding: 8px 40px 0 40px;
-    }
-
     .form-heading-text {
         gap: 4px;
     }
@@ -948,12 +946,10 @@
 
     .sign-in-btn {
         padding: 8px;
-    }
-
-    .sign-in-btn a {
         font-size: 14px;
         line-height: 20px;
     }
+
 
     .sign-in-form {
         gap: 12px;
@@ -1844,14 +1840,16 @@
         font-size: 11px;
     }
 
-    .btn-grey {
+    .btn-grey,
+    .btn-red {
         padding: 6px 10px;
         font-size: 12px;
     }
 
-    .btn-red {
-        padding: 6px 10px;
-        font-size: 12px;
+    .applyBtn,
+    .cancelBtn {
+        padding: 2px 4px !important;
+        font-size: 12px !important;
     }
 
     /* Add contact modal */
@@ -1909,7 +1907,8 @@
         height: 14px;
     }
 
-    .addContact-email-input {
+    .addContact-email-input,
+    .addContact-number-input {
         padding: 8px 16px 10px 42px;
         background-size: 14px;
         font-size: 12px;
@@ -2164,11 +2163,6 @@
 
     /* sign-up css */
 
-    .sign-in {
-        gap: 12px;
-        padding: 8px 40px 0 40px;
-    }
-
     .form-heading-text {
         gap: 4px;
     }
@@ -2237,13 +2231,11 @@
     }
 
     .sign-in-btn {
-        padding: 6px;
-    }
-
-    .sign-in-btn a {
+        padding: 8px;
         font-size: 14px;
         line-height: 20px;
     }
+
 
     .sign-in-form {
         gap: 12px;
@@ -3138,14 +3130,16 @@
         font-size: 13px;
     }
 
-    .btn-grey {
+    .btn-grey,
+    .btn-red {
         padding: 6px 10px;
         font-size: 12px;
     }
 
-    .btn-red {
-        padding: 6px 10px;
-        font-size: 12px;
+    .applyBtn,
+    .cancelBtn {
+        padding: 2px 4px !important;
+        font-size: 12px !important;
     }
 
     /* Add contact modal */
@@ -3203,7 +3197,8 @@
         height: 14px;
     }
 
-    .addContact-email-input {
+    .addContact-email-input,
+    .addContact-number-input {
         padding: 8px 16px 10px 42px;
         background-size: 14px;
         font-size: 12px;
@@ -3458,11 +3453,6 @@
 
     /* sign-up css */
 
-    .sign-in {
-        gap: 12px;
-        padding: 8px 40px 0 40px;
-    }
-
     .form-heading-text {
         gap: 4px;
     }
@@ -3531,13 +3521,12 @@
     }
 
     .sign-in-btn {
-        padding: 6px;
-    }
-
-    .sign-in-btn a {
+        padding: 8px;
         font-size: 14px;
         line-height: 20px;
     }
+
+
 
     .sign-in-form {
         gap: 12px;
@@ -4130,7 +4119,7 @@
 
 }
 
-@media screen and (min-width: 1376px) and (max-width: 1440px) {
+@media screen and (min-width: 1376px) and (max-width: 1470px) {
     .sidebar {
 
         width: 240px;
@@ -4431,14 +4420,16 @@
         font-size: 13px;
     }
 
-    .btn-grey {
+    .btn-grey,
+    .btn-red {
         padding: 6px 10px;
         font-size: 12px;
     }
 
-    .btn-red {
-        padding: 6px 10px;
-        font-size: 12px;
+    .applyBtn,
+    .cancelBtn {
+        padding: 2px 4px !important;
+        font-size: 12px !important;
     }
 
     /* Add contact modal */
@@ -4496,7 +4487,8 @@
         height: 14px;
     }
 
-    .addContact-email-input {
+    .addContact-email-input,
+    .addContact-number-input {
         padding: 8px 16px 10px 42px;
         background-size: 14px;
         font-size: 12px;
@@ -4751,11 +4743,6 @@
 
     /* sign-up css */
 
-    .sign-in {
-        gap: 12px;
-        padding: 8px 40px 0 40px;
-    }
-
     .form-heading-text {
         gap: 4px;
     }
@@ -4824,10 +4811,7 @@
     }
 
     .sign-in-btn {
-        padding: 6px;
-    }
-
-    .sign-in-btn a {
+        padding: 8px;
         font-size: 14px;
         line-height: 20px;
     }
@@ -5424,7 +5408,7 @@
     }
 }
 
-@media screen and (min-width: 1441px) and (max-width: 1536px) {
+@media screen and (min-width: 1471px) and (max-width: 1536px) {
     .sidebar {
 
         width: 240px;

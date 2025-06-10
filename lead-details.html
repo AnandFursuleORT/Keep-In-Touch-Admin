@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/KIT-favicon.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 </head>
 
 <body>
@@ -76,7 +77,7 @@
                                 </li>
                                 <li class="menu-item">
                                     <div class="accordion" id="accordionLeads">
-                                        <div class="accordion-item sidebar-accdn">
+                                        <div class="accordion-item sidebar-accdn sidebar-accdn-active">
                                             <div class="accordion-header">
                                                 <button class="accordion-button sidebar-accordion collapsed"
                                                     type="button" data-bs-toggle="collapse"
@@ -86,10 +87,10 @@
                                                     <span>Lead Management</span>
                                                 </button>
                                             </div>
-                                            <div id="collapseaccordionLeads" class="accordion-collapse collapse">
+                                            <div id="collapseaccordionLeads" class="accordion-collapse collapse show">
                                                 <div class="accordion-body contact-sub-items">
                                                     <ul class="accdn-menu-list">
-                                                        <li class="menu-item">
+                                                        <li class="menu-item active">
                                                             <a href="lead-details.html">
                                                                 <img src="./assets/images/tags.svg" alt="Category">
                                                                 <span>Lead Details</span>
@@ -173,7 +174,7 @@
                                         <span>Credit Rate</span>
                                     </a>
                                 </li>
-                                <li class="menu-item active">
+                                <li class="menu-item">
                                     <a href="settings.html">
                                         <img src="./assets/images/setting-menu.svg" alt="setting">
                                         <span>Settings</span>
@@ -206,10 +207,9 @@
                                 <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
                                     aria-label="breadcrumb">
                                     <ol class="breadcrumb drip-breadcrumb">
-                                        <li class="breadcrumb-item"><a href="dashboard.html" class="link-item">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li>
-                                        <li class="breadcrumb-item active active-item" aria-current="page">SMS Configuration
-                                        </li>
+                                        <li class="breadcrumb-item"><a href="#" class="link-item">Home</a></li>
+                                        <li class="breadcrumb-item"><a class="link-item">Lead Management</a></li>
+                                        <li class="breadcrumb-item active active-item" aria-current="page">Lead Details</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -325,7 +325,7 @@
                                                                     class="accordion-collapse collapse">
                                                                     <div class="accordion-body contact-sub-items">
                                                                         <ul class="accdn-menu-list">
-                                                                            <li class="menu-item">
+                                                                            <li class="menu-item active">
                                                                                 <a href="category.html">
                                                                                     <img src="./assets/images/tags.svg" alt="Category">
                                                                                     <span>Category</span>
@@ -351,7 +351,7 @@
                                                     </li>
                                                     <li class="menu-item">
                                                         <div class="accordion" id="accordionLeads">
-                                                            <div class="accordion-item sidebar-accdn">
+                                                            <div class="accordion-item sidebar-accdn sidebar-accdn-active">
                                                                 <div class="accordion-header">
                                                                     <button
                                                                         class="accordion-button sidebar-accordion collapsed"
@@ -365,10 +365,10 @@
                                                                     </button>
                                                                 </div>
                                                                 <div id="collapseaccordionLeads"
-                                                                    class="accordion-collapse collapse">
+                                                                    class="accordion-collapse collapse show">
                                                                     <div class="accordion-body contact-sub-items">
                                                                         <ul class="accdn-menu-list">
-                                                                            <li class="menu-item">
+                                                                            <li class="menu-item active">
                                                                                 <a href="lead-details.html">
                                                                                     <img src="./assets/images/tags.svg" alt="Category">
                                                                                     <span>Lead Deatils</span>
@@ -389,7 +389,7 @@
                                                                             <li class="menu-item">
                                                                                 <a href="lead-status.html">
                                                                                     <img src="./assets/images/tags.svg" alt="Ticket Management">
-                                                                                    <span>Lead Status</span>
+                                                                                    <span>Leads Section</span>
                                                                                 </a>
                                                                             </li>
                                                                         </ul>
@@ -487,40 +487,40 @@
                         </div>
                     </div>
                     <div class="page-content">
-                        <div class="page-header">
+                        <div class="drip-header">
                             <div class="heading">
-                                <h4>SMS Configuration</h4>
+                                <h4>Lead Details</h4>
                             </div>
                         </div>
 
-                        <div class="setting-section-sms">
-                            <div class="setting-upload-wrapper">
-                                <div class="upload-div">
-                                    <div class="setting-input">
-                                        <label for="formFile" class="form-label">Upload Excel</label>
-                                        <input class="form-control" type="file" id="formFile">
-                                    </div>
-                                    <button class="red-button">Upload</button>
-                                </div>
-                                <a href="#" class="download-sheet">Download Sample Sheet</a>
-                            </div>
+                        <!-- <div class="setting-section-sms">
+                            </div> -->
                             <div class="setting-wrapper">
                                 <div class="table-div">
-                                    <div class="table-head">
-                                        <div class="table-div1">
-                                            <!-- <div class="table-heading">
-                                            <h4 class="mb-0">
-                                            User List
-                                        </h4>
-                                            </div> -->
-                                            <div class="table-search">
+                                    <div class="ticket-table-head">
+                                        <div class="ticket-div1">
+                                            <div class="ticket-search">
                                                 <input type="search" class="form-control search " id="dt-search"
-                                                    placeholder="Search">
+                                                    placeholder="Search Lead">
+                                            </div>
+                                            <div class="search-ticket-buttons">
+                                                <div class="export" role="button">
+                                                    <img src="./assets/images/export.svg" alt="download">
+                                                    <span>Download Report</span>
+                                                </div>
+                                                <div class="export" role="button">
+                                                    <img src="./assets/images/star-2.svg" alt="favourite">
+                                                    <span>Favourite</span>
+                                                </div>
+                                                <div class="export" role="button" data-bs-toggle="offcanvas"
+                                                    data-bs-target="#filterContact" aria-controls="offcanvasRight">
+                                                    <img src="./assets/images/filter.svg" alt="filter">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="sms-config-div table-responsive">
-                                        <table id="sms-config-table" class="Table" style="width:100%">
+                                    <div class="email-config-div table-responsive">
+                                        <table id="lead-details-table" class="Table" style="width:100%">
                                             <thead class="table-heading">
                                                 <tr>
                                                     <th>
@@ -530,12 +530,15 @@
                                                         </div>
                                                     </th>
                                                     <th>Sr.No</th>
-                                                    <th>Email Id</th>
-                                                    <th>Sender Id</th>
-                                                    <th>Template Id</th>
-                                                    <th>Template Content</th>
-                                                    <th>Tested</th>
-                                                    <th>Last Tested</th>
+                                                    <th>Lead Id</th>
+                                                    <th>Company Name</th>
+                                                    <th>Lead Name</th>
+                                                    <th>Lead Type</th>
+                                                    <th>Lead Source</th>
+                                                    <th>Reference</th>
+                                                    <th>Owner</th>
+                                                    <th>Assign To</th>
+                                                    <th>Status</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
@@ -548,30 +551,37 @@
                                                         </div>
                                                     </td>
                                                     <td>1</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>Samuel Schmidt</td>
-                                                    <td>1707167342755630000</td>
-                                                    <td class="template-content">Dear Valued Customer, We have launched
-                                                        a new product
-                                                        called{#var#}If you require demo please register on{#var#}. -
-                                                        Bhavana Televentures Limited</td>
-                                                    <td><span class="badge badge-light-success">TESTED-SUCCESS</span>
+                                                    <td>12345</td>
+                                                    <td>Company Name</td>
+                                                    <td>UVW XYZ</td>
+                                                    <td>Type</td>
+                                                    <td>Source</td>
+                                                    <td>Reference</td>
+                                                    <td>Owner</td>
+                                                    <td>ABC XYZ</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="autoDetectSwitch">
+                                                        </div>
                                                     </td>
-                                                    <td>2025-02-19T07:56:46.58931</td>
                                                     <td>
                                                         <div class="table-action">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
+                                                            <a href="#viewLeadDeatilsModal" data-bs-toggle="modal"
+                                                                data-bs-target="#" title="view"><img
                                                                     src="./assets/images/eye-icon.svg"
                                                                     alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
-                                                            </a>
+                                                            <a href="followup.html" title="followup"><img
+                                                                    src="./assets/images/followup.svg"
+                                                                    alt="followup-icon"></a>
+                                                            <a href="#reassignLeadModal" data-bs-toggle="modal" 
+                                                                data-bs-target="#" title="reassign"><img
+                                                                    src="./assets/images/reassign.svg"
+                                                                    alt="reassign-icon"></a>
+                                                            <a href="#addremarkModal" data-bs-toggle="modal" 
+                                                                data-bs-target="#" title="addremark"><img
+                                                                    src="./assets/images/add-icon.svg"
+                                                                    alt="addremarks-icon"></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -583,30 +593,37 @@
                                                         </div>
                                                     </td>
                                                     <td>2</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>Samuel Schmidt</td>
-                                                    <td>1707167342755630000</td>
-                                                    <td class="template-content">Dear Valued Customer, We have launched
-                                                        a new product
-                                                        called{#var#}If you require demo please register on{#var#}. -
-                                                        Bhavana Televentures Limited</td>
-                                                    <td><span class="badge badge-light-success">TESTED-SUCCESS</span>
+                                                    <td>12345</td>
+                                                    <td>Company Name</td>
+                                                    <td>UVW XYZ</td>
+                                                    <td>Type</td>
+                                                    <td>Source</td>
+                                                    <td>Reference</td>
+                                                    <td>Owner</td>
+                                                    <td>ABC XYZ</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="autoDetectSwitch">
+                                                        </div>
                                                     </td>
-                                                    <td>2025-02-19T07:56:46.58931</td>
                                                     <td>
                                                         <div class="table-action">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
+                                                            <a href="#viewLeadDeatilsModal" data-bs-toggle="modal"
+                                                                data-bs-target="#" title="view"><img
                                                                     src="./assets/images/eye-icon.svg"
                                                                     alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
-                                                            </a>
+                                                            <a href="followup.html" title="followup"><img
+                                                                    src="./assets/images/followup.svg"
+                                                                    alt="followup-icon"></a>
+                                                            <a href="#reassignLeadModal" data-bs-toggle="modal" 
+                                                                data-bs-target="#" title="reassign"><img
+                                                                    src="./assets/images/reassign.svg"
+                                                                    alt="reassign-icon"></a>
+                                                            <a href="#addremarkModal" data-bs-toggle="modal" 
+                                                                data-bs-target="#" title="addremark"><img
+                                                                    src="./assets/images/add-icon.svg"
+                                                                    alt="addremarks-icon"></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -618,29 +635,37 @@
                                                         </div>
                                                     </td>
                                                     <td>3</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>Samuel Schmidt</td>
-                                                    <td>1707167342755630000</td>
-                                                    <td class="template-content">Your account Password has been changed.
-                                                        Details sent to your registered email id - Team Bhavana
-                                                        Televentures</td>
-                                                    <td><span class="badge badge-light-success">TESTED-SUCCESS</span>
+                                                    <td>12345</td>
+                                                    <td>Company Name</td>
+                                                    <td>UVW XYZ</td>
+                                                    <td>Type</td>
+                                                    <td>Source</td>
+                                                    <td>Reference</td>
+                                                    <td>Owner</td>
+                                                    <td>ABC XYZ</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="autoDetectSwitch">
+                                                        </div>
                                                     </td>
-                                                    <td>2025-02-19T07:56:46.58931</td>
                                                     <td>
                                                         <div class="table-action">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
+                                                            <a href="#viewLeadDeatilsModal" data-bs-toggle="modal"
+                                                                data-bs-target="#" title="view"><img
                                                                     src="./assets/images/eye-icon.svg"
                                                                     alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
-                                                            </a>
+                                                            <a href="followup.html" title="followup"><img
+                                                                    src="./assets/images/followup.svg"
+                                                                    alt="followup-icon"></a>
+                                                            <a href="#reassignLeadModal" data-bs-toggle="modal" 
+                                                                data-bs-target="#" title="reassign"><img
+                                                                    src="./assets/images/reassign.svg"
+                                                                    alt="reassign-icon"></a>
+                                                            <a href="#addremarkModal" data-bs-toggle="modal" 
+                                                                data-bs-target="#" title="addremark"><img
+                                                                    src="./assets/images/add-icon.svg"
+                                                                    alt="addremarks-icon"></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -652,29 +677,37 @@
                                                         </div>
                                                     </td>
                                                     <td>4</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>Samuel Schmidt</td>
-                                                    <td>1707167342755630000</td>
-                                                    <td class="template-content">Dear Valued Customer, We have launched
-                                                        a new product
-                                                        called{#var#}If you require demo please register on{#var#}. -
-                                                        Bhavana Televentures Limited</td>
-                                                    <td><span class="badge badge-light-warning">Not Tested</span></td>
-                                                    <td>2025-02-19T07:56:46.58931</td>
+                                                    <td>12345</td>
+                                                    <td>Company Name</td>
+                                                    <td>UVW XYZ</td>
+                                                    <td>Type</td>
+                                                    <td>Source</td>
+                                                    <td>Reference</td>
+                                                    <td>Owner</td>
+                                                    <td>ABC XYZ</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="autoDetectSwitch">
+                                                        </div>
+                                                    </td>
                                                     <td>
                                                         <div class="table-action">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
+                                                            <a href="#viewLeadDeatilsModal" data-bs-toggle="modal"
+                                                                data-bs-target="#" title="view"><img
                                                                     src="./assets/images/eye-icon.svg"
                                                                     alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
-                                                            </a>
+                                                            <a href="followup.html" title="followup"><img
+                                                                    src="./assets/images/followup.svg"
+                                                                    alt="followup-icon"></a>
+                                                            <a href="#reassignLeadModal" data-bs-toggle="modal" 
+                                                                data-bs-target="#" title="reassign"><img
+                                                                    src="./assets/images/reassign.svg"
+                                                                    alt="reassign-icon"></a>
+                                                            <a href="#addremarkModal" data-bs-toggle="modal" 
+                                                                data-bs-target="#" title="addremark"><img
+                                                                    src="./assets/images/add-icon.svg"
+                                                                    alt="addremarks-icon"></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -686,30 +719,37 @@
                                                         </div>
                                                     </td>
                                                     <td>5</td>
-                                                    <td>deanna.curtis@example.com</td>
-                                                    <td>Samuel Schmidt</td>
-                                                    <td>1707167342755630000</td>
-                                                    <td class="template-content">Dear Valued Customer, We have launched
-                                                        a new product
-                                                        called{#var#}If you require demo please register on{#var#}. -
-                                                        Bhavana Televentures Limited</td>
-                                                    <td><span class="badge badge-light-success">TESTED-SUCCESS</span>
+                                                    <td>12345</td>
+                                                    <td>Company Name</td>
+                                                    <td>UVW XYZ</td>
+                                                    <td>Type</td>
+                                                    <td>Source</td>
+                                                    <td>Reference</td>
+                                                    <td>Owner</td>
+                                                    <td>ABC XYZ</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="autoDetectSwitch">
+                                                        </div>
                                                     </td>
-                                                    <td>2025-02-19T07:56:46.58931</td>
                                                     <td>
                                                         <div class="table-action">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#TestSMSModal" title="Test">
-                                                                <img src="./assets/images/edit.svg" alt="Edit">
-                                                            </a>
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target="#updateSMSModal" title="update"><img
+                                                            <a href="#viewLeadDeatilsModal" data-bs-toggle="modal"
+                                                                data-bs-target="#" title="view"><img
                                                                     src="./assets/images/eye-icon.svg"
                                                                     alt="eye-icon"></a>
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                                title="Delete">
-                                                                <img src="./assets/images/delete.svg" alt="delete">
-                                                            </a>
+                                                            <a href="followup.html" title="followup"><img
+                                                                    src="./assets/images/followup.svg"
+                                                                    alt="followup-icon"></a>
+                                                            <a href="#reassignLeadModal" data-bs-toggle="modal" 
+                                                                data-bs-target="#" title="reassign"><img
+                                                                    src="./assets/images/reassign.svg"
+                                                                    alt="reassign-icon"></a>
+                                                            <a href="#addremarkModal" data-bs-toggle="modal" 
+                                                                data-bs-target="#" title="addremark"><img
+                                                                    src="./assets/images/add-icon.svg"
+                                                                    alt="addremarks-icon"></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -729,141 +769,434 @@
             </div>
         </div>
     </div>
-    <!-- update SMS Modal -->
-    <div class="modal fade " id="updateSMSModal" aria-labelledby="updateSMSModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header details-header">
-                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
-                        <ol class="breadcrumb drip-breadcrumb">
-                            <li class="breadcrumb-item"><a href="#" class="link-item">Home</a></li>
-                            <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li>
-                            <li class="breadcrumb-item active active-item" aria-current="page">SMS Configuration
-                            </li>
-                        </ol>
-                    </nav>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="at-hdg-div">
-                                <h2 class="setting-modal-hdg">SMS Configuration</h2>
+    
+    <!-- =============================== Filter-offcanvas =========================== -->
+    <div class="offcanvas offcanvas-end filter-offcanvas" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" id="filterContact" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title title-offcanvas" id="offcanvasRightLabel">Filter</h5>
+            <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+        </div>
+        <div class="offcanvas-body">
+            <div class="accordion" id="accordionExample">
+                <!-- date filter code -->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#f-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Date
+                        </button>
+                    </h2>
+                    <div id="f-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="filter-date-range">
+                                <input type="text" name="daterange" class="filter-date w-100" />
                             </div>
                         </div>
                     </div>
-                    <div class="update-form-wrapper">
-                        <div class="update-form">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="drip-input-div">
-                                        <label for="dripInput1" class="form-label input-label mb-1">Sender ID</label>
-                                        <input type="text" class="form-control input-text" id="dripInput1"
-                                            placeholder="Enter Sender ID">
-                                    </div>
+                </div>
+
+                <!-- Priority filter code -->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#f-collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Priority
+                        </button>
+                    </h2>
+                    <div id="f-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div id="tagList">
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="capt" name="rank"
+                                        value="Captains/Masters">
+                                    <label class="form-check-label filter-label" for="capt">Low
+                                    </label>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="drip-input-div">
-                                        <label for="dripInput1" class="form-label input-label mb-1">Template ID</label>
-                                        <input type="text" class="form-control input-text" id="dripInput1"
-                                            placeholder="Enter Template ID">
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="officers"
+                                        name="rank" value="Officers">
+                                    <label class="form-check-label filter-label" for="officers">Medium
+                                    </label>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="drip-input-div">
-                                        <label for="dripInput1" class="form-label input-label mb-1">API Key</label>
-                                        <input type="text" class="form-control input-text" id="dripInput1"
-                                            placeholder="Enter API Key">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="drip-input-div">
-                                        <label for="dripInput1" class="form-label input-label mb-1">Client ID</label>
-                                        <input type="text" class="form-control input-text" id="dripInput1"
-                                            placeholder="Enter Client ID">
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="ratings"
+                                        name="rank" value="Ratings">
+                                    <label class="form-check-label filter-label" for="ratings">High
+                                    </label>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="drip-input-div">
-                                    <label for="dripInput1" class="form-label input-label mb-1">Content</label>
-                                    <textarea class="form-control text-area" style="resize: none;"
-                                        placeholder="Enter Content" rows="4"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="setting-form-buttons">
-                            <button class="cancel-btn" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
-                            <button class="submit-btn">Submit</button>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer border-0 justify-content-start">
-                    <a href="settings.html" role="button" class="back-btn">
-                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
-                        Back
-                    </a>
+                
+                <!--Owner filter code-->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#f-collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            Owner
+                        </button>
+                    </h2>
+                    <div id="f-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="mb-3">
+                                <input type="text" id="tagSearch" class="filter-search" placeholder="Search">
+                            </div>
+                            <div id="tagList">
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="capt" name="rank"
+                                        value="Captains/Masters">
+                                    <label class="form-check-label filter-label" for="capt">Owner 1
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="officers"
+                                        name="rank" value="Officers">
+                                    <label class="form-check-label filter-label" for="officers">Owner 2
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="ratings"
+                                        name="rank" value="Ratings">
+                                    <label class="form-check-label filter-label" for="ratings">Owner 3
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="ratings"
+                                        name="rank" value="Ratings">
+                                    <label class="form-check-label filter-label" for="ratings">Owner 4
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!--Assign to filter code-->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#f-collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            Assigned To
+                        </button>
+                    </h2>
+                    <div id="f-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="mb-3">
+                                <input type="text" id="tagSearch" class="filter-search" placeholder="Search">
+                            </div>
+                            <div id="tagList">
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="capt" name="rank"
+                                        value="Captains/Masters">
+                                    <label class="form-check-label filter-label" for="capt">ABC XYZ
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="officers"
+                                        name="rank" value="Officers">
+                                    <label class="form-check-label filter-label" for="officers">DEF UVW
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="ratings"
+                                        name="rank" value="Ratings">
+                                    <label class="form-check-label filter-label" for="ratings">STU PQR
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="ratings"
+                                        name="rank" value="Ratings">
+                                    <label class="form-check-label filter-label" for="ratings">HSG PFT
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Favourites Watch filter code -->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#f-collapseFive" aria-expanded="true"
+                            aria-controls="collapseFive">
+                            Favourites
+                        </button>
+                    </h2>
+                    <div id="f-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ">
+                            <div id="referenceList">
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="b1" name="Bridge"
+                                        value="B1">
+                                    <label class="form-check-label filter-label" for="b1">Favourite</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="b2" name="Bridge"
+                                        value="B2">
+                                    <label class="form-check-label filter-label" for="b2">Not Favourite</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-footer-btn">
+                <button type="button" class="btn-grey">Reset All</button>
+                <button type="button" class="btn-red">Apply</button>
             </div>
         </div>
     </div>
-    <!-- ======================= Modal for Add  ======================= -->
 
-    <div class="modal fade" id="TestSMSModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="TestSMSModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <!-- view lead details Modal -->
+    <div class="modal fade" id="viewLeadDeatilsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="viewLeadDeatilsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content add-modal">
                 <div class="modal-header d-flex align-items-center justify-content-between">
-                    <h4 class="modal-title add-modal-title" id="TestSMSModalLabel">Test SMS</h4>
+                    <h4 class="modal-title add-modal-title" id="exampleModalLabel">Lead Details</h4>
                     <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="modal"
                         aria-label="Close" aria-label="Close">
                 </div>
                 <div class="modal-body">
-
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="drip-input-div">
-                                <label for="dripInput1" class="form-label input-label mb-1">Mobile Number (India
-                                    Only)</label>
-                                <input type="text" class="form-control input-text" id="dripInput1"
-                                    placeholder="Enter Phone Number">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="drip-input-div">
-                                <label for="dripInput1" class="form-label input-label mb-1">Sender ID</label>
-                                <input type="text" class="form-control input-text" id="dripInput1"
-                                    placeholder="Enter Sender ID">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="drip-input-div">
-                                <label for="dripInput1" class="form-label input-label mb-1">Message</label>
-                                <input type="text" class="form-control input-text" id="dripInput1"
-                                    placeholder="Enter Message">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="drip-input-div">
-                                <label for="dripInput1" class="form-label input-label mb-1">API Key</label>
-                                <input type="text" class="form-control input-text" id="dripInput1"
-                                    placeholder="Enter API Key">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="drip-input-div">
-                                <label for="dripInput1" class="form-label input-label mb-1">Client ID</label>
-                                <input type="text" class="form-control input-text" id="dripInput1"
-                                    placeholder="Enter Client ID">
+                    <div class="lead-details-view-form">
+                        <div class="ticket-form-section1">
+                            <div class="row gy-2">
+                                <div class="col-4">
+                                    <div class="drip-input-div">
+                                        <label for="dripInput1" class="form-label input-label mb-1">Lead Id: </label>
+                                        <span>12345</span>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="drip-input-div">
+                                        <label for="dripInput1" class="form-label input-label mb-1">Company Name: </label>
+                                        <span>Company</span>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="drip-input-div">
+                                        <label for="dripInput1" class="form-label input-label mb-1">Lead Name: </label>
+                                        <span>UVW XYZ</span>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="drip-input-div">
+                                        <label for="dripInput1" class="form-label input-label mb-1">Lead Type: </label>
+                                        <select id="domain-email-template" class="form-select domain-select">
+                                            <option selected>Select Lead Type: </option>
+                                            <option value="1">Type 1</option>
+                                            <option value="2">Type 2</option>
+                                            <option value="2">Type 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="drip-input-div">
+                                        <label for="dripInput1" class="form-label input-label mb-1">Lead Source: </label>
+                                        <select id="domain-email-template" class="form-select domain-select">
+                                            <option selected>Select Lead Source: </option>
+                                            <option value="1">Source 1</option>
+                                            <option value="2">Source 2</option>
+                                            <option value="2">Source 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="drip-input-div">
+                                        <label for="dripInput1" class="form-label input-label mb-1">Reference: </label>
+                                        <input type="text" class="form-control input-text" id="DomainName"
+                                            placeholder="References">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="drip-input-div">
+                                        <label for="dripInput1" class="form-label input-label mb-1">Owner: </label>
+                                        <select id="domain-email-template" class="form-select domain-select">
+                                            <option selected>Select Owner: </option>
+                                            <option value="1">Owner 1</option>
+                                            <option value="2">Owner 2</option>
+                                            <option value="2">Owner 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="drip-input-div">
+                                        <label for="dripInput1" class="form-label input-label mb-1">Assign To: </label>
+                                        <select id="domain-email-template" class="form-select domain-select">
+                                            <option selected>Select Assign To: </option>
+                                            <option value="1">ABC XYZ</option>
+                                            <option value="2">DEF IJK</option>
+                                            <option value="2">LMN OPQ</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="drip-input-div">
+                                        <label for="dripInput1" class="form-label input-label mb-1">Favourite: </label>
+                                        <br>
+                                        <input class="form-check-input filter-check" type="checkbox" id="capt" name="rank"
+                                            value="Captains/Masters">
+                                        <label class="form-check-label filter-label" for="capt">Favourite</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <div class="setting-form-buttons">
-                        <button class="cancel-btn" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                        <button class="cancel-btn" data-bs-dismiss="modal" aria-label="Close">Discard</button>
+                        <button class="submit-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================= reassign lead Modal  ======================= -->
+    <div class="modal fade" id="reassignLeadModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="reassignLeadModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content add-modal">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h4 class="modal-title add-modal-title" id="exampleModalLabel">Reassign Lead</h4>
+                    <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="modal"
+                        aria-label="Close" aria-label="Close">
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="drip-input-div">
+                                <label for="dripInput1" class="form-label input-label mb-1">Lead Name</label>
+                                <select id="domain-email-template" class="form-select domain-select">
+                                    <option selected>Select Lead Name</option>
+                                    <option value="1">Lead 1</option>
+                                    <option value="2">Lead 2</option>
+                                    <option value="3">Lead 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col 12">
+                            <div class="reassign-tracking-history">
+                                <div>
+                                    <h4 class="modal-title add-modal-title">Tracking History</h4>
+                                </div>
+                                <div class="reassign-tracking-history-body">
+                                    <div class="reassign-tracking-history-body-section1">
+                                        <div class="reassign-tracking-history-body-left">
+                                            <img src="./assets/images/profile-img.png" alt="Profile">
+                                        </div>
+                                        <div class="reassign-tracking-history-body-right">
+                                            <span class="reassign-tracking-history-body-name">Samuel Smith</span>
+                                            <span class="reassign-tracking-history-body-date">6 June, 2025</span>
+                                            <span class="reassign-tracking-history-body-note">Comapny Name was reassigned to ABC DEF</span>
+                                        </div>
+                                    </div>
+                                    <div class="reassign-tracking-history-body-section1">
+                                        <div class="reassign-tracking-history-body-left">
+                                            <img src="./assets/images/profile-img.png" alt="Profile">
+                                        </div>
+                                        <div class="reassign-tracking-history-body-right">
+                                            <span class="reassign-tracking-history-body-name">Samuel Smith</span>
+                                            <span class="reassign-tracking-history-body-date">6 June, 2025</span>
+                                            <span class="reassign-tracking-history-body-note">Comapny Name was reassigned to ABC DEF</span>
+                                        </div>
+                                    </div>
+                                    <div class="reassign-tracking-history-body-section1">
+                                        <div class="reassign-tracking-history-body-left">
+                                            <img src="./assets/images/profile-img.png" alt="Profile">
+                                        </div>
+                                        <div class="reassign-tracking-history-body-right">
+                                            <span class="reassign-tracking-history-body-name">Samuel Smith</span>
+                                            <span class="reassign-tracking-history-body-date">6 June, 2025</span>
+                                            <span class="reassign-tracking-history-body-note">Comapny Name was reassigned to ABC DEF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="setting-form-buttons">
+                        <button class="cancel-btn" data-bs-dismiss="modal" aria-label="Close">Discard</button>
+                        <button class="submit-btn">Reassign</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================= add remark Modal  ======================= -->
+    <div class="modal fade" id="addremarkModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="addremarkModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content add-modal">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h4 class="modal-title add-modal-title" id="exampleModalLabel">Add Remark</h4>
+                    <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="modal"
+                        aria-label="Close" aria-label="Close">
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="drip-input-div">
+                                <label for="dripInput1" class="form-label input-label mb-1">Date: </label>
+                                <span class="addremarkdate">7 June, 2025</span>
+                                <br>
+                                <label for="dripInput1" class="form-label input-label mb-1">Add Remark</label>
+                                <textarea class="form-control text-area" style="resize: none;" placeholder="Enter Remark"
+                                    rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="col 12">
+                            <div class="reassign-tracking-history">
+                                <div>
+                                    <h4 class="modal-title add-modal-title">Remark History</h4>
+                                </div>
+                                <div class="reassign-tracking-history-body">
+                                    <div class="reassign-tracking-history-body-section1">
+                                        <div class="reassign-tracking-history-body-left">
+                                            <img src="./assets/images/profile-img.png" alt="Profile">
+                                        </div>
+                                        <div class="reassign-tracking-history-body-right">
+                                            <span class="reassign-tracking-history-body-name">Samuel Smith</span>
+                                            <span class="reassign-tracking-history-body-date">6 June, 2025</span>
+                                            <span class="reassign-tracking-history-body-note">Need to make changes to XYZ.</span>
+                                        </div>
+                                    </div>
+                                    <div class="reassign-tracking-history-body-section1">
+                                        <div class="reassign-tracking-history-body-left">
+                                            <img src="./assets/images/profile-img.png" alt="Profile">
+                                        </div>
+                                        <div class="reassign-tracking-history-body-right">
+                                            <span class="reassign-tracking-history-body-name">Samuel Smith</span>
+                                            <span class="reassign-tracking-history-body-date">5 June, 2025</span>
+                                            <span class="reassign-tracking-history-body-note">Need to make changes to XYZ.</span>
+                                        </div>
+                                    </div>
+                                    <div class="reassign-tracking-history-body-section1">
+                                        <div class="reassign-tracking-history-body-left">
+                                            <img src="./assets/images/profile-img.png" alt="Profile">
+                                        </div>
+                                        <div class="reassign-tracking-history-body-right">
+                                            <span class="reassign-tracking-history-body-name">Samuel Smith</span>
+                                            <span class="reassign-tracking-history-body-date">31 May, 2025</span>
+                                            <span class="reassign-tracking-history-body-note">Need to make changes to XYZ.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="setting-form-buttons">
+                        <button class="cancel-btn" data-bs-dismiss="modal" aria-label="Close">Discard</button>
                         <button class="submit-btn">Submit</button>
                     </div>
                 </div>
@@ -893,10 +1226,8 @@
                 </div>
                 <div class="modal-footer">
                     <div class="d-flex justify-content-end  gap-3">
-                        <button type="button" class="btn-grey" data-bs-target="#teamAccessPermission"
-                            data-bs-toggle="modal">Cancel</button>
-                        <button type="button" class="btn-red" data-bs-target="#teamAccessPermission"
-                            data-bs-toggle="modal">Confirm</button>
+                        <button type="button" class="btn-grey">Cancel</button>
+                        <button type="button" class="btn-red">Confirm</button>
                     </div>
                 </div>
             </div>
@@ -907,18 +1238,10 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
-    <script>new DataTable('#login-history-table', {
-            layout: {
-                topStart: null,
-                topEnd: null,
-                bottomStart: {
-                    pageLength: {
-                        menu: [10, 25, 50, 100]
-                    }
-                },
-            }
-        });</script>
-    <script>new DataTable('#sms-config-table', {
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>new DataTable('#lead-details-table', {
             layout: {
                 topStart: null,
                 topEnd: null,
@@ -929,23 +1252,22 @@
                 },
             },
             autoWidth: false,
-            columns: [
-                { width: '5%' },
-                { width: '5%' },
-                { width: '10%' },
-                { width: '15%' },
-                { width: '10%' },
-                { width: '30%' },
-                { width: '5%' },
-                { width: '10%' },
-                { width: '10%' }
-            ]
         });
     </script>
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
+    
+<script>
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'left'
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+</script>
 </body>
 
 </html>
