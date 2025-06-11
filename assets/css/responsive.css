@@ -2832,7 +2832,7 @@
 @media screen and (min-width: 1281px) and (max-width: 1366px) {
     .sidebar {
 
-        width: 230px;
+        width: 225px;
     }
 
     .step span {
@@ -4119,10 +4119,10 @@
 
 }
 
-@media screen and (min-width: 1376px) and (max-width: 1470px) {
+@media screen and (min-width: 1366px) and (max-width: 1470px) {
     .sidebar {
 
-        width: 240px;
+        width: 230px;
     }
 
     .step span {
@@ -5411,7 +5411,7 @@
 @media screen and (min-width: 1471px) and (max-width: 1536px) {
     .sidebar {
 
-        width: 240px;
+        width: 255px;
     }
 
 
