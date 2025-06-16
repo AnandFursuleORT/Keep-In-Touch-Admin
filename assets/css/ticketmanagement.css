@@ -1,0 +1,76 @@
+.ticket-div1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  justify-content: space-between;
+}
+
+.ticket-search {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-ticket-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.ticket-form-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+}
+
+.ticket-view-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ticket-form-header {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.ticket-form-header-details {
+  font-size: 12px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  color: #67779a;
+}
+
+.ticket-form-header-data {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .ticket-form-header-data a {
+  text-decoration: none;
+  color: #67779a;
+} */
+
+.ticket-form-header-data h5 {
+  font-size: 16px;
+  color: #0e285e;
+  font-weight: 600;
+}
+
+.ticket-form-section2 label {
+  font-size: 16px;
+  color: #0e285e;
+  font-weight: 600;
+}
+
+.ticket-form-section2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ticket-form-section1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

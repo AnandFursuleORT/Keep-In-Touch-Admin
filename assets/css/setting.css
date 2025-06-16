@@ -1,0 +1,108 @@
+
+.Setting-section {
+  border-radius: 16px;
+  border: 1px solid #ebedf1;
+  background: #fff;
+  padding: 16px;
+}
+
+.setting-hdg h4 {
+  color: #0e285e;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.line-div {
+  background: #ebedf1;
+  height: 1px;
+}
+
+.setting-option-btn {
+  border-radius: 8px;
+  border: 1px solid #dee2e9;
+  background-color: #fafafc;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: #67779a;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+
+
+.setting-option h6 {
+  color: #0e285e;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.setting-option p {
+  color: #67779a;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.setting-option {
+  padding: 16px;
+  border-bottom: 1px solid var(--Neutrals-Neutral-150, #ebedf1);
+}
+
+.setting-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.setting-input label {
+  color: #0e285e;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.setting-switch {
+  border: none !important;
+  border-radius: 5px !important;
+  padding: 2px !important;
+  background-color: #dee2e9 !important;
+  background-image: url("../images/Switch.svg") !important;
+  height: 14px;
+  width: 30px !important;
+}
+
+.setting-switch:checked {
+  background-color: #e31e24 !important;
+}
+
+.number-select-dropdown {
+  border-radius: 12px !important;
+  border: 1px solid #dee2e9 !important;
+  color: #67779a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.setting-checkBox label {
+  color: #0e285e;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.setting-dropdown {
+  border-radius: 12px;
+  border: 1px solid #dee2e9;
+  background-color: #fff;
+  color: #0e285e;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}

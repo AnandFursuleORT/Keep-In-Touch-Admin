@@ -1,0 +1,18 @@
+.setting-section-one {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.category-div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.category-wrapper {
+    border-radius: 16px;
+    border: 1px solid #ebedf1;
+    background: #fff;
+    padding: 16px;
+}

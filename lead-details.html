@@ -7,6 +7,7 @@
     <title>Settings</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/lead-details.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/KIT-favicon.png">
@@ -497,13 +498,13 @@
                             </div> -->
                             <div class="setting-wrapper">
                                 <div class="table-div">
-                                    <div class="ticket-table-head">
-                                        <div class="ticket-div1">
-                                            <div class="ticket-search">
+                                    <div class="">
+                                        <div class="lead-details-div1">
+                                            <div class="lead-search">
                                                 <input type="search" class="form-control search " id="dt-search"
                                                     placeholder="Search Lead">
                                             </div>
-                                            <div class="search-ticket-buttons">
+                                            <div class="search-lead-buttons">
                                                 <div class="export" role="button">
                                                     <img src="./assets/images/export.svg" alt="download">
                                                     <span>Download Report</span>
@@ -967,26 +968,26 @@
                             <div class="row gy-2">
                                 <div class="col-4">
                                     <div class="drip-input-div">
-                                        <label for="dripInput1" class="form-label input-label mb-1">Lead Id: </label>
+                                        <label  class="form-label input-label-details mb-1">Lead Id: </label>
                                         <span>12345</span>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <div class="drip-input-div">
-                                        <label for="dripInput1" class="form-label input-label mb-1">Company Name: </label>
+                                        <label class="form-label input-label-details mb-1">Company Name: </label>
                                         <span>Company</span>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <div class="drip-input-div">
-                                        <label for="dripInput1" class="form-label input-label mb-1">Lead Name: </label>
+                                        <label class="form-label input-label-details mb-1">Lead Name: </label>
                                         <span>UVW XYZ</span>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <div class="drip-input-div">
-                                        <label for="dripInput1" class="form-label input-label mb-1">Lead Type: </label>
-                                        <select id="domain-email-template" class="form-select domain-select">
+                                        <label for="lead-type" class="form-label input-label mb-1">Lead Type: </label>
+                                        <select id="lead-type" class="form-select domain-select">
                                             <option selected>Select Lead Type: </option>
                                             <option value="1">Type 1</option>
                                             <option value="2">Type 2</option>
@@ -996,8 +997,8 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="drip-input-div">
-                                        <label for="dripInput1" class="form-label input-label mb-1">Lead Source: </label>
-                                        <select id="domain-email-template" class="form-select domain-select">
+                                        <label for="lead-source" class="form-label input-label mb-1">Lead Source: </label>
+                                        <select id="lead-source" class="form-select domain-select">
                                             <option selected>Select Lead Source: </option>
                                             <option value="1">Source 1</option>
                                             <option value="2">Source 2</option>
@@ -1007,15 +1008,15 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="drip-input-div">
-                                        <label for="dripInput1" class="form-label input-label mb-1">Reference: </label>
-                                        <input type="text" class="form-control input-text" id="DomainName"
+                                        <label for="reference" class="form-label input-label mb-1">Reference: </label>
+                                        <input type="text" class="form-control input-text" id="reference"
                                             placeholder="References">
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <div class="drip-input-div">
-                                        <label for="dripInput1" class="form-label input-label mb-1">Owner: </label>
-                                        <select id="domain-email-template" class="form-select domain-select">
+                                        <label for="owner" class="form-label input-label mb-1">Owner: </label>
+                                        <select id="owner" class="form-select domain-select">
                                             <option selected>Select Owner: </option>
                                             <option value="1">Owner 1</option>
                                             <option value="2">Owner 2</option>
@@ -1025,8 +1026,8 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="drip-input-div">
-                                        <label for="dripInput1" class="form-label input-label mb-1">Assign To: </label>
-                                        <select id="domain-email-template" class="form-select domain-select">
+                                        <label for="Assign-To" class="form-label input-label mb-1">Assign To: </label>
+                                        <select id=">Assign-To" class="form-select domain-select">
                                             <option selected>Select Assign To: </option>
                                             <option value="1">ABC XYZ</option>
                                             <option value="2">DEF IJK</option>
@@ -1036,11 +1037,11 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="drip-input-div">
-                                        <label for="dripInput1" class="form-label input-label mb-1">Favourite: </label>
+                                        <label for="Favourite" class="form-label input-label mb-1">Favourite: </label>
                                         <br>
-                                        <input class="form-check-input filter-check" type="checkbox" id="capt" name="rank"
+                                        <input class="form-check-input filter-check" type="checkbox" id="Favourite" name="rank"
                                             value="Captains/Masters">
-                                        <label class="form-check-label filter-label" for="capt">Favourite</label>
+                                        <label class="form-check-label filter-label" for="Favourite">Favourite</label>
                                     </div>
                                 </div>
                             </div>
