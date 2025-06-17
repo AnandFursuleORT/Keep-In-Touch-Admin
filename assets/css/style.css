@@ -952,7 +952,7 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
   color: #e94b50;
   font-size: 14px;
   font-weight: 600;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .link-item:hover {
@@ -960,7 +960,7 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
-  margin-top: 3px;
+  margin-top: 4px;
 }
 
 .drip-breadcrumb {

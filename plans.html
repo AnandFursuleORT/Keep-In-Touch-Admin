@@ -7,6 +7,7 @@
     <title>Settings</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/plans.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/KIT-favicon.png">
@@ -29,7 +30,7 @@
                                         <span>Dashboard</span>
                                     </a>
                                 </li>
-                                <li class="menu-item active">
+                                <li class="menu-item">
                                     <a href="customer-management.html">
                                         <img src="./assets/images/user-management-menu.svg" alt="Customer-icon">
                                         <span>Customer Management</span>
@@ -64,7 +65,8 @@
                                                         </li>
                                                         <li class="menu-item">
                                                             <a href="ticketmanagement.html">
-                                                                <img src="./assets/images/tags.svg" alt="Ticket Management">
+                                                                <img src="./assets/images/tags.svg"
+                                                                    alt="Ticket Management">
                                                                 <span>Ticket Management</span>
                                                             </a>
                                                         </li>
@@ -103,13 +105,15 @@
                                                         </li>
                                                         <li class="menu-item">
                                                             <a href="lead-type.html">
-                                                                <img src="./assets/images/tags.svg" alt="Ticket Management">
+                                                                <img src="./assets/images/tags.svg"
+                                                                    alt="Ticket Management">
                                                                 <span>Lead Type</span>
                                                             </a>
                                                         </li>
                                                         <li class="menu-item">
                                                             <a href="lead-status.html">
-                                                                <img src="./assets/images/tags.svg" alt="Ticket Management">
+                                                                <img src="./assets/images/tags.svg"
+                                                                    alt="Ticket Management">
                                                                 <span>Lead Status</span>
                                                             </a>
                                                         </li>
@@ -161,9 +165,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                 <li class="menu-item">
+                                <li class="menu-item">
                                     <div class="accordion" id="accordionPlans">
-                                        <div class="accordion-item sidebar-accdn">
+                                        <div class="accordion-item sidebar-accdn sidebar-accdn-active">
                                             <div class="accordion-header">
                                                 <button class="accordion-button sidebar-accordion collapsed"
                                                     type="button" data-bs-toggle="collapse"
@@ -173,24 +177,24 @@
                                                     <span>Plan Management</span>
                                                 </button>
                                             </div>
-                                            <div id="collapseaccordionPlans" class="accordion-collapse collapse">
+                                            <div id="collapseaccordionPlans" class="accordion-collapse collapse show">
                                                 <div class="accordion-body contact-sub-items">
                                                     <ul class="accdn-menu-list">
-                                                        <li class="menu-item">
+                                                        <li class="menu-item active">
                                                             <a href="plans.html">
-                                                                <img src="./assets/images/tags.svg" alt="Category">
+                                                                <img src="./assets/images/tags.svg" alt="plan">
                                                                 <span>Plans</span>
                                                             </a>
                                                         </li>
                                                         <li class="menu-item">
                                                             <a href="add-features.html">
-                                                                <img src="./assets/images/tags.svg" alt="Sub-category">
+                                                                <img src="./assets/images/tags.svg" alt="Add Features">
                                                                 <span>Add Features</span>
                                                             </a>
                                                         </li>
                                                         <li class="menu-item">
                                                             <a href="plan-log.html">
-                                                                <img src="./assets/images/tags.svg" alt="Ticket Management">
+                                                                <img src="./assets/images/tags.svg" alt="plan logs">
                                                                 <span>plan Logs</span>
                                                             </a>
                                                         </li>
@@ -239,10 +243,9 @@
                                 <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
                                     aria-label="breadcrumb">
                                     <ol class="breadcrumb drip-breadcrumb">
-                                        <li class="breadcrumb-item"><a href="dashboard.html" class="link-item">Home</a>
-                                        </li>
-                                        <li class="breadcrumb-item active active-item" aria-current="page">Customer Management
-                                        </li>
+                                        <li class="breadcrumb-item"><a href="dashboard.html" class="link-item">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="#" class="link-item">Plan Management</a></li>
+                                        <li class="breadcrumb-item active active-item" aria-current="page">Plans</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -360,19 +363,22 @@
                                                                         <ul class="accdn-menu-list">
                                                                             <li class="menu-item">
                                                                                 <a href="category.html">
-                                                                                    <img src="./assets/images/tags.svg" alt="Category">
+                                                                                    <img src="./assets/images/tags.svg"
+                                                                                        alt="Category">
                                                                                     <span>Category</span>
                                                                                 </a>
                                                                             </li>
                                                                             <li class="menu-item">
                                                                                 <a href="subcategory.html">
-                                                                                    <img src="./assets/images/tags.svg" alt="Sub-category">
+                                                                                    <img src="./assets/images/tags.svg"
+                                                                                        alt="Sub-category">
                                                                                     <span>Sub-category</span>
                                                                                 </a>
                                                                             </li>
                                                                             <li class="menu-item">
                                                                                 <a href="ticketmanagement.html">
-                                                                                    <img src="./assets/images/tags.svg" alt="Ticket Management">
+                                                                                    <img src="./assets/images/tags.svg"
+                                                                                        alt="Ticket Management">
                                                                                     <span>Ticket Management</span>
                                                                                 </a>
                                                                             </li>
@@ -403,25 +409,29 @@
                                                                         <ul class="accdn-menu-list">
                                                                             <li class="menu-item">
                                                                                 <a href="lead-details.html">
-                                                                                    <img src="./assets/images/tags.svg" alt="Category">
+                                                                                    <img src="./assets/images/tags.svg"
+                                                                                        alt="Category">
                                                                                     <span>Lead Deatils</span>
                                                                                 </a>
                                                                             </li>
                                                                             <li class="menu-item">
                                                                                 <a href="lead-source.html">
-                                                                                    <img src="./assets/images/tags.svg" alt="Sub-category">
+                                                                                    <img src="./assets/images/tags.svg"
+                                                                                        alt="Sub-category">
                                                                                     <span>Lead Source</span>
                                                                                 </a>
                                                                             </li>
                                                                             <li class="menu-item">
                                                                                 <a href="lead-type.html">
-                                                                                    <img src="./assets/images/tags.svg" alt="Ticket Management">
+                                                                                    <img src="./assets/images/tags.svg"
+                                                                                        alt="Ticket Management">
                                                                                     <span>Lead Type</span>
                                                                                 </a>
                                                                             </li>
                                                                             <li class="menu-item">
                                                                                 <a href="lead-status.html">
-                                                                                    <img src="./assets/images/tags.svg" alt="Ticket Management">
+                                                                                    <img src="./assets/images/tags.svg"
+                                                                                        alt="Ticket Management">
                                                                                     <span>Lead Status</span>
                                                                                 </a>
                                                                             </li>
@@ -515,235 +525,27 @@
                     <div class="page-content">
                         <div class="page-header">
                             <div class="heading">
-                                <h4>Customer Management</h4>
+                                <h4>Plans</h4>
                             </div>
-                            <button class="add-button"> <img src="./assets/images/add.svg" alt="">Add Customer</button>
+                            <button class="add-button"> <img src="./assets/images/add.svg" alt="">Add Plan</button>
                         </div>
-                        <div class="table-div">
-                            <div class="table-head">
-                                <div class="table-div1">
-                                    <!-- <div class="table-heading">
-                                            <h4 class="mb-0">
-                                            User List
-                                        </h4>
-                                            </div> -->
-                                    <div class="table-search">
-                                        <input type="search" class="form-control search " id="dt-search"
-                                            placeholder="Search">
+                       <div class="plans-div">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="plan-details-wrapper">
+                                    <div class="plan-heading">
+                                        <div></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="customer-table-div table-responsive">
-                                <table id="customer-table" class="Table" style="width:100%">
-                                    <thead class="table-heading">
-                                        <tr>
-                                            <th>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="checkDefault">
-                                                </div>
-                                            </th>
-                                            <th>Sr.No</th>
-                                            <th>Name</th>
-                                            <th>Plan</th>
-                                            <th>Mobile No.</th>
-                                            <th>Email</th>
-                                            <th>Last Login</th>
-                                            <th>Status</th>
-                                            <th>Registered On</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                       <tr>
-                                            <td>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="checkDefault">
-                                                </div>
-                                            </td>
-                                            <td>1</td>
-                                            <td>
-                                                <div class="customer-name">
-                                                    <img src="./assets/images/profile-img.png" alt="Profile">
-                                                    Samual Smith
-                                                </div>
-                                            </td>
-                                            <td>Plan</td>
-                                            <td>9876543210</td>
-                                            <td>abc@gmail.com</td>
-                                            <td>15-05-2025</td>
-                                            <td>
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input setting-switch" type="checkbox"
-                                                        id="autoDetectSwitch">
-                                                </div>
-                                            </td>
-                                            <td>15-05-2025</td>
-                                            <td>
-                                                <div class="table-action">
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                        title="View"><img src="./assets/images/eye-icon.svg"
-                                                            alt="eye-icon"></a>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"
-                                                        title="Delete">
-                                                        <img src="./assets/images/delete.svg" alt="delete">
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="checkDefault">
-                                                </div>
-                                            </td>
-                                            <td>2</td>
-                                            <td>
-                                                <div class="customer-name">
-                                                    <img src="./assets/images/profile-img.png" alt="Profile">
-                                                    Samual Smith
-                                                </div>
-                                            </td>
-                                            <td>Plan</td>
-                                            <td>9876543210</td>
-                                            <td>abc@gmail.com</td>
-                                            <td>15-05-2025</td>
-                                            <td>
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input setting-switch" type="checkbox"
-                                                        id="autoDetectSwitch">
-                                                </div>
-                                            </td>
-                                            <td>15-05-2025</td>
-                                            <td>
-                                                <div class="table-action">
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                        title="View"><img src="./assets/images/eye-icon.svg"
-                                                            alt="eye-icon"></a>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#deleteModal
-                                                        title="Delete">
-                                                        <img src="./assets/images/delete.svg" alt="delete">
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="checkDefault">
-                                                </div>
-                                            </td>
-                                            <td>3</td>
-                                            <td>
-                                                <div class="customer-name">
-                                                    <img src="./assets/images/profile-img.png" alt="Profile">
-                                                    Samual Smith
-                                                </div>
-                                            </td>
-                                            <td>Plan</td>
-                                            <td>9876543210</td>
-                                            <td>abc@gmail.com</td>
-                                            <td>15-05-2025</td>
-                                            <td>
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input setting-switch" type="checkbox"
-                                                        id="autoDetectSwitch">
-                                                </div>
-                                            </td>
-                                            <td>15-05-2025</td>
-                                            <td>
-                                                <div class="table-action">
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                        title="View"><img src="./assets/images/eye-icon.svg"
-                                                            alt="eye-icon"></a>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"
-                                                        title="Delete">
-                                                        <img src="./assets/images/delete.svg" alt="delete">
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="checkDefault">
-                                                </div>
-                                            </td>
-                                            <td>4</td>
-                                            <td>
-                                                <div class="customer-name">
-                                                    <img src="./assets/images/profile-img.png" alt="Profile">
-                                                    Samual Smith
-                                                </div>
-                                            </td>
-                                            <td>Plan</td>
-                                            <td>9876543210</td>
-                                            <td>abc@gmail.com</td>
-                                            <td>15-05-2025</td>
-                                            <td>
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input setting-switch" type="checkbox"
-                                                        id="autoDetectSwitch">
-                                                </div>
-                                            </td>
-                                            <td>15-05-2025</td>
-                                            <td>
-                                                <div class="table-action">
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                        title="View"><img src="./assets/images/eye-icon.svg"
-                                                            alt="eye-icon"></a>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"
-                                                        title="Delete">
-                                                        <img src="./assets/images/delete.svg" alt="delete">
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="checkDefault">
-                                                </div>
-                                            </td>
-                                            <td>5</td>
-                                            <td>
-                                                <div class="customer-name">
-                                                    <img src="./assets/images/profile-img.png" alt="Profile">
-                                                    Samual Smith
-                                                </div>
-                                            </td>
-                                            <td>Plan</td>
-                                            <td>9876543210</td>
-                                            <td>abc@gmail.com</td>
-                                            <td>15-05-2025</td>
-                                            <td>
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input setting-switch" type="checkbox"
-                                                        id="autoDetectSwitch">
-                                                </div>
-                                            </td>
-                                            <td>15-05-2025</td>
-                                            <td>
-                                                <div class="table-action">
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#"
-                                                        title="View"><img src="./assets/images/eye-icon.svg"
-                                                            alt="eye-icon"></a>
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"
-                                                        title="Delete">
-                                                        <img src="./assets/images/delete.svg" alt="delete">
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12"> <div class="plan-details-wrapper">
+                                    
+                                </div></div>
+                            <div class="col-lg-4 col-md-4 col-sm-12"> <div class="plan-details-wrapper">
+                                    
+                                </div></div>
                         </div>
+                       </div>
                     </div>
                     <footer>
                         <div class="version">
@@ -755,8 +557,8 @@
         </div>
     </div>
 
-    
-     <!-- ============================ Delete  Modal ======================= -->
+
+    <!-- ============================ Delete  Modal ======================= -->
     <div class="modal fade deleteModal" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
