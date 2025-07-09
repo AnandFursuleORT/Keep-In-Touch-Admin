@@ -1,16 +1,127 @@
-.plans-div {
-    border-radius: 24px;
-    border: 1px solid #EBEDF1;
-    background-color: #FFF;
-    padding: 16px;
+
+.plan-price {
+   color: rgb(227, 30, 36);
+    /* font-size: 12px; */
+}
+h6{
+    color: #0e285e !important;
 }
 
-.plan-details-wrapper {
-      border-radius: 16px;
-    border: 1px solid #EBEDF1;
-    background-color: #FFF;
-   
+.edit-button{
+  border-radius: 12px;
+  background: #e94b50;
+  padding: 8px 16px;
+  align-items: center;
+  border: none;
+  gap: 8px;
+  color: #fafafc;
+  font-size: 16px;
+  font-weight: 500;
+  min-width: 12%;
+  text-align: center;
 }
-.plan-heading {
+
+.edit-button:hover {
+  background: #ee787c;
+}
+
+.edit-button:active {
+  background: #e31e24;
+}
+
+strong{
+    color: #0e285e !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+li{
+    color: #67779a !important;
+    font-size: 14px;
+    font-weight: 400;
     
 }
+.plan-features {
+    border-radius: 16px;
+    border: 1px solid #EBEDF1;
+    background-color: #FFF;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.plan-features-title h6 {
+    color: #0E285E;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-features-title h6 {
+    color: #0E285E;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 0px;
+}
+
+.features h6 {
+    color: #576A8F;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+.features span {
+    color: #2F4674;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+
+}
+.table-dropdown {
+    cursor: pointer;
+}
+
+.table-dropdown-menu-item a {
+    color: #0E285E;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feature-divider {
+ margin: 2px;
+ 
+  
+}
+.table-tabs-link {
+    color: #B0B9CB;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.nav-pills .table-tabs-link.active {
+    background-color: transparent !important;
+    color: #0E285E;
+    /* font-size: 16px; */
+    font-weight: 600;
+}
+
+.table-tabs-link:hover {
+    color: #0E285E;
+    font-weight: 600;
+}
+
+

@@ -290,7 +290,7 @@
                                             >
                                                 <div class="accordion-body contact-sub-items">
                                                     <ul class="accdn-menu-list">
-                                                        <li class="menu-item active">
+                                                        <li class="menu-item ">
                                                             <a href="plans.html">
                                                                 <img
                                                                     src="./assets/images/tags.svg"
@@ -308,7 +308,7 @@
                                                                 <span>Add Features</span>
                                                             </a>
                                                         </li>
-                                                        <li class="menu-item">
+                                                        <li class="menu-item active">
                                                             <a href="plan-log.html">
                                                                 <img
                                                                     src="./assets/images/tags.svg"
@@ -821,700 +821,72 @@
                         </div>
                     </div>
                     <div class="page-content">
-                        <div class="page-header">
-                            <div class="heading">
-                                <h4>Plans</h4>
+                        <div class="page-content">
+                            <div class="drip-header">
+                                <div class="heading">
+                                    <h4>Plan Log</h4>
+                                </div>
                             </div>
-                            <button
-                                class="add-button"
-                                data-bs-toggle="modal"
-                                data-bs-target="#addplanModal"
-                            > <img
-                                    src="./assets/images/add.svg"
-                                    alt=""
-                                >Add Plan</button>
-                        </div>
-                        <div class="table-tabs">
-                            <ul
-                                class="nav nav-pills align-items-center"
-                                id="plans-tab"
-                                role="tablist"
-                            >
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link table-tabs-link active"
-                                        id="unpublish-tab"
-                                        data-bs-toggle="pill"
-                                        data-bs-target="#unpublish-content"
-                                        type="button"
-                                        role="tab"
-                                        aria-controls="unpublish-content"
-                                        aria-selected="true"
-                                    >
-                                        Unpublish
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link table-tabs-link"
-                                        id="publish-tab"
-                                        data-bs-toggle="pill"
-                                        data-bs-target="#publish-content"
-                                        type="button"
-                                        role="tab"
-                                        aria-controls="publish-content"
-                                        aria-selected="false"
-                                    >
-                                        Publish
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
 
-                        <!-- publish and unpublish plan content -->
-                        <div
-                            class="tab-content mt-3"
-                            id="plans-tabContent"
-                        >
-                            <div
-                                class="tab-pane fade show active"
-                                id="unpublish-content"
-                                role="tabpanel"
-                                aria-labelledby="unpublish-tab"
-                            >
-                            <!-- unpublish content -->
-                                <div class="container ">
-                                    <div class="row g-4">
+                            <div class="setting-wrapper">
+                                <div class="table-div">
 
-                                        <!-- Plan Card Template Start -->
-                                        <div class="col-md-4 ">
-                                            <div class="plan-features position-relative">
-                                                <div
-                                                    class="position-absolute top-0 start-0 end-0 d-flex justify-content-between align-items-center p-2">
-                                                    <!-- Left icon: Deactivate -->
-                                                    <div class="form-check form-switch">
-                                                        <input
-                                                            class="form-check-input setting-switch"
-                                                            type="checkbox"
-                                                            id="autoDetectSwitch"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#deactivateModal"
-                                                            checked
-                                                        >
+                                    <div class="lead-details-div table-responsive">
+                                        <table
+                                            id="lead-details-table"
+                                            class="Table"
+                                            style="width:100%"
+                                        >
+                                            <thead class="table-heading">
+                                                <tr>
 
-                                                    </div>
+                                                    <th>Sr.No</th>
+                                                    <th>Date</th>
+                                                    <th>Plan Name</th>
+                                                    <th>Action</th>
+                                                    <th>Performed By</th>
+                                                    <th>Details</th>
 
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
 
-                                                    <!-- Right icons: Edit + Delete -->
-                                                    <div class="d-flex gap-2">
-                                                        <img
-                                                            src="./assets/images/edit.svg"
-                                                            alt="Edit"
-                                                            title="Edit"
-                                                            role="button"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#Editplanmodal"
-                                                        />
-                                                    </div>
-                                                </div>
-                                                <div class="plan-features-title">
-                                                    <h6 class="card-title text-center">Solo Entrepreneur</h6>
-                                                    <p class="text-center fw-bold plan-price">₹1000/month</p>
+                                                    <td>1</td>
+                                                    <td>2025-06-18</td>
+                                                    <td>Solo Entrepreneur</td>
+                                                    <td><span class="badge badge-light-success">Created</span></td>
+                                                    <td>Admin </td>
+                                                    <td>Initial plan added with ₹1000/month</td>
 
-                                                </div>
-                                                <div class="features-include">
-                                                    <div class="features">
-                                                        <h6>VCard Scanner</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt=""
-                                                            ></span>
-                                                    </div>
-                                                    <hr class="feature-divider">
+                                                </tr>
+                                                <tr>
 
-                                                    <div class="features">
-                                                        <h6>Validity</h6>
-                                                        <span>Unlimited</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
+                                                    <td>1</td>
+                                                    <td>2025-06-19</td>
+                                                    <td>Small Enterprise</td>
+                                                    <td><span class="badge badge-light-warning">Edited</span></td>
+                                                    <td>Admin </td>
+                                                    <td>Credits changed from 3000 to 5000</td>
 
-                                                    <div class="features">
-                                                        <h6>Contact Limit</h6>
-                                                        <span>5000</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
+                                                </tr>
+                                                <tr>
 
-                                                    <div class="features">
-                                                        <h6>WhatsApp Support</h6>
-                                                        <span>Limited</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
+                                                    <td>1</td>
+                                                    <td>2025-06-20</td>
+                                                    <td>Large Enterprise</td>
+                                                    <td><span class="badge  badge-light-danger">Deactivated</span></td>
+                                                    <td>Admin </td>
+                                                    <td>Plan no longer available for purchase</td>
 
-                                                    <div class="features">
-                                                        <h6>Dedicated CRM</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt="Tick"
-                                                            ></span>
-                                                    </div>
-                                                    <hr class="feature-divider">
+                                                </tr>
 
-                                                    <div class="features">
-                                                        <h6>credits</h6>
-                                                        <span>100</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Implementation Support</h6>
-                                                        <span><img
-                                                                src="./assets/images/red-cross.svg"
-                                                                alt="Cross"
-                                                            ></span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- Plan Card Template End -->
-
-                                        <!-- Small Enterprise -->
-                                        <div class="col-md-4 ">
-                                            <div class="plan-features position-relative">
-                                                <div
-                                                    class="position-absolute top-0 start-0 end-0 d-flex justify-content-between align-items-center p-2">
-                                                    <!-- Left icon: Deactivate -->
-                                                    <div class="form-check form-switch">
-                                                        <input
-                                                            class="form-check-input setting-switch"
-                                                            type="checkbox"
-                                                            id="autoDetectSwitch"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#deactivateModal"
-                                                            checked
-                                                        >
-
-                                                    </div>
-
-
-                                                    <!-- Right icons: Edit + Delete -->
-                                                    <div class="d-flex gap-2">
-                                                        <img
-                                                            src="./assets/images/edit.svg"
-                                                            alt="Edit"
-                                                            title="Edit"
-                                                            role="button"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#Editplanmodal"
-                                                        />
-                                                    </div>
-                                                </div>
-                                                <div class="plan-features-title">
-                                                    <h6 class="card-title text-center">Small Enterprise</h6>
-                                                    <p class="text-center fw-bold plan-price">₹5000/month</p>
-                                                </div>
-                                                <div class="features-include">
-                                                    <div class="features">
-                                                        <h6>VCard Scanner</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt=""
-                                                            ></span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Validity</h6>
-                                                        <span>365 Days</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Contact Limit</h6>
-                                                        <span>1000</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>WhatsApp Support</h6>
-                                                        <span>Limited</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Dedicated CRM</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt="Tick"
-                                                            ></span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>credits</h6>
-                                                        <span>5000</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Implementation Support</h6>
-                                                        <span><img
-                                                                src="./assets/images/red-cross.svg"
-                                                                alt="Cross"
-                                                            ></span>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Medium Enterprise -->
-                                        <div class="col-md-4 ">
-                                            <div class="plan-features position-relative">
-                                                <div
-                                                    class="position-absolute top-0 start-0 end-0 d-flex justify-content-between align-items-center p-2">
-                                                    <!-- Left icon: Deactivate -->
-                                                    <div class="form-check form-switch">
-                                                        <input
-                                                            class="form-check-input setting-switch"
-                                                            type="checkbox"
-                                                            id="autoDetectSwitch"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#deactivateModal"
-                                                            checked
-                                                        >
-
-                                                    </div>
-
-
-                                                    <!-- Right icons: Edit + Delete -->
-                                                    <div class="d-flex">
-                                                        <img
-                                                            src="./assets/images/edit.svg"
-                                                            alt="Edit"
-                                                            title="Edit"
-                                                            role="button"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#Editplanmodal"
-                                                        />
-                                                    </div>
-                                                </div>
-                                                <div class="plan-features-title">
-                                                    <h6 class="card-title text-center">Medium Enterprise</h6>
-                                                    <p class="text-center fw-bold plan-price">₹10000/month</p>
-                                                </div>
-                                                <div class="features-include">
-                                                    <div class="features">
-                                                        <h6>VCard Scanner</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt=""
-                                                            ></span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Validity</h6>
-                                                        <span>365 Days</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Contact Limit</h6>
-                                                        <span>5000</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>WhatsApp Support</h6>
-                                                        <span>Unlimited</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Dedicated CRM</h6>
-                                                        <span><img
-                                                                src="./assets/images/red-cross.svg"
-                                                                alt="Tick"
-                                                            ></span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>credits</h6>
-                                                        <span>30000</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Implementation Support</h6>
-                                                        <span><img
-                                                                src="./assets/images/red-cross.svg"
-                                                                alt="Cross"
-                                                            ></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Large Enterprise -->
-                                        <div class="col-md-4 ">
-                                            <div class="plan-features position-relative">
-                                                <div
-                                                    class="position-absolute top-0 start-0 end-0 d-flex justify-content-between align-items-center p-2">
-                                                    <!-- Left icon: Deactivate -->
-                                                    <div class="form-check form-switch">
-                                                        <input
-                                                            class="form-check-input setting-switch"
-                                                            type="checkbox"
-                                                            id="autoDetectSwitch"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#deactivateModal"
-                                                            checked
-                                                        >
-
-                                                    </div>
-
-
-                                                    <!-- Right icons: Edit + Delete -->
-                                                    <div class="d-flex">
-                                                        <img
-                                                            src="./assets/images/edit.svg"
-                                                            alt="Edit"
-                                                            title="Edit"
-                                                            role="button"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#Editplanmodal"
-                                                        />
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="plan-features-title">
-                                                    <h6 class="card-title text-center">Large Enterprise</h6>
-                                                    <p class="text-center fw-bold plan-price">₹15000/month</p>
-                                                </div>
-                                                <div class="features-include">
-                                                    <div class="features">
-                                                        <h6>VCard Scanner</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt=""
-                                                            ></span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Validity</h6>
-                                                        <span>365 Days</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Contact Limit</h6>
-                                                        <span>10000</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>WhatsApp Support</h6>
-                                                        <span>Unlimited</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Dedicated CRM</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt="Tick"
-                                                            ></span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Credits</h6>
-                                                        <span>75000</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Implementation Support</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt="Cross"
-                                                            ></span>
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Large Enterprise Extended -->
-                                        <div class="col-md-4 ">
-                                            <div class="plan-features position-relative">
-                                                <div
-                                                    class="position-absolute top-0 start-0 end-0 d-flex justify-content-between align-items-center p-2">
-                                                    <!-- Left icon: Deactivate -->
-                                                    <div class="form-check form-switch">
-                                                        <input
-                                                            class="form-check-input setting-switch"
-                                                            type="checkbox"
-                                                            id="autoDetectSwitch"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#deactivateModal"
-                                                            checked
-                                                        >
-
-                                                    </div>
-
-
-                                                    <!-- Right icons: Edit + Delete -->
-                                                    <div class="d-flex gap-2">
-                                                        <img
-                                                            src="./assets/images/edit.svg"
-                                                            alt="Edit"
-                                                            title="Edit"
-                                                            role="button"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#Editplanmodal"
-                                                        />
-
-                                                    </div>
-                                                </div>
-                                                <div class="plan-features-title">
-                                                    <h6 class="card-title text-center">Large Enterprise +</h6>
-                                                    <p class="text-center fw-bold plan-price">₹20000/month</p>
-                                                </div>
-                                                <div class="features-include">
-                                                    <div class="features">
-                                                        <h6>VCard Scanner</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt=""
-                                                            ></span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Validity</h6>
-                                                        <span>365 Days</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Contact Limit</h6>
-                                                        <span>25000</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>WhatsApp Support</h6>
-                                                        <span>unlimited</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Dedicated CRM</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt="Tick"
-                                                            ></span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Credits</h6>
-                                                        <span>200000</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Implementation Support</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt="Cross"
-                                                            ></span>
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
-                            <div
-                                class="tab-pane fade"
-                                id="publish-content"
-                                role="tabpanel"
-                                aria-labelledby="publish-tab"
-                            >
-                        <!-- publish content -->
-                          <div class="container ">
-                                    <div class="row g-4">
-
-                                        <!-- Plan Card Template Start -->
-                                        <div class="col-md-4 ">
-                                            <div class="plan-features position-relative">
-                                                <div
-                                                    class="position-absolute top-0 start-0 end-0 d-flex justify-content-between align-items-center p-2">
-                                                    <!-- Left icon: Deactivate -->
-                                                    <div class="form-check form-switch">
-                                                        <input
-                                                            class="form-check-input setting-switch"
-                                                            type="checkbox"
-                                                            id="autoDetectSwitch"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#deactivateModal"
-                                                            checked
-                                                        >
-
-                                                    </div>
-
-
-                                                    <!-- Right icons: Edit + Delete -->
-                                                    <div class="d-flex gap-2">
-                                                        <img
-                                                            src="./assets/images/edit.svg"
-                                                            alt="Edit"
-                                                            title="Edit"
-                                                            role="button"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#Editplanmodal"
-                                                        />
-                                                    </div>
-                                                </div>
-                                                <div class="plan-features-title">
-                                                    <h6 class="card-title text-center">Solo Entrepreneur</h6>
-                                                    <p class="text-center fw-bold plan-price">₹1000/month</p>
-
-                                                </div>
-                                                <div class="features-include">
-                                                    <div class="features">
-                                                        <h6>VCard Scanner</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt=""
-                                                            ></span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-
-                                                    <div class="features">
-                                                        <h6>Validity</h6>
-                                                        <span>Unlimited</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-
-                                                    <div class="features">
-                                                        <h6>Contact Limit</h6>
-                                                        <span>5000</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-
-                                                    <div class="features">
-                                                        <h6>WhatsApp Support</h6>
-                                                        <span>Limited</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-
-                                                    <div class="features">
-                                                        <h6>Dedicated CRM</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt="Tick"
-                                                            ></span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-
-                                                    <div class="features">
-                                                        <h6>credits</h6>
-                                                        <span>100</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Implementation Support</h6>
-                                                        <span><img
-                                                                src="./assets/images/red-cross.svg"
-                                                                alt="Cross"
-                                                            ></span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- Plan Card Template End -->
-
-                                        <!-- Small Enterprise -->
-                                        <div class="col-md-4 ">
-                                            <div class="plan-features position-relative">
-                                                <div
-                                                    class="position-absolute top-0 start-0 end-0 d-flex justify-content-between align-items-center p-2">
-                                                    <!-- Left icon: Deactivate -->
-                                                    <div class="form-check form-switch">
-                                                        <input
-                                                            class="form-check-input setting-switch"
-                                                            type="checkbox"
-                                                            id="autoDetectSwitch"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#deactivateModal"
-                                                            checked
-                                                        >
-
-                                                    </div>
-
-
-                                                    <!-- Right icons: Edit + Delete -->
-                                                    <div class="d-flex gap-2">
-                                                        <img
-                                                            src="./assets/images/edit.svg"
-                                                            alt="Edit"
-                                                            title="Edit"
-                                                            role="button"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#Editplanmodal"
-                                                        />
-                                                    </div>
-                                                </div>
-                                                <div class="plan-features-title">
-                                                    <h6 class="card-title text-center">Small Enterprise</h6>
-                                                    <p class="text-center fw-bold plan-price">₹5000/month</p>
-                                                </div>
-                                                <div class="features-include">
-                                                    <div class="features">
-                                                        <h6>VCard Scanner</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt=""
-                                                            ></span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Validity</h6>
-                                                        <span>365 Days</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Contact Limit</h6>
-                                                        <span>1000</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>WhatsApp Support</h6>
-                                                        <span>Limited</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Dedicated CRM</h6>
-                                                        <span><img
-                                                                src="./assets/images/green-tick.svg"
-                                                                alt="Tick"
-                                                            ></span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>credits</h6>
-                                                        <span>5000</span>
-                                                    </div>
-                                                    <hr class="feature-divider">
-                                                    <div class="features">
-                                                        <h6>Implementation Support</h6>
-                                                        <span><img
-                                                                src="./assets/images/red-cross.svg"
-                                                                alt="Cross"
-                                                            ></span>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                              
-                            </div>
                         </div>
-
-
-
-
 
 
 
@@ -1531,314 +903,9 @@
     </div>
 
 
-    <!-- ============================ Add plan Modal ======================= -->
-    <div
-        class="modal fade"
-        id="addplanModal"
-        data-bs-backdrop="static"
-        data-bs-keyboard="false"
-        tabindex="-1"
-        aria-labelledby="addplanModalLabel"
-        aria-hidden="true"
-    >
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content add-modal">
-                <div class="modal-header d-flex align-items-center justify-content-between">
-                    <h4
-                        class="modal-title add-modal-title"
-                        id="exampleModalLabel"
-                    >Add Plan</h4>
-                    <img
-                        src="./assets/images/cross.svg"
-                        style="cursor: pointer;"
-                        alt="cross"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                        aria-label="Close"
-                    >
-                </div>
-                <div class="modal-body">
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">Plan Name</label>
-                            <input
-                                type="text"
-                                class="form-control input-text"
-                                placeholder="e.g. Solo Entrepreneur"
-                                required
-                            >
-                        </div>
 
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">Price (₹/month)</label>
-                            <input
-                                type="number"
-                                class="form-control input-text"
-                                placeholder="e.g. 2000"
-                                required
-                            >
-                        </div>
 
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">Validity</label>
-                            <select class="form-select domain-select">
-                                <option>Unlimited</option>
-                                <option>365 Days</option>
-                                <option>Monthly</option>
-                            </select>
-                        </div>
 
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">Contact Limit</label>
-                            <input
-                                type="number"
-                                class="form-control input-text"
-                                placeholder="e.g. 1000"
-                            >
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">Credits</label>
-                            <input
-                                type="number"
-                                class="form-control input-text"
-                                placeholder="e.g. 100"
-                            >
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">WhatsApp Support</label>
-                            <select class=" form-select domain-select ">
-                                <option>Unlimited</option>
-                                <option>Limited</option>
-                                <option>None</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">Vcard Scanner</label>
-                            <select class=" form-select domain-select">
-                                <option>Enabled</option>
-                                <option>Disabled</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="drip-input-div">
-                                <label class="form-label input-label mb-1">CRM</label>
-                                <select class=" form-select domain-select">
-                                    <option>Enabled</option>
-                                    <option selected>Disabled</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">One-time Implementation Support</label>
-                            <select class=" form-select domain-select">
-                                <option>Enabled</option>
-                                <option selected>Disabled</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal-footer">
-                    <div class="setting-form-buttons">
-                        <button
-                            class="cancel-btn"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        >Discard</button>
-                        <button class="submit-btn">Add Plan</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ============================ Edit Modal ======================= -->
-    <div
-        class="modal fade"
-        id="Editplanmodal"
-        data-bs-backdrop="static"
-        data-bs-keyboard="false"
-        tabindex="-1"
-        aria-labelledby="editplanModalLabel"
-        aria-hidden="true"
-    >
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content add-modal">
-                <div class="modal-header d-flex align-items-center justify-content-between">
-                    <h4
-                        class="modal-title add-modal-title"
-                        id="exampleModalLabel"
-                    >Edit Plan</h4>
-                    <img
-                        src="./assets/images/cross.svg"
-                        style="cursor: pointer;"
-                        alt="cross"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                        aria-label="Close"
-                    >
-                </div>
-                <div class="modal-body">
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">Plan Name</label>
-                            <input
-                                type="text"
-                                class="form-control input-text"
-                                placeholder="e.g. Solo Entrepreneur"
-                                required
-                            >
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">Price (₹/month)</label>
-                            <input
-                                type="number"
-                                class="form-control input-text"
-                                placeholder="e.g. 2000"
-                                required
-                            >
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">Validity</label>
-                            <select class="form-select domain-select">
-                                <option>Unlimited</option>
-                                <option>365 Days</option>
-                                <option>Monthly</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">Contact Limit</label>
-                            <input
-                                type="number"
-                                class="form-control input-text"
-                                placeholder="e.g. 1000"
-                            >
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">Credits</label>
-                            <input
-                                type="number"
-                                class="form-control input-text"
-                                placeholder="e.g. 100"
-                            >
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">WhatsApp Support</label>
-                            <select class=" form-select domain-select ">
-                                <option>Unlimited</option>
-                                <option>Limited</option>
-                                <option>None</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">Vcard Scanner</label>
-                            <select class=" form-select domain-select">
-                                <option>Enabled</option>
-                                <option>Disabled</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="drip-input-div">
-                                <label class="form-label input-label mb-1">CRM</label>
-                                <select class=" form-select domain-select">
-                                    <option>Enabled</option>
-                                    <option selected>Disabled</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label input-label mb-1">One-time Implementation Support</label>
-                            <select class=" form-select domain-select">
-                                <option>Enabled</option>
-                                <option selected>Disabled</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal-footer">
-                    <div class="setting-form-buttons">
-                        <button
-                            class="cancel-btn"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        >Discard</button>
-                        <button class="submit-btn">Save</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ============================ Deactivate Modal ======================= -->
-
-    <div
-        class="modal fade deleteModal "
-        id="deactivateModal"
-        data-bs-backdrop="static"
-        data-bs-keyboard="false"
-        tabindex="-1"
-        aria-labelledby="deactivateModalLabel"
-        aria-hidden="true"
-    >
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4
-                        class="modal-title delete-modal-title"
-                        id="exampleModalLabel"
-                    >Deactivate </h4>
-                    <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                    ></button>
-                </div>
-                <div class="modal-body">
-                    <div class="d-flex align-items-center gap-3">
-                        <div class="delete-img-div">
-                            <img
-                                src="./assets/images/delete-modal.svg"
-                                alt=""
-                            >
-                        </div>
-                        <div class="delete-modal-text">
-                            <p class="mb-0">Are you sure you want to deactivate?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="d-flex justify-content-end  gap-3">
-                        <button
-                            type="button"
-                            class="btn-grey"
-                            data-bs-dismiss="modal"
-                        >Cancel</button>
-                        <button
-                            type="button"
-                            class="btn-red"
-                        >Deactivate</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <!-- ============================ Delete  Modal ======================= -->
@@ -1855,7 +922,7 @@
                     <h4
                         class="modal-title delete-modal-title"
                         id="exampleModalLabel"
-                    >Delete Plan</h4>
+                    >Delete Customer</h4>
                     <button
                         type="button"
                         class="btn-close"
@@ -1872,7 +939,7 @@
                             >
                         </div>
                         <div class="delete-modal-text">
-                            <p class="mb-0">Are you sure you want to delete Plan</p>
+                            <p class="mb-0">Are you sure you want to delete customer</p>
                         </div>
                     </div>
                 </div>
@@ -1895,6 +962,9 @@
             </div>
         </div>
     </div>
+
+
+
 
     <!-- update SMS Modal -->
     <div
